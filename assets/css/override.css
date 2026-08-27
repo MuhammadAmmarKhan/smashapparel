@@ -1,0 +1,843 @@
+/* ==========================================================================
+   1. BRAND VARIABLES & CORE DESIGN SYSTEM
+   ========================================================================== */
+:root {
+    --brand-primary: #d60208;
+    --brand-primary-hover: #ff0007;
+    --brand-primary-glow: rgba(248, 3, 10, 0.25);
+    --brand-primary-subtle: rgba(248, 3, 10, 0.08);
+    --transition-premium: cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ==========================================================================
+   2. HEADER & GRID LAYOUT LOCK
+   ========================================================================== */
+.custom-header-grid {
+    display: grid !important;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    position: relative;
+}
+
+body{
+    font-family: "Basic", sans-serif;
+}
+
+.grid-zone-left   { grid-column: 1 / 2; grid-row: 1; }
+.grid-zone-center { grid-column: 2 / 3; grid-row: 1; }
+.grid-zone-right  { grid-column: 3 / 4; grid-row: 1; }
+
+/* Desktop Navigation Alignment */
+@media (min-width: 992px) {
+    .grid-zone-collapse {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        display: flex !important;
+        width: auto;
+    }
+
+    #mainNavbar {
+        position: relative !important;
+    }
+
+    .mega-menu-panel {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        /*margin-top: 0.75rem !important;*/
+        transform: none !important;
+        z-index: 1050;
+    }
+}
+
+/* Mobile Collapse Layout Lock */
+@media (max-width: 991.98px) {
+    .grid-zone-collapse {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+    }
+
+    .grid-zone-collapse .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+    }
+
+    /* Prevent render flash before GSAP animation triggers */
+    .navbar-collapse:not(.show) .nav-item,
+    .navbar-collapse.collapsing .nav-item {
+        opacity: 0;
+    }
+}
+
+/* ==========================================================================
+   3. DIRECTIONAL UNDERLINES & CUSTOM CARET INTERACTION
+   ========================================================================== */
+/* Scoped Underline (Applied to internal text spans or standalone links) */
+/* ==========================================================================
+   3. DIRECTIONAL UNDERLINES & CUSTOM CARET INTERACTION
+   ========================================================================== */
+/* Scoped Underline Target (Supports direct <a>.hover-theme, nested <span>, & mega-menu links) */
+.hover-theme,
+.hover-theme span,
+.mega-menu-panel .list-unstyled a {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-theme::after,
+.hover-theme span::after,
+.mega-menu-panel .list-unstyled a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.4s var(--transition-premium);
+}
+
+/* Hover Triggers */
+.hover-theme:hover::after,
+.hover-theme:hover span::after,
+a:hover .hover-theme span::after,
+.mega-menu-panel .list-unstyled a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+.mega-menu-panel .list-unstyled a {
+    width: fit-content;
+}
+
+/* Custom Dropdown Caret Styling */
+.custom-dropdown-toggle::after {
+    display: none !important; /* Disables default Bootstrap arrow */
+}
+
+.custom-caret {
+    font-size: 0.65rem;
+    display: inline-block;
+    transition: transform 0.35s var(--transition-premium), color 0.3s ease;
+}
+
+.custom-dropdown-toggle:hover .custom-caret {
+    transform: translateY(1px);
+}
+
+.custom-dropdown-toggle[aria-expanded="true"] .custom-caret {
+    transform: rotate(180deg);
+}
+
+/* ==========================================================================
+   4. SHOPPING CART DRAWER & OFFCANVAS FRAMING
+   ========================================================================== */
+.offcanvas.offcanvas-end#cartDrawer {
+    transition: transform 0.45s var(--transition-premium), visibility 0.45s var(--transition-premium) !important;
+}
+
+.offcanvas-backdrop.show {
+    transition: opacity 0.4s ease-in-out !important;
+}
+
+/* Inner Frame Scale Micro-Animation */
+#cartDrawer .custom-drawer-content {
+    transition: transform 0.45s var(--transition-premium);
+    transform: scale(0.96);
+}
+
+#cartDrawer.show .custom-drawer-content {
+    transform: scale(1);
+}
+
+/* Responsive Offcanvas Framing */
+@media (max-width: 767.98px) {
+    #cartDrawer {
+        top: 0 !important;
+        height: 100vh !important;
+    }
+    #cartDrawer .custom-drawer-content {
+        height: 100vh !important;
+        border-radius: 0 !important;
+    }
+}
+
+@media (min-width: 768px) {
+    #cartDrawer {
+        top: 100px !important;
+    }
+    #cartDrawer .custom-drawer-content {
+        height: calc(100vh - 120px) !important;
+    }
+}
+
+/* ==========================================================================
+   5. AMBIENT ELEVATION, CARDS & BUTTON MICRO-INTERACTIONS
+   ========================================================================== */
+/* Glass Cards Layered Elevation */
+.mega-menu-panel .theme-card-bg,
+.js-cart-populated .card {
+    transition: transform 0.4s var(--transition-premium),
+    box-shadow 0.4s var(--transition-premium),
+    border-color 0.4s ease;
+    will-change: transform, box-shadow;
+}
+
+.mega-menu-panel a:hover .theme-card-bg,
+.js-cart-populated .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.12),
+    0 4px 12px -2px rgba(0, 0, 0, 0.04);
+}
+
+.mega-menu-panel .theme-card-bg i {
+    transition: transform 0.3s var(--transition-premium);
+}
+
+.mega-menu-panel a:hover .theme-card-bg i {
+    transform: translateX(5px);
+}
+
+/* Header Controls & Links Opacity Fade */
+.grid-zone-right .btn-link,
+.top-announcement-bar a {
+    transition: transform 0.3s var(--transition-premium), opacity 0.3s ease;
+}
+
+.grid-zone-right .btn-link:hover,
+.top-announcement-bar a:hover {
+    opacity: 0.75;
+    transform: translateY(-1px);
+}
+
+/* Cart Badge Micro Scale */
+.grid-zone-right .btn-link:hover .js-cart-count {
+    transform: scale(1.1);
+}
+
+.js-cart-count {
+    transition: transform 0.3s var(--transition-bounce);
+}
+
+/* Minimal Bounce Controls */
+.hover-scale {
+    transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.08);
+}
+
+.js-cart-populated .bg-dark button {
+    transition: transform 0.2s var(--transition-premium), opacity 0.2s ease;
+}
+
+.js-cart-populated .bg-dark button:hover {
+    opacity: 0.7;
+    transform: scale(1.15);
+}
+
+/* Neutral Solid Buttons Elevation */
+.offcanvas-footer .btn-dark,
+.cart-drawer-empty .btn-dark,
+.d-lg-none .btn-dark {
+    transition: transform 0.35s var(--transition-premium),
+    box-shadow 0.35s var(--transition-premium),
+    background-color 0.35s ease;
+}
+
+.offcanvas-footer .btn-dark:hover,
+.cart-drawer-empty .btn-dark:hover,
+.d-lg-none .btn-dark:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.25);
+}
+
+.offcanvas-footer .btn-dark:hover i {
+    transform: translateX(4px);
+}
+
+.offcanvas-footer .btn-dark i {
+    transition: transform 0.3s var(--transition-premium);
+}
+
+.btn-close,
+button[data-bs-dismiss="offcanvas"] {
+    transition: transform 0.3s var(--transition-premium);
+}
+
+.btn-close:hover,
+button[data-bs-dismiss="offcanvas"]:hover {
+    transform: rotate(90deg);
+}
+
+/* ==========================================================================
+   6. VIEW TRANSITION API (Circular Bottom-Right Reveal)
+   ========================================================================== */
+@keyframes revealFromBottomRight {
+    from {
+        clip-path: circle(0px at calc(100% - 40px) calc(100% - 40px));
+    }
+    to {
+        clip-path: circle(150% at calc(100% - 40px) calc(100% - 40px));
+    }
+}
+
+::view-transition-old(root) {
+    animation: none;
+    z-index: 1;
+}
+
+::view-transition-new(root) {
+    animation: revealFromBottomRight 0.6s var(--transition-premium);
+    z-index: 9999;
+}
+
+/* ==========================================================================
+   7. BRAND UTILITIES & ACCENT CLASSES (#f8030a)
+   ========================================================================== */
+.text-brand {
+    color: var(--brand-primary) !important;
+}
+
+.text-brand-hover {
+    transition: color 0.3s var(--transition-premium);
+}
+
+.text-brand-hover:hover {
+    color: var(--brand-primary) !important;
+}
+
+.bg-brand {
+    background-color: var(--brand-primary) !important;
+    color: #ffffff !important;
+}
+
+.bg-brand-subtle {
+    background-color: var(--brand-primary-subtle) !important;
+    color: var(--brand-primary) !important;
+}
+
+.border-brand {
+    border-color: var(--brand-primary) !important;
+}
+
+.border-brand-subtle {
+    border-color: rgba(248, 3, 10, 0.3) !important;
+}
+
+.border-brand-glow {
+    border-color: var(--brand-primary) !important;
+    box-shadow: 0 0 12px var(--brand-primary-glow);
+}
+
+.badge-brand {
+    background-color: var(--brand-primary);
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.35em 0.65em;
+    border-radius: 0.375rem;
+}
+
+.badge-brand-outline {
+    background-color: transparent;
+    color: var(--brand-primary);
+    border: 1px solid var(--brand-primary);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.3em 0.6em;
+    border-radius: 0.375rem;
+}
+
+.btn-brand {
+    background-color: var(--brand-primary);
+    color: #ffffff;
+    border: 1px solid var(--brand-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.35s var(--transition-premium),
+    box-shadow 0.35s var(--transition-premium),
+    background-color 0.35s ease;
+    will-change: transform, box-shadow;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--brand-primary-hover);
+    border-color: var(--brand-primary-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px -4px var(--brand-primary-glow);
+}
+
+.btn-brand:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px var(--brand-primary-glow);
+}
+.btn-brand-grayed {
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-brand-grayed:hover,.btn-brand-grayed:focus {
+    background-color: var(--brand-primary);
+    color: #000000 !important;
+    border-color: var(--brand-primary);
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand-primary);
+    border: 1px solid var(--brand-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.35s var(--transition-premium),
+    box-shadow 0.35s var(--transition-premium),
+    background-color 0.35s ease,
+    color 0.35s ease;
+    will-change: transform, box-shadow;
+}
+
+.btn-outline-brand:hover,
+.btn-outline-brand:focus {
+    background-color: var(--brand-primary);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px -4px var(--brand-primary-glow);
+}
+
+.btn-outline-brand:active {
+    transform: translateY(0);
+}
+
+.card-brand-hover {
+    transition: transform 0.4s var(--transition-premium),
+    box-shadow 0.4s var(--transition-premium),
+    border-color 0.4s ease;
+}
+
+.card-brand-hover:hover {
+    transform: translateY(-4px);
+    border-color: var(--brand-primary) !important;
+    box-shadow: 0 16px 32px -8px var(--brand-primary-glow);
+}
+/* ==========================================================================
+   CART DRAWER & MICRO-INTERACTION FIXES
+   ========================================================================== */
+
+/* Fix Close Button Hover & Transform Lock */
+/* ==========================================================================
+   CART DRAWER RESETS & HOVER FIXES
+   ========================================================================== */
+
+/* Fix Close Button Hover & Rotations */
+#cartDrawer .btn-close-custom {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.25s ease !important;
+    transform: rotate(0deg) scale(1);
+    will-change: transform;
+}
+
+#cartDrawer .btn-close-custom:hover {
+    transform: rotate(90deg) scale(1.1) !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+#cartDrawer .btn-close-custom:active {
+    transform: rotate(90deg) scale(0.92) !important;
+}
+
+/* Ensure Separator Always Renders Full Width */
+#cartDrawer .cart-progress-bar {
+    width: 100% !important;
+    display: block !important;
+    transform-origin: left center !important;
+    will-change: transform;
+}
+
+/* Product Card Ambient Elevation & Hover */
+#cartDrawer .js-cart-populated .card {
+    transition: transform 0.35s var(--transition-premium),
+    box-shadow 0.35s var(--transition-premium),
+    border-color 0.35s ease;
+    will-change: transform, box-shadow;
+}
+
+#cartDrawer .js-cart-populated .card:hover {
+    transform: translateY(-2px) translateX(2px);
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.15) !important;
+}
+/* Quantity Controls Pill Micro-Interactions */
+#cartDrawer .qty-pill-container {
+    transition: transform 0.35s var(--transition-premium), box-shadow 0.35s ease;
+}
+
+#cartDrawer .qty-pill-container:hover {
+    box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.3);
+}
+
+#cartDrawer .js-qty-plus,
+#cartDrawer .js-qty-minus {
+    transition: transform 0.2s var(--transition-bounce), opacity 0.2s ease;
+}
+
+#cartDrawer .js-qty-plus:hover,
+#cartDrawer .js-qty-minus:hover {
+    transform: scale(1.25);
+    opacity: 0.85;
+}
+
+/* Checkout Button Hover Pulse */
+#cartDrawer .btn-checkout {
+    transition: transform 0.35s var(--transition-premium),
+    box-shadow 0.35s var(--transition-premium),
+    background-color 0.35s ease;
+    will-change: transform, box-shadow;
+}
+
+#cartDrawer .btn-checkout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.3);
+}
+
+#cartDrawer .btn-checkout:hover i {
+    transform: translateX(5px);
+}
+
+#cartDrawer .btn-checkout i {
+    transition: transform 0.3s var(--transition-premium);
+}
+
+/* ==========================================================================
+   HERO BANNER & DYNAMIC VIGNETTE STYLING
+   ========================================================================= */
+
+.max-w-xl { max-width: 650px; }
+.max-w-md { max-width: 480px; }
+.fw-black { font-weight: 900; }
+.tracking-tighter { letter-spacing: -0.04em; }
+.tracking-widest { letter-spacing: 0.15em; }
+.text-stroke-white { -webkit-text-stroke: 1.5px #ffffff; }
+.text-transparent { color: transparent !important; }
+
+/* Subtitle & Gradient Overlay */
+.bg-overlay-editorial {
+    background: linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.2) 50%,
+            rgba(0, 0, 0, 0.85) 100%
+    );
+}
+
+/* Dynamic Interactive Vignette Layer */
+.dynamic-vignette {
+    background: radial-gradient(
+            circle 600px at var(--mouse-x, 50%) var(--mouse-y, 50%),
+            transparent 20%,
+            rgba(0, 0, 0, 0.85) 100%
+    );
+    transition: background 0.1s ease-out;
+    will-change: background;
+}
+
+/* Background Slide Initial State */
+.hero-slide {
+    opacity: 0;
+    visibility: hidden;
+    scale: 1.08;
+    will-change: opacity, transform;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Shop Button Micro-Interactions */
+.btn-hero-shop {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s ease,
+    background-color 0.3s ease;
+}
+
+.btn-hero-shop:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 14px 30px rgba(255, 255, 255, 0.25);
+    background-color: #ffffff !important;
+}
+
+.btn-hero-shop .btn-arrow-wrapper {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+}
+
+.btn-hero-shop:hover .btn-arrow-wrapper {
+    transform: translateX(4px) rotate(-45deg);
+    background-color: #000000 !important;
+}
+
+/* Nav Control Buttons */
+.btn-nav-ctrl {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-nav-ctrl:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: scale(1.1);
+}
+/* Typography & Utility Scaffolding */
+.fw-black { font-weight: 900; }
+.tracking-tighter { letter-spacing: -0.04em; }
+.tracking-tight { letter-spacing: -0.02em; }
+.tracking-wider { letter-spacing: 0.1em; }
+.tracking-widest { letter-spacing: 0.2em; }
+.fs-7 { font-size: 0.75rem; }
+.fs-8 { font-size: 0.6875rem; }
+.max-w-sm { max-width: 320px; }
+.text-stroke-white { -webkit-text-stroke: 1.5px #ffffff; }
+.text-transparent { color: transparent !important; }
+
+/* Left Spotlight Panel Styling */
+.spot-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.85) 100%);
+}
+.spot-img {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+div:hover > .spot-img {
+    transform: scale(1.04);
+}
+
+/* Horizontal Track Setup */
+.product-scroll-track {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    scroll-behavior: smooth;
+}
+.product-scroll-track::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* Product Card Sizing & Structure */
+.product-card {
+    width: 260px;
+    height: 420px;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+}
+
+.card-media-wrapper {
+    height: 270px;
+}
+
+.card-slides-track {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Image Carousel Navigation Controls inside Card */
+.card-media-wrapper:hover .js-card-nav {
+    opacity: 1 !important;
+}
+
+.btn-card-nav {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.65);
+    color: #ffffff;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-card-nav:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+/* Wishlist Button */
+.btn-wishlist {
+    width: 36px;
+    height: 36px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    backdrop-filter: blur(6px);
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.btn-wishlist:hover {
+    background: #dc3545;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Add To Cart Button */
+.btn-add-cart {
+    width: 40px;
+    height: 40px;
+    background: #212529;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.btn-add-cart:hover {
+    background: #ffffff;
+    color: #000000 !important;
+    border-color: #ffffff;
+    transform: scale(1.08);
+}
+/* ==========================================================================
+   CSS VARIABLES FOR LIGHT & DARK THEME ADAPTABILITY
+   ========================================================================= */
+
+.product-scroll-track {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+.product-scroll-track::-webkit-scrollbar { display: none; }
+
+.product-card {
+    width: 320px;
+    height: 420px;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover,
+.product-card:focus-within {
+    transform: translateY(-6px);
+    border-color: var(--brand-primary) !important;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card-media-wrapper { height: 270px; }
+.card-slides-track { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+.card-slide-nav { opacity: 0; transition: opacity 0.25s ease; }
+.card-media-wrapper:hover .card-slide-nav,
+.card-media-wrapper:focus-within .card-slide-nav { opacity: 1; }
+
+.btn-wishlist {
+    width: 36px;
+    height: 36px;
+    background: rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn-wishlist:hover { background: var(--brand-primary); transform: scale(1.1); }
+.js-hero-banner {
+    position: relative;
+    overflow: hidden;
+    /* Forces GPU clip path so border radius never resets on inline style updates */
+    border-radius: 1.5rem;
+    transform: translateZ(0);
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+/* Typography & Layout Spacing */
+.lh-09 { line-height: 0.88; }
+.fs-8 { font-size: 0.75rem; }
+.max-w-2xl { max-width: 680px; }
+.max-w-sm { max-width: 340px; }
+
+/* Status Dot */
+.live-status-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--brand-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--brand-primary);
+}
+
+/* Editorial Typography Treatment */
+.editorial-accent-text {
+    font-family: "Arial Black", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(192 192 192);
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -0.5rem;
+}
+/* WebKit Browsers (Chrome, Safari, Edge) - Main Page Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bs-body-bg, #09090b);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--brand-primary);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    filter: brightness(1.15);
+}
+
+/* Firefox Support - Main Page Scrollbar */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--brand-primary) var(--bs-body-bg, #09090b);
+}
+
+/* Minimalist Button Styling */
+
+.btn-indicator-line {
+    width: 24px;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.btn-brand:hover .btn-indicator-line {
+    width: 36px;
+}
+
+/* Progress Tracker replacing Arrows */
+.hero-progress-bar {
+    width: 120px;
+    height: 2px;
+}
+
+.bg-white-10 {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.hero-progress-fill {
+    width: 25%; /* Dynamically animated via GSAP based on current slide */
+    transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-white:hover {
+    color: #ffffff !important;
+}
