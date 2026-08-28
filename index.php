@@ -10,31 +10,31 @@ ob_start(); ?>
         <!-- 1. FADING BACKGROUND SLIDES -->
         <div class="hero-slides-wrapper position-absolute top-0 start-0 w-100 h-100 z-0">
             <div class="hero-slide active position-absolute top-0 start-0 w-100 h-100" data-slide="0">
-                <img src="/assets/images/slide_1.webp" alt="PPA Tour Melbourne Pro Pickleball"
+                <img src="/smashapparel/assets/images/slide_1.webp" alt="PPA Tour Melbourne Pro Pickleball"
                      class="w-100 h-100 object-fit-cover">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="1">
-                <img src="/assets/images/slide_2.webp" alt="Pro Court Tech Tee"
+                <img src="/smashapparel/assets/images/slide_2.webp" alt="Pro Court Tech Tee"
                      class="w-100 h-100 object-fit-cover">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="2">
-                <img src="/assets/images/slide_3.webp" alt="Pro Doubles Match Play"
+                <img src="/smashapparel/assets/images/slide_3.webp" alt="Pro Doubles Match Play"
                      class="w-100 h-100 object-fit-cover">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="3">
-                <img src="/assets/images/slide_5.webp" alt="Tennis Performance Activewear"
+                <img src="/smashapparel/assets/images/slide_5.webp" alt="Tennis Performance Activewear"
                      class="w-100 h-100 object-fit-cover">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="4">
-                <img src="/assets/images/slide_6.webp" alt="Championship Match Victory"
+                <img src="/smashapparel/assets/images/slide_6.webp" alt="Championship Match Victory"
                      class="w-100 h-100 object-fit-cover">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="5">
-                <img src="/assets/images/slide_7.webp" alt="Post Match Sportsmanship"
+                <img src="/smashapparel/assets/images/slide_7.webp" alt="Post Match Sportsmanship"
                      class="w-100 h-100 object-fit-cover">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="6">
-                <img src="/assets/images/slide_8.webp" alt="Kinetic Gradient Pro Top"
+                <img src="/smashapparel/assets/images/slide_8.webp" alt="Kinetic Gradient Pro Top"
                      class="w-100 h-100 object-fit-cover">
             </div>
         </div>
@@ -264,7 +264,7 @@ ob_start(); ?>
         <!-- Image Card (First on Mobile, Right Side on Desktop) -->
         <div class="col-12 col-lg-9 order-1 order-lg-2">
             <div class="w-100 h-100 bg-body-tertiary rounded-4 border border-body-subtle overflow-hidden position-relative" style="min-height: 600px !important;">
-                <img src="/assets/images/slide_8.webp" alt="Engineered for the rally" class="w-100 h-100 object-fit-cover object-fit-top position-absolute inset-0" loading="lazy">
+                <img src="/smashapparel/assets/images/slide_8.webp" alt="Engineered for the rally" class="w-100 h-100 object-fit-cover object-fit-top position-absolute inset-0" loading="lazy">
             </div>
         </div>
 
@@ -619,7 +619,7 @@ ob_start(); ?>
 
         <!-- LEFT PANEL: SPOTLIGHT MEDIA -->
         <div class="w-100 w-lg-50 rounded-4 overflow-hidden position-relative bg-body-tertiary d-flex flex-column justify-content-between p-4 p-md-5">
-            <img src="/assets/images/premium-cat.webp" alt="Featured Activewear"
+            <img src="/smashapparel/assets/images/premium-cat.webp" alt="Featured Activewear"
                  class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0 spot-img">
             <div class="position-absolute top-0 start-0 w-100 h-100 z-1 bg-overlay-editorial pointer-events-none"></div>
 

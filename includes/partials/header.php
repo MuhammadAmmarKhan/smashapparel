@@ -37,7 +37,7 @@
         </div>
     </div>
 </div>
-<header class="site-header sticky-top position-relative" id="mainHeader">
+<header class="sticky-top">
     <div class="container-fluid px-2 px-md-3">
         <!-- Main Navbar Shell -->
         <nav class="navbar navbar-expand-lg py-0 px-3 border border-dark rounded-4 theme-glass-nav custom-header-grid bg-black navbar-dark"
@@ -133,7 +133,7 @@
                                         <div class="col-12 col-lg-3 d-none d-lg-block">
                                             <a href="/collections/mens-new" class="text-decoration-none d-block h-100">
                                                 <div class="card border border-dark bg-dark text-white overflow-hidden rounded-3 h-100 p-3 d-flex flex-column justify-content-between position-relative" style="min-height: 180px;">
-                                                    <img src="/assets/images/slide_6.webp" alt="Pro-Series Activewear Drop" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" loading="lazy">
+                                                    <img src="/smashapparel/assets/images/slide_6.webp" alt="Pro-Series Activewear Drop" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" loading="lazy">
                                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 z-1"></div>
 
                                                     <span class="badge w-auto align-self-start rounded-1 small bg-danger text-white position-relative z-2">JUST DROPPED</span>
@@ -148,7 +148,7 @@
                                         <div class="col-12 col-lg-3 d-none d-lg-block">
                                             <a href="/collections/mens-trending" class="text-decoration-none d-block h-100">
                                                 <div class="card border border-dark bg-dark text-white overflow-hidden rounded-3 h-100 p-3 d-flex flex-column justify-content-between position-relative" style="min-height: 180px;">
-                                                    <img src="/assets/images/slide_8.webp" alt="Core Essentials Trending" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" loading="lazy">
+                                                    <img src="/smashapparel/assets/images/slide_8.webp" alt="Core Essentials Trending" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" loading="lazy">
                                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 z-1"></div>
 
                                                     <span class="badge bg-black text-white w-auto align-self-start rounded-1 small border border-dark position-relative z-2">BESTSELLERS</span>

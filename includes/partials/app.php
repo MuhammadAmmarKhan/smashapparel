@@ -3,7 +3,7 @@ $host = $_SERVER['HTTP_HOST'];
 define('BASE_URL', $protocol . $host . '/');
 function asset($path)
 {
-    $localPath = __DIR__ . '/assets/' . $path;
+    $localPath = __DIR__ . 'smashapparal/assets/' . $path;
     $baseUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/assets/";
     $version = '1.8.4';
     if (file_exists($localPath)) {

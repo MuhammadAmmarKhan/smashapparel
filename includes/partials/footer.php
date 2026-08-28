@@ -1,4 +1,4 @@
-<footer class="container-fluid px-2 px-md-3 py-2">
+<footer class="container-fluid px-2 px-md-3 py-2 pb-3">
     <div class="w-100 bg-black text-white rounded-4 border border-dark pt-5 pb-4 position-relative overflow-hidden">
 
         <div class="px-4 px-md-5">
@@ -98,7 +98,7 @@
         </div>
 
         <div class="w-100 text-center py-4 my-2 overflow-hidden user-select-none px-4 px-md-5">
-            <img src="/assets/images/logo-white.webp" alt="Smash Apparel" class="img-fluid edge-brand-img" loading="lazy">
+            <img src="/smashapparel/assets/images/logo-white.webp" alt="Smash Apparel" class="img-fluid edge-brand-img" loading="lazy">
         </div>
 
         <div class="px-4 px-md-5">
