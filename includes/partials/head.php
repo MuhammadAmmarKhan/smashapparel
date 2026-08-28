@@ -19,7 +19,7 @@ $canonical_url = $protocol . $_SERVER['HTTP_HOST'] . strtok($_SERVER['REQUEST_UR
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-    (function() {
+    (function () {
         const savedTheme = localStorage.getItem('theme');
         const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const theme = savedTheme ? savedTheme : (systemPrefersDark ? 'dark' : 'light');
@@ -37,11 +37,16 @@ $canonical_url = $protocol . $_SERVER['HTTP_HOST'] . strtok($_SERVER['REQUEST_UR
 <meta name="apple-mobile-web-app-title" content="Smash Apparel">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Basic&family=BenchNine:wght@300;400;700&family=Boldonse&family=Libre+Barcode+128+Text&family=Oswald:wght@200..700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
 <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Basic&family=BenchNine:wght@300;400;700&family=Oswald:wght@200..700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-<link href="<?php echo asset('css/bootstrap.min.css'); ?>" rel="preload" onload='this.onload=null,this.rel="stylesheet"' as="style">
-<noscript><link href="<?php echo asset('css/bootstrap.min.css'); ?>" rel="stylesheet"></noscript>
+<link href="<?php echo asset('css/bootstrap.min.css'); ?>" rel="preload" onload='this.onload=null,this.rel="stylesheet"'
+      as="style">
+<noscript>
+    <link href="<?php echo asset('css/bootstrap.min.css'); ?>" rel="stylesheet">
+</noscript>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <link href="<?php echo asset('css/override.css'); ?>" rel="stylesheet">
 <script crossorigin="anonymous" defer src="https://kit.fontawesome.com/0b217c8a25.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">

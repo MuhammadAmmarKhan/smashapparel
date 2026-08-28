@@ -1,11 +1,9 @@
-<script src="<?php echo asset('js/jquery-3.6.0.min.js') ?>"></script>
-<script src="<?php echo asset('js/bootstrap.bundle.min.js') ?>"></script>
-<script src="<?php echo asset('js/gsap.min.js') ?>"></script>
-<script src="<?php echo asset('js/TextPlugin.min.js') ?>"></script>
-<script src="<?php echo asset('js/ScrollTrigger.min.js') ?>"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="<?php echo asset('js/jquery-3.6.0.min.js') ?>" defer></script>
+<script src="<?php echo asset('js/bootstrap.bundle.min.js') ?>" defer></script>
+<script src="<?php echo asset('js/gsap.min.js') ?>" defer></script>
+<script src="<?php echo asset('js/TextPlugin.min.js') ?>" defer></script>
+<script src="<?php echo asset('js/ScrollTrigger.min.js') ?>" defer></script>
 <script type="text/javascript">
-    // 1. Instant Theme Init (Prevents Flash of Unstyled Content / FOUT)
     (function () {
         const storedTheme = localStorage.getItem('theme');
         const getPreferredTheme = () => {
@@ -14,39 +12,29 @@
         };
         document.documentElement.setAttribute('data-bs-theme', getPreferredTheme());
     })();
-
-    document.addEventListener('DOMContentLoaded', () => {
-
-        // Register GSAP ScrollTrigger
-        if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-            gsap.registerPlugin(ScrollTrigger);
-        }
-
-        // -----------------------------------------------------------------
-        // 2. Dark / Light Mode Toggle & Dynamic Logo Asset Switcher
-        // -----------------------------------------------------------------
+    function initThemeSwitcher() {
         const themeToggleBtn = document.getElementById('bd-theme-toggle');
-        const logoLightSrc = "<?= asset('images/logo.png') ?>";
-        const logoDarkSrc = "<?= asset('images/logo-white.png') ?>";
+        const mobileThemeToggleBtn = document.getElementById('bd-theme-toggle-mobile');
+
+        const logoLightSrc = "<?= asset('images/logo-white.webp') ?>";
+        const logoDarkSrc = "<?= asset('images/logo-white.webp') ?>";
 
         const updateThemeUI = (theme) => {
-            // Update Icon
-            if (themeToggleBtn) {
-                const icon = themeToggleBtn.querySelector('i');
+            [themeToggleBtn, mobileThemeToggleBtn].forEach((btn) => {
+                if (!btn) return;
+                const icon = btn.querySelector('i');
                 if (icon) {
-                    icon.className = theme === 'dark' ? 'bi bi-moon-stars fs-6 d-block' : 'bi bi-sun fs-6 d-block';
+                    icon.className = theme === 'dark'
+                        ? 'bi bi-moon-stars fs-6 d-block'
+                        : 'bi bi-sun fs-6 d-block';
                 }
-            }
+            });
 
-            // Update Logos (Desktop & Mobile)
             const brandLogos = document.querySelectorAll('.navbar-brand img');
             brandLogos.forEach((img) => {
                 img.src = theme === 'dark' ? logoDarkSrc : logoLightSrc;
             });
         };
-
-        // Set initial icon and logo matching current HTML theme attribute
-        updateThemeUI(document.documentElement.getAttribute('data-bs-theme'));
 
         const applyTheme = (newTheme) => {
             document.documentElement.setAttribute('data-bs-theme', newTheme);
@@ -54,452 +42,40 @@
             updateThemeUI(newTheme);
         };
 
-        if (themeToggleBtn) {
-            themeToggleBtn.addEventListener('click', () => {
-                const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        const toggleTheme = () => {
+            const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-                // Check if View Transition API is supported by the browser
-                if (document.startViewTransition) {
-                    document.startViewTransition(() => {
-                        applyTheme(newTheme);
-                    });
-                } else {
-                    applyTheme(newTheme);
-                }
-            });
+            if (document.startViewTransition) {
+                document.startViewTransition(() => applyTheme(newTheme));
+            } else {
+                applyTheme(newTheme);
+            }
+        };
+
+        updateThemeUI(document.documentElement.getAttribute('data-bs-theme') || 'dark');
+
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', toggleTheme);
         }
 
+        if (mobileThemeToggleBtn) {
+            mobileThemeToggleBtn.addEventListener('click', toggleTheme);
+        }
 
-        // Listen for system theme changes if no manual preference is saved
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        const colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        colorSchemeQuery.addEventListener('change', (e) => {
             if (!localStorage.getItem('theme')) {
                 const newTheme = e.matches ? 'dark' : 'light';
                 if (document.startViewTransition) {
-                    document.startViewTransition(() => {
-                        applyTheme(newTheme);
-                    });
+                    document.startViewTransition(() => applyTheme(newTheme));
                 } else {
                     applyTheme(newTheme);
                 }
             }
         });
-        const mobileThemeToggleBtn = document.getElementById('bd-theme-toggle-mobile');
-        if (mobileThemeToggleBtn) {
-            mobileThemeToggleBtn.addEventListener('click', () => {
-                const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                applyTheme(newTheme);
-            });
-        }
-
-        // -----------------------------------------------------------------
-        // 3. GSAP Entrance & Scroll-Triggered Reveal Animations
-        // -----------------------------------------------------------------
-        requestAnimationFrame(() => {
-            const mm = gsap.matchMedia();
-
-            // ==========================================================================
-            // 1. MASTER ENTRANCE TIMELINE
-            // ==========================================================================
-            const masterEntrance = gsap.timeline({ defaults: { ease: 'power3.out' } });
-
-            masterEntrance
-                .from('.top-announcement-bar', {
-                    y: -20,
-                    opacity: 0,
-                    duration: 0.6,
-                    clearProps: 'all'
-                })
-                .from('.site-header', {
-                    y: -30,
-                    opacity: 0,
-                    duration: 0.6,
-                    clearProps: 'all'
-                }, '-=0.3')
-                .from('.navbar-brand', {
-                    y: -8,
-                    opacity: 0,
-                    duration: 0.5,
-                    clearProps: 'all'
-                }, '-=0.3');
-
-            // Desktop Entrance Adjustments (>= 992px)
-            mm.add("(min-width: 992px)", () => {
-                masterEntrance
-                    .from('.top-announcement-bar .d-none.d-md-flex:first-child a', {
-                        x: -12,
-                        opacity: 0,
-                        duration: 0.4,
-                        stagger: 0.08,
-                        clearProps: 'all'
-                    }, '-=0.6')
-                    .from('.top-announcement-bar .d-none.d-md-flex:last-child a', {
-                        x: 12,
-                        opacity: 0,
-                        duration: 0.4,
-                        stagger: 0.08,
-                        clearProps: 'all'
-                    }, '-=0.5')
-                    .from('.navbar-nav .nav-item', {
-                        y: 10,
-                        opacity: 0,
-                        duration: 0.45,
-                        stagger: 0.05,
-                        clearProps: 'all'
-                    }, '-=0.4');
-            });
-
-            // ==========================================================================
-            // 2. MOBILE BOOTSTRAP COLLAPSE NAV ANIMATION
-            // ==========================================================================
-            const mainNavCollapse = document.getElementById('mainNavCollapse');
-
-            if (mainNavCollapse) {
-                mainNavCollapse.addEventListener('show.bs.collapse', () => {
-                    const mobileItems = mainNavCollapse.querySelectorAll('.nav-item, .d-lg-none > *');
-                    gsap.set(mobileItems, { y: 15, opacity: 0 });
-                });
-
-                mainNavCollapse.addEventListener('shown.bs.collapse', () => {
-                    const mobileItems = mainNavCollapse.querySelectorAll('.nav-item, .d-lg-none > *');
-
-                    gsap.to(mobileItems, {
-                        y: 0,
-                        opacity: 1,
-                        duration: 0.35,
-                        stagger: 0.04,
-                        ease: 'power2.out',
-                        clearProps: 'transform,opacity'
-                    });
-                });
-
-                mainNavCollapse.addEventListener('hidden.bs.collapse', () => {
-                    const mobileItems = mainNavCollapse.querySelectorAll('.nav-item, .d-lg-none > *');
-                    gsap.set(mobileItems, { clearProps: 'all' });
-                });
-            }
-
-            // ==========================================================================
-            // 3. ULTRA-PREMIUM STAGGERED CART DRAWER ANIMATION
-            // ==========================================================================
-            const cartDrawer = document.getElementById('cartDrawer');
-
-            if (cartDrawer) {
-                let cartTimeline;
-
-                cartDrawer.addEventListener('show.bs.offcanvas', () => {
-                    // Kill any active timeline to eliminate mid-animation glitches
-                    if (cartTimeline) cartTimeline.kill();
-
-                    const isPopulated = !document.querySelector('.js-cart-populated').classList.contains('d-none');
-
-                    cartTimeline = gsap.timeline({ defaults: { ease: 'power4.out' } });
-
-                    // 1. Inner Drawer Frame Scale & Fade
-                    cartTimeline.fromTo('#cartDrawer .custom-drawer-content',
-                        { scale: 0.94, opacity: 0 },
-                        { scale: 1, opacity: 1, duration: 0.5, ease: 'power3.out' }
-                    )
-
-                        // 2. Title Slide Down & Close Button Pop
-                        .fromTo('#cartDrawer .js-cart-title',
-                            { y: -18, opacity: 0 },
-                            { y: 0, opacity: 1, duration: 0.4 },
-                            '-=0.3'
-                        )
-                        .fromTo('#cartDrawer .js-cart-close',
-                            { scale: 0.5, opacity: 0, rotate: -90 },
-                            { scale: 1, opacity: 1, rotate: 0, duration: 0.45, ease: 'back.out(1.7)' },
-                            '-=0.35'
-                        )
-
-                        // 3. Progress Separator (Fill from left to right - Guaranteed Every Open)
-                        .fromTo('#cartDrawer .cart-progress-bar',
-                            { scaleX: 0, opacity: 0 },
-                            { scaleX: 1, opacity: 1, duration: 0.5, ease: 'expo.out' },
-                            '-=0.25'
-                        );
-
-                    // 4. POPULATED CART CHOREOGRAPHY
-                    if (isPopulated) {
-                        // Main Product Cards (Sliding smoothly from the right)
-                        cartTimeline.fromTo('#cartDrawer .js-cart-card',
-                            { x: 35, opacity: 0 },
-                            { x: 0, opacity: 1, duration: 0.5, stagger: 0.08 },
-                            '-=0.2'
-                        )
-                            // Product Image Scale Pop
-                            .fromTo('#cartDrawer .js-item-img',
-                                { scale: 0.8, opacity: 0 },
-                                { scale: 1, opacity: 1, duration: 0.35, stagger: 0.08, ease: 'back.out(1.4)' },
-                                '-=0.45'
-                            )
-                            // Product Text Details Fade & Rise
-                            .fromTo('#cartDrawer .js-item-details',
-                                { y: 10, opacity: 0 },
-                                { y: 0, opacity: 1, duration: 0.35, stagger: 0.08 },
-                                '-=0.4'
-                            )
-                            // Quantity Controls Sidebar Slide & Scale
-                            .fromTo('#cartDrawer .js-qty-container',
-                                { x: 20, scale: 0.9, opacity: 0 },
-                                { x: 0, scale: 1, opacity: 1, duration: 0.4, stagger: 0.08, ease: 'back.out(1.2)' },
-                                '-=0.35'
-                            )
-                            // Subtotal Text Rise
-                            .fromTo('#cartDrawer .js-footer-subtotal',
-                                { y: 15, opacity: 0 },
-                                { y: 0, opacity: 1, duration: 0.35 },
-                                '-=0.2'
-                            )
-                            // Proceed to Checkout Button Expand
-                            .fromTo('#cartDrawer .js-checkout-btn',
-                                { y: 20, scale: 0.96, opacity: 0 },
-                                { y: 0, scale: 1, opacity: 1, duration: 0.45, ease: 'power3.out', clearProps: 'transform,opacity' },
-                                '-=0.25'
-                            );
-                    }
-                    // 5. EMPTY CART CHOREOGRAPHY
-                    else {
-                        cartTimeline.fromTo('#cartDrawer .js-empty-icon',
-                            { scale: 0.5, opacity: 0 },
-                            { scale: 1, opacity: 1, duration: 0.45, ease: 'back.out(1.7)' },
-                            '-=0.2'
-                        )
-                            .fromTo('#cartDrawer .js-empty-title, #cartDrawer .js-empty-text',
-                                { y: 15, opacity: 0 },
-                                { y: 0, opacity: 1, duration: 0.35, stagger: 0.08 },
-                                '-=0.3'
-                            )
-                            .fromTo('#cartDrawer .js-empty-btn',
-                                { y: 20, opacity: 0 },
-                                { y: 0, opacity: 1, duration: 0.4, ease: 'back.out(1.2)', clearProps: 'transform,opacity' },
-                                '-=0.2'
-                            );
-                    }
-                });
-
-                // Clear all GSAP inline styles on drawer hide to guarantee clean state
-                cartDrawer.addEventListener('hidden.bs.offcanvas', () => {
-                    gsap.set([
-                        '#cartDrawer .custom-drawer-content',
-                        '#cartDrawer .js-cart-title',
-                        '#cartDrawer .js-cart-close',
-                        '#cartDrawer .cart-progress-bar',
-                        '#cartDrawer .js-cart-card',
-                        '#cartDrawer .js-item-img',
-                        '#cartDrawer .js-item-details',
-                        '#cartDrawer .js-qty-container',
-                        '#cartDrawer .js-footer-subtotal',
-                        '#cartDrawer .js-checkout-btn',
-                        '#cartDrawer .js-empty-icon',
-                        '#cartDrawer .js-empty-title',
-                        '#cartDrawer .js-empty-text',
-                        '#cartDrawer .js-empty-btn'
-                    ], { clearProps: 'all' });
-                });
-            }
-        });
-
-
-        // -----------------------------------------------------------------
-        // 4. Kinetic Character-Stagger GSAP Ticker (Anamorphic 3D Morph)
-        // -----------------------------------------------------------------
-        const tickerItems = document.querySelectorAll('.gsap-ticker-list .ticker-item');
-
-        if (tickerItems.length > 1) {
-            tickerItems.forEach((item) => {
-                const text = item.textContent.trim();
-                item.innerHTML = text.split('').map(char => {
-                    const isSpace = char === ' ';
-                    return `<span class="ticker-char d-inline-block" style="will-change: transform, opacity, filter, letter-spacing; transform-origin: 50% 50%;">${isSpace ? '&nbsp;' : char}</span>`;
-                }).join('');
-            });
-
-            gsap.set(tickerItems, { opacity: 0, visibility: 'hidden', position: 'absolute', top: 0, left: 0 });
-            gsap.set(tickerItems[0], { opacity: 1, visibility: 'visible', position: 'relative' });
-
-            let currentIndex = 0;
-
-            function transitionNext() {
-                const currentSlide = tickerItems[currentIndex];
-                currentIndex = (currentIndex + 1) % tickerItems.length;
-                const nextSlide = tickerItems[currentIndex];
-
-                const currentChars = currentSlide.querySelectorAll('.ticker-char');
-                const nextChars = nextSlide.querySelectorAll('.ticker-char');
-
-                const tl = gsap.timeline({
-                    onComplete: () => {
-                        gsap.set(currentSlide, { position: 'absolute' });
-                        gsap.set(nextSlide, { position: 'relative' });
-                        gsap.delayedCall(2.4, transitionNext);
-                    }
-                });
-
-                // STEP 1: OUTRO - Kinetic Deconstruction
-                tl.to(currentChars, {
-                    opacity: 0,
-                    filter: 'blur(8px) brightness(1.8)',
-                    rotationX: -90,
-                    scaleX: 1.3,
-                    duration: 0.4,
-                    stagger: {
-                        each: 0.012,
-                        from: 'start'
-                    },
-                    ease: 'power3.in'
-                })
-                    .set(currentSlide, { visibility: 'hidden', opacity: 0 })
-
-                    // STEP 2: INTRO - Anamorphic Reconstruction
-                    .set(nextSlide, { visibility: 'visible', opacity: 1 })
-                    .set(nextChars, {
-                        opacity: 0,
-                        filter: 'blur(8px) brightness(1.8)',
-                        rotationX: 90,
-                        scaleX: 1.3
-                    })
-                    .to(nextChars, {
-                        opacity: 1,
-                        filter: 'blur(0px) brightness(1)',
-                        rotationX: 0,
-                        scaleX: 1,
-                        duration: 0.5,
-                        stagger: {
-                            each: 0.012,
-                            from: 'start'
-                        },
-                        ease: 'expo.out'
-                    });
-            }
-
-            gsap.delayedCall(2.4, transitionNext);
-        }
-
-        // -----------------------------------------------------------------
-        // 5. Smart Sticky Header (Hide on Scroll Down / Reveal on Scroll Up)
-        // -----------------------------------------------------------------
-
-
-        // -----------------------------------------------------------------
-        // 6. Interactive Cart Drawer & Calculation Engine
-        // -----------------------------------------------------------------
-        const itemPrice = 65.00;
-        const freeShippingThreshold = 120.00;
-
-        // Trigger item reveals when Cart Drawer opens
-        const cartDrawer = document.getElementById('cartDrawer');
-        if (cartDrawer) {
-            cartDrawer.addEventListener('shown.bs.offcanvas', () => {
-                gsap.from('.cart-drawer-items .card, .cart-drawer-items .flex-shrink-0', {
-                    y: 15,
-                    opacity: 0,
-                    duration: 0.4,
-                    stagger: 0.08,
-                    ease: 'power2.out'
-                });
-            });
-        }
-
-        // Quantity Plus Event
-        document.addEventListener('click', (e) => {
-            const plusBtn = e.target.closest('.js-qty-plus');
-            if (plusBtn) {
-                const container = plusBtn.closest('.d-flex');
-                const countEl = container ? container.querySelector('.js-qty-count') : null;
-                if (countEl) {
-                    let current = parseInt(countEl.textContent, 10) || 1;
-                    countEl.textContent = current + 1;
-                    updateCartTotals();
-                }
-            }
-        });
-
-        // Quantity Minus Event
-        document.addEventListener('click', (e) => {
-            const minusBtn = e.target.closest('.js-qty-minus');
-            if (minusBtn) {
-                const container = minusBtn.closest('.d-flex');
-                const countEl = container ? container.querySelector('.js-qty-count') : null;
-                if (countEl) {
-                    let current = parseInt(countEl.textContent, 10) || 1;
-                    if (current > 1) {
-                        countEl.textContent = current - 1;
-                        updateCartTotals();
-                    } else {
-                        const cartRow = minusBtn.closest('.cart-drawer-items > .d-flex');
-                        if (cartRow) {
-                            gsap.to(cartRow, {
-                                scale: 0.9,
-                                opacity: 0,
-                                duration: 0.25,
-                                onComplete: () => {
-                                    cartRow.remove();
-                                    updateCartTotals();
-                                }
-                            });
-                        }
-                    }
-                }
-            }
-        });
-
-        function updateCartTotals() {
-            let totalQty = 0;
-            const countEls = document.querySelectorAll('.js-qty-count');
-
-            countEls.forEach(el => {
-                totalQty += parseInt(el.textContent, 10) || 0;
-            });
-
-            // Update badge counters
-            document.querySelectorAll('.js-cart-count').forEach(badge => {
-                badge.textContent = totalQty;
-            });
-
-            // Calculate and update subtotal
-            const subtotal = totalQty * itemPrice;
-            const subtotalEl = document.querySelector('.js-cart-subtotal');
-            if (subtotalEl) {
-                subtotalEl.textContent = subtotal.toFixed(2);
-            }
-
-            // Progress bar updates
-            const progressBar = document.querySelector('.js-shipping-progress');
-            const goalText = document.querySelector('.js-shipping-goal-text');
-
-            if (progressBar && goalText) {
-                const percentage = Math.min((subtotal / freeShippingThreshold) * 100, 100);
-                progressBar.style.width = `${percentage}%`;
-                progressBar.setAttribute('aria-valuenow', percentage);
-
-                if (subtotal >= freeShippingThreshold) {
-                    goalText.innerHTML = `<span class="fw-black text-success">🎉 You've Unlocked FREE Express Shipping!</span>`;
-                } else {
-                    const remaining = (freeShippingThreshold - subtotal).toFixed(2);
-                    goalText.innerHTML = `Spend <span class="fw-black text-success">$${remaining}</span> more for Free Express Shipping!`;
-                }
-            }
-
-            // Handle empty cart state switching
-            if (totalQty === 0) {
-                document.querySelectorAll('.js-cart-populated').forEach(el => el.classList.add('d-none'));
-                const cartFooter = document.querySelector('.js-cart-footer');
-                if (cartFooter) cartFooter.classList.add('d-none');
-
-                const emptyState = document.querySelector('.js-cart-empty');
-                if (emptyState) {
-                    emptyState.classList.remove('d-none');
-                    emptyState.classList.add('d-flex');
-                    gsap.from(emptyState, { opacity: 0, scale: 0.95, duration: 0.3 });
-                }
-            }
-        }
-    });
-    document.addEventListener('DOMContentLoaded', () => {
-
+    }
+    function initHeroSlider() {
         const heroBanner = document.querySelector('.js-hero-banner');
         if (!heroBanner) return;
 
@@ -515,14 +91,10 @@
 
         let currentIndex = 0;
         let isAnimating = false;
-        let autoPlayTimer;
+        let autoPlayTimer = null;
 
-        // Force hardware acceleration layer to preserve border-radius during mousemove & animations
-        gsap.set(heroBanner, { force3D: true });
+        gsap.set(heroBanner, {force3D: true});
 
-        // ==========================================================================
-        // 1. DYNAMIC MOVING VIGNETTE (Cursor Tracker)
-        // ==========================================================================
         heroBanner.addEventListener('mousemove', (e) => {
             const rect = heroBanner.getBoundingClientRect();
             const x = ((e.clientX - rect.left) / rect.width) * 100;
@@ -532,25 +104,15 @@
             heroBanner.style.setProperty('--mouse-y', `${y}%`);
         });
 
-        // ==========================================================================
-        // 2. INITIAL PAGE LOAD REVEAL ANIMATION
-        // ==========================================================================
         const initHeroReveal = () => {
-            const activeSlide = slides[0];
-            const activeImg = activeSlide ? activeSlide.querySelector('img') : null;
-            const activeText = textGroups[0];
-
-            // Ensure all non-active slides/texts start hidden without layout shifts
             slides.forEach((slide, idx) => {
-                gsap.set(slide, {
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    opacity: idx === 0 ? 1 : 0,
-                    zIndex: idx === 0 ? 2 : 1
-                });
+                if (idx === 0) {
+                    slide.classList.add('active');
+                    gsap.set(slide, {opacity: 1, visibility: 'visible', zIndex: 2});
+                } else {
+                    slide.classList.remove('active');
+                    gsap.set(slide, {opacity: 0, visibility: 'hidden', zIndex: 1});
+                }
             });
 
             textGroups.forEach((group, idx) => {
@@ -563,19 +125,21 @@
                 }
             });
 
+            const activeSlide = slides[0];
+            const activeImg = activeSlide ? activeSlide.querySelector('img') : null;
+            const activeText = textGroups[0];
+
             const initTl = gsap.timeline({
                 onComplete: () => {
                     startAutoPlay();
                 }
             });
 
-            // Set initial states
-            gsap.set(heroBanner, { opacity: 0, scale: 0.98 });
-            if (activeImg) gsap.set(activeImg, { scale: 1.2 });
-            if (activeText) gsap.set(activeText.children, { y: 40, opacity: 0 });
-            if (shopBtn) gsap.set(shopBtn, { y: 20, opacity: 0 });
+            gsap.set(heroBanner, {opacity: 0, scale: 0.98});
+            if (activeImg) gsap.set(activeImg, {scale: 1.2});
+            if (activeText) gsap.set(activeText.children, {y: 40, opacity: 0});
+            if (shopBtn) gsap.set(shopBtn, {y: 20, opacity: 0});
 
-            // Entrance Sequence
             initTl.to(heroBanner, {
                 opacity: 1,
                 scale: 1,
@@ -586,32 +150,34 @@
                     scale: 1,
                     duration: 1.4,
                     ease: 'power2.out'
-                }, '-=0.8')
-                .to(activeText.children, {
+                }, '-=0.8');
+
+            if (activeText && activeText.children.length) {
+                initTl.to(activeText.children, {
                     y: 0,
                     opacity: 1,
                     duration: 0.8,
                     stagger: 0.1,
                     ease: 'power3.out'
-                }, '-=1.0')
-                .to(shopBtn, {
+                }, '-=1.0');
+            }
+
+            if (shopBtn) {
+                initTl.to(shopBtn, {
                     y: 0,
                     opacity: 1,
                     duration: 0.6,
                     ease: 'back.out(1.7)'
                 }, '-=0.6');
+            }
         };
 
-        // ==========================================================================
-        // 3. GSAP CROSS-FADE & SLIDE ENGINE
-        // ==========================================================================
         const goToSlide = (targetIndex) => {
             const newIndex = ((targetIndex % totalSlides) + totalSlides) % totalSlides;
 
             if (isAnimating || newIndex === currentIndex) return;
             isAnimating = true;
 
-            // Stop timer immediately to make arrow navigation ultra-responsive
             stopAutoPlay();
 
             const currentSlide = slides[currentIndex];
@@ -622,9 +188,21 @@
             const currentText = textGroups[currentIndex];
             const nextText = textGroups[newIndex];
 
+            gsap.set(nextSlide, {visibility: 'visible', opacity: 0, zIndex: 2});
+            if (currentSlide) gsap.set(currentSlide, {zIndex: 1});
+            if (nextImg) gsap.set(nextImg, {scale: 1.18});
+
             const tl = gsap.timeline({
                 onComplete: () => {
-                    if (currentSlide) currentSlide.classList.remove('active');
+                    slides.forEach((slide, idx) => {
+                        if (idx === newIndex) {
+                            slide.classList.add('active');
+                            gsap.set(slide, {opacity: 1, visibility: 'visible', zIndex: 2});
+                        } else {
+                            slide.classList.remove('active');
+                            gsap.set(slide, {opacity: 0, visibility: 'hidden', zIndex: 1});
+                        }
+                    });
 
                     currentIndex = newIndex;
                     isAnimating = false;
@@ -632,20 +210,8 @@
                 }
             });
 
-            // Update Counter Display
             if (currentSlideNum) {
                 currentSlideNum.textContent = String(newIndex + 1).padStart(2, '0');
-            }
-
-            // --- BACKGROUND IMAGE SLIDE TRANSITION ---
-            if (nextSlide) {
-                gsap.set(nextSlide, { opacity: 0, visibility: 'visible', zIndex: 2 });
-            }
-            if (currentSlide) {
-                gsap.set(currentSlide, { zIndex: 1 });
-            }
-            if (nextImg) {
-                gsap.set(nextImg, { scale: 1.18 });
             }
 
             if (currentImg) {
@@ -656,13 +222,11 @@
                 }, 0);
             }
 
-            if (nextSlide) {
-                tl.to(nextSlide, {
-                    opacity: 1,
-                    duration: 1,
-                    ease: 'power2.inOut'
-                }, 0);
-            }
+            tl.to(nextSlide, {
+                opacity: 1,
+                duration: 1,
+                ease: 'power2.inOut'
+            }, 0);
 
             if (nextImg) {
                 tl.to(nextImg, {
@@ -672,8 +236,7 @@
                 }, 0);
             }
 
-            // --- TEXT CONTENT OUT / IN ANIMATION (SYNCHRONIZED SWAP) ---
-            if (currentText) {
+            if (currentText && currentText.children.length) {
                 tl.to(currentText.children, {
                     y: -25,
                     opacity: 0,
@@ -683,7 +246,6 @@
                 }, 0);
             }
 
-            // Seamless swap precisely at 0.3s eliminates the vertical layout jerk
             tl.add(() => {
                 if (currentText) {
                     currentText.classList.add('d-none');
@@ -695,29 +257,15 @@
                 }
             }, 0.3);
 
-            if (nextText) {
+            if (nextText && nextText.children.length) {
                 tl.fromTo(nextText.children,
-                    { y: 35, opacity: 0 },
-                    { y: 0, opacity: 1, duration: 0.5, stagger: 0.06, ease: 'power3.out' },
+                    {y: 35, opacity: 0},
+                    {y: 0, opacity: 1, duration: 0.5, stagger: 0.06, ease: 'power3.out'},
                     0.32
                 );
             }
         };
 
-        // Controls Handlers
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                goToSlide(currentIndex + 1);
-            });
-        }
-
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                goToSlide(currentIndex - 1);
-            });
-        }
-
-        // Auto Play Timer (6 Seconds)
         const startAutoPlay = () => {
             stopAutoPlay();
             autoPlayTimer = setInterval(() => {
@@ -729,43 +277,432 @@
             if (autoPlayTimer) clearInterval(autoPlayTimer);
         };
 
-        // Run Initial Entrance
-        initHeroReveal();
-    });
-    document.addEventListener('DOMContentLoaded', () => {
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+        }
 
-        // ==========================================================================
-        // 1. HORIZONTAL PRODUCT TRACK SCROLLING (Buttons)
-        // ==========================================================================
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+        }
+
+        initHeroReveal();
+    }
+    function initSiteAnimations() {
+        const masterEntrance = gsap.timeline({defaults: {ease: 'power3.out'}});
+
+        masterEntrance
+            .from('.top-announcement-bar', {
+                y: -20,
+                opacity: 0,
+                duration: 0.6,
+                clearProps: 'all'
+            })
+            .from('.site-header', {
+                y: -30,
+                opacity: 0,
+                duration: 0.6,
+                clearProps: 'transform,opacity'
+            }, '-=0.3')
+            .from('.navbar-brand', {
+                y: -8,
+                opacity: 0,
+                duration: 0.5,
+                clearProps: 'all'
+            }, '-=0.3');
+
+        const mm = gsap.matchMedia();
+        mm.add("(min-width: 992px)", () => {
+            masterEntrance
+                .from('.top-announcement-bar .d-none.d-md-flex:first-child a', {
+                    x: -12,
+                    opacity: 0,
+                    duration: 0.4,
+                    stagger: 0.08,
+                    clearProps: 'all'
+                }, '-=0.6')
+                .from('.top-announcement-bar .d-none.d-md-flex:last-child a', {
+                    x: 12,
+                    opacity: 0,
+                    duration: 0.4,
+                    stagger: 0.08,
+                    clearProps: 'all'
+                }, '-=0.5')
+                .from('.navbar-nav .nav-item', {
+                    y: 10,
+                    opacity: 0,
+                    duration: 0.45,
+                    stagger: 0.05,
+                    clearProps: 'all'
+                }, '-=0.4');
+        });
+
+        const siteHeader = document.querySelector('.site-header');
+        if (siteHeader) {
+            gsap.set(siteHeader, {
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                width: '100%',
+                zIndex: 1030
+            });
+
+            ScrollTrigger.create({
+                trigger: document.body,
+                start: 'top top',
+                end: '100vh top',
+                onLeave: () => {
+                    siteHeader.classList.add('is-sticky-active');
+                },
+                onEnterBack: () => {
+                    siteHeader.classList.remove('is-sticky-active');
+                    gsap.to(siteHeader, {yPercent: 0, duration: 0.3, ease: 'power2.out'});
+                }
+            });
+
+            ScrollTrigger.create({
+                start: '100vh top',
+                onUpdate: (self) => {
+                    if (self.direction === 1) {
+                        gsap.to(siteHeader, {
+                            yPercent: -100,
+                            duration: 0.4,
+                            ease: 'power3.inOut'
+                        });
+                    } else if (self.direction === -1) {
+                        gsap.to(siteHeader, {
+                            yPercent: 0,
+                            duration: 0.4,
+                            ease: 'power3.out'
+                        });
+                    }
+                }
+            });
+        }
+
+        const mainNavCollapse = document.getElementById('mainNavCollapse');
+        if (mainNavCollapse) {
+            mainNavCollapse.addEventListener('show.bs.collapse', () => {
+                const mobileItems = mainNavCollapse.querySelectorAll('.nav-item, .d-lg-none > *');
+                if (mobileItems.length) gsap.set(mobileItems, {y: 15, opacity: 0});
+            });
+
+            mainNavCollapse.addEventListener('shown.bs.collapse', () => {
+                const mobileItems = mainNavCollapse.querySelectorAll('.nav-item, .d-lg-none > *');
+                if (mobileItems.length) {
+                    gsap.to(mobileItems, {
+                        y: 0,
+                        opacity: 1,
+                        duration: 0.35,
+                        stagger: 0.04,
+                        ease: 'power2.out',
+                        clearProps: 'transform,opacity'
+                    });
+                }
+            });
+
+            mainNavCollapse.addEventListener('hidden.bs.collapse', () => {
+                const mobileItems = mainNavCollapse.querySelectorAll('.nav-item, .d-lg-none > *');
+                if (mobileItems.length) gsap.set(mobileItems, {clearProps: 'all'});
+            });
+        }
+
+        const cartDrawer = document.getElementById('cartDrawer');
+        if (cartDrawer) {
+            let cartTimeline = null;
+
+            cartDrawer.addEventListener('show.bs.offcanvas', () => {
+                if (cartTimeline) cartTimeline.kill();
+
+                const cartEl = document.querySelector('.js-cart-populated');
+                const isPopulated = cartEl ? !cartEl.classList.contains('d-none') : false;
+
+                cartTimeline = gsap.timeline({defaults: {ease: 'power4.out'}});
+
+                cartTimeline.fromTo('#cartDrawer .custom-drawer-content',
+                    {scale: 0.94, opacity: 0},
+                    {scale: 1, opacity: 1, duration: 0.5, ease: 'power3.out'}
+                )
+                    .fromTo('#cartDrawer .js-cart-title',
+                        {y: -18, opacity: 0},
+                        {y: 0, opacity: 1, duration: 0.4},
+                        '-=0.3'
+                    )
+                    .fromTo('#cartDrawer .js-cart-close',
+                        {scale: 0.5, opacity: 0, rotate: -90},
+                        {scale: 1, opacity: 1, rotate: 0, duration: 0.45, ease: 'back.out(1.7)'},
+                        '-=0.35'
+                    )
+                    .fromTo('#cartDrawer .cart-progress-bar',
+                        {scaleX: 0, opacity: 0},
+                        {scaleX: 1, opacity: 1, duration: 0.5, ease: 'expo.out'},
+                        '-=0.25'
+                    );
+
+                if (isPopulated) {
+                    cartTimeline.fromTo('#cartDrawer .js-cart-card',
+                        {x: 35, opacity: 0},
+                        {x: 0, opacity: 1, duration: 0.5, stagger: 0.08},
+                        '-=0.2'
+                    )
+                        .fromTo('#cartDrawer .js-item-img',
+                            {scale: 0.8, opacity: 0},
+                            {scale: 1, opacity: 1, duration: 0.35, stagger: 0.08, ease: 'back.out(1.4)'},
+                            '-=0.45'
+                        )
+                        .fromTo('#cartDrawer .js-item-details',
+                            {y: 10, opacity: 0},
+                            {y: 0, opacity: 1, duration: 0.35, stagger: 0.08},
+                            '-=0.4'
+                        )
+                        .fromTo('#cartDrawer .js-qty-container',
+                            {x: 20, scale: 0.9, opacity: 0},
+                            {x: 0, scale: 1, opacity: 1, duration: 0.4, stagger: 0.08, ease: 'back.out(1.2)'},
+                            '-=0.35'
+                        )
+                        .fromTo('#cartDrawer .js-footer-subtotal',
+                            {y: 15, opacity: 0},
+                            {y: 0, opacity: 1, duration: 0.35},
+                            '-=0.2'
+                        )
+                        .fromTo('#cartDrawer .js-checkout-btn',
+                            {y: 20, scale: 0.96, opacity: 0},
+                            {
+                                y: 0,
+                                scale: 1,
+                                opacity: 1,
+                                duration: 0.45,
+                                ease: 'power3.out',
+                                clearProps: 'transform,opacity'
+                            },
+                            '-=0.25'
+                        );
+                } else {
+                    cartTimeline.fromTo('#cartDrawer .js-empty-icon',
+                        {scale: 0.5, opacity: 0},
+                        {scale: 1, opacity: 1, duration: 0.45, ease: 'back.out(1.7)'},
+                        '-=0.2'
+                    )
+                        .fromTo('#cartDrawer .js-empty-title, #cartDrawer .js-empty-text',
+                            {y: 15, opacity: 0},
+                            {y: 0, opacity: 1, duration: 0.35, stagger: 0.08},
+                            '-=0.3'
+                        )
+                        .fromTo('#cartDrawer .js-empty-btn',
+                            {y: 20, opacity: 0},
+                            {
+                                y: 0,
+                                opacity: 1,
+                                duration: 0.4,
+                                ease: 'back.out(1.2)',
+                                clearProps: 'transform,opacity'
+                            },
+                            '-=0.2'
+                        );
+                }
+            });
+
+            cartDrawer.addEventListener('hidden.bs.offcanvas', () => {
+                if (cartTimeline) cartTimeline.kill();
+                gsap.set([
+                    '#cartDrawer .custom-drawer-content',
+                    '#cartDrawer .js-cart-title',
+                    '#cartDrawer .js-cart-close',
+                    '#cartDrawer .cart-progress-bar',
+                    '#cartDrawer .js-cart-card',
+                    '#cartDrawer .js-item-img',
+                    '#cartDrawer .js-item-details',
+                    '#cartDrawer .js-qty-container',
+                    '#cartDrawer .js-footer-subtotal',
+                    '#cartDrawer .js-checkout-btn',
+                    '#cartDrawer .js-empty-icon',
+                    '#cartDrawer .js-empty-title',
+                    '#cartDrawer .js-empty-text',
+                    '#cartDrawer .js-empty-btn'
+                ], {clearProps: 'all'});
+            });
+        }
+    }
+    function initScrollReveals() {
+        const sections = gsap.utils.toArray('section, footer').filter(elem => !elem.classList.contains('js-hero-banner'));
+
+        sections.forEach((elem) => {
+            gsap.fromTo(elem,
+                { y: 35, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    ease: 'power3.out',
+                    clearProps: 'transform',
+                    scrollTrigger: {
+                        trigger: elem,
+                        start: 'top 85%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+        });
+
+        ScrollTrigger.batch('.row > [class*="col-"]', {
+            interval: 0.1,
+            batchMax: 4,
+            start: 'top 85%',
+            onEnter: (batch) => gsap.fromTo(batch,
+                { y: 30, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.65,
+                    stagger: 0.1,
+                    ease: 'power2.out',
+                    clearProps: 'transform,opacity'
+                }
+            )
+        });
+
+        gsap.utils.toArray('h1, h2, h3, h4').forEach((heading) => {
+            if (heading.closest('header, nav, #cartDrawer, .js-hero-banner')) return;
+
+            gsap.fromTo(heading,
+                { y: 20, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.7,
+                    ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: heading,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+        });
+
+        gsap.utils.toArray('img').forEach((img) => {
+            if (img.closest('header, nav, #cartDrawer, .hero-slide')) return;
+
+            gsap.fromTo(img,
+                { scale: 1.05, opacity: 0, filter: 'blur(3px)' },
+                {
+                    scale: 1,
+                    opacity: 1,
+                    filter: 'blur(0px)',
+                    duration: 0.8,
+                    ease: 'power2.out',
+                    clearProps: 'all',
+                    scrollTrigger: {
+                        trigger: img,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+        });
+
+        ScrollTrigger.refresh();
+    }
+    function initKineticTicker() {
+        const tickerItems = document.querySelectorAll('.gsap-ticker-list .ticker-item');
+        if (tickerItems.length <= 1) return;
+
+        tickerItems.forEach((item) => {
+            const text = item.textContent.trim();
+            item.innerHTML = text.split('').map(char => {
+                const isSpace = char === ' ';
+                return `<span class="ticker-char d-inline-block" style="will-change: transform, opacity, filter; transform-origin: 50% 50%;">${isSpace ? '&nbsp;' : char}</span>`;
+            }).join('');
+        });
+
+        gsap.set(tickerItems, { opacity: 0, visibility: 'hidden', position: 'absolute', top: 0, left: 0 });
+        gsap.set(tickerItems[0], { opacity: 1, visibility: 'visible', position: 'relative' });
+
+        let currentIndex = 0;
+        let nextCall = null;
+
+        function transitionNext() {
+            const currentSlide = tickerItems[currentIndex];
+            currentIndex = (currentIndex + 1) % tickerItems.length;
+            const nextSlide = tickerItems[currentIndex];
+
+            const currentChars = currentSlide.querySelectorAll('.ticker-char');
+            const nextChars = nextSlide.querySelectorAll('.ticker-char');
+
+            const tl = gsap.timeline({
+                onComplete: () => {
+                    gsap.set(currentSlide, { position: 'absolute' });
+                    gsap.set(nextSlide, { position: 'relative' });
+                    nextCall = gsap.delayedCall(2.4, transitionNext);
+                }
+            });
+
+            tl.to(currentChars, {
+                opacity: 0,
+                filter: 'blur(8px) brightness(1.8)',
+                rotationX: -90,
+                scaleX: 1.3,
+                duration: 0.4,
+                stagger: {
+                    each: 0.012,
+                    from: 'start'
+                },
+                ease: 'power3.in'
+            })
+                .set(currentSlide, { visibility: 'hidden', opacity: 0 })
+                .set(nextSlide, { visibility: 'visible', opacity: 1 })
+                .set(nextChars, {
+                    opacity: 0,
+                    filter: 'blur(8px) brightness(1.8)',
+                    rotationX: 90,
+                    scaleX: 1.3
+                })
+                .to(nextChars, {
+                    opacity: 1,
+                    filter: 'blur(0px) brightness(1)',
+                    rotationX: 0,
+                    scaleX: 1,
+                    duration: 0.5,
+                    stagger: {
+                        each: 0.012,
+                        from: 'start'
+                    },
+                    ease: 'expo.out'
+                });
+        }
+
+        nextCall = gsap.delayedCall(2.4, transitionNext);
+    }
+    function initCartAndProductInteractions() {
         const track = document.querySelector('.js-product-track');
         const scrollLeftBtn = document.querySelector('.js-prod-scroll-left');
         const scrollRightBtn = document.querySelector('.js-prod-scroll-right');
 
         if (track && scrollLeftBtn && scrollRightBtn) {
-            const scrollAmount = 280; // Card width + gap
+            const scrollAmount = 280;
 
-            scrollRightBtn.addEventListener('click', () => {
+            scrollRightBtn.addEventListener('click', (e) => {
+                e.preventDefault();
                 track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
             });
 
-            scrollLeftBtn.addEventListener('click', () => {
+            scrollLeftBtn.addEventListener('click', (e) => {
+                e.preventDefault();
                 track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
             });
         }
 
-        // ==========================================================================
-        // 2. INDIVIDUAL PRODUCT CARD IMAGE SLIDER
-        // ==========================================================================
         const productCards = document.querySelectorAll('.product-card');
 
-        productCards.forEach(card => {
+        productCards.forEach((card) => {
             const slidesTrack = card.querySelector('.js-card-slides');
             const prevBtn = card.querySelector('.js-card-prev');
             const nextBtn = card.querySelector('.js-card-next');
 
             if (!slidesTrack || !prevBtn || !nextBtn) return;
 
-            const totalImages = slidesTrack.querySelectorAll('img').length;
+            const images = slidesTrack.querySelectorAll('img');
+            if (!images.length) return;
+
             let imageIndex = 0;
 
             const updateCardSlide = () => {
@@ -775,67 +712,157 @@
             nextBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 e.preventDefault();
-                imageIndex = (imageIndex + 1) % totalImages;
+                imageIndex = (imageIndex + 1) % images.length;
                 updateCardSlide();
             });
 
             prevBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 e.preventDefault();
-                imageIndex = (imageIndex - 1 + totalImages) % totalImages;
+                imageIndex = (imageIndex - 1 + images.length) % images.length;
                 updateCardSlide();
             });
         });
-    });
+    }
+    function initGlobalDelegatedEvents() {
+        document.addEventListener('click', (e) => {
+            const arrivalNextBtn = e.target.closest('.js-arrival-next');
+            const arrivalPrevBtn = e.target.closest('.js-arrival-prev');
+
+            if (arrivalNextBtn || arrivalPrevBtn) {
+                e.preventDefault();
+                const btn = arrivalNextBtn || arrivalPrevBtn;
+
+                const container = btn.closest('section') ||
+                    btn.closest('.container-fluid') ||
+                    btn.closest('.container') ||
+                    btn.parentElement.parentElement;
+
+                const track = container ? container.querySelector('.js-arrival-track') : null;
+
+                if (track) {
+                    const firstCard = track.querySelector('.product-card');
+                    const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : 320;
+                    const gap = parseFloat(window.getComputedStyle(track).gap) || 16;
+                    const scrollDistance = (cardWidth + gap) * 2;
+
+                    if (arrivalNextBtn) {
+                        track.scrollBy({ left: scrollDistance, behavior: 'smooth' });
+                    } else if (arrivalPrevBtn) {
+                        track.scrollBy({ left: -scrollDistance, behavior: 'smooth' });
+                    }
+                }
+                return;
+            }
+
+            const cardNextImgBtn = e.target.closest('.js-card-next');
+            const cardPrevImgBtn = e.target.closest('.js-card-prev');
+
+            if (cardNextImgBtn || cardPrevImgBtn) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const btn = cardNextImgBtn || cardPrevImgBtn;
+                const wrapper = btn.closest('.js-card-media-wrapper');
+                const slidesTrack = wrapper ? wrapper.querySelector('.js-card-slides') : null;
+
+                if (!slidesTrack) return;
+
+                const totalSlides = slidesTrack.querySelectorAll('img').length;
+                if (totalSlides <= 1) return;
+
+                let currentIndex = parseInt(slidesTrack.dataset.currentSlide || '0', 10);
+
+                if (cardNextImgBtn) {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                } else if (cardPrevImgBtn) {
+                    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                }
+
+                slidesTrack.dataset.currentSlide = currentIndex;
+                slidesTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+        });
+    }
+    function initEditorialAccents() {
+        const targets = document.querySelectorAll('.editorial-accent-text');
+        if (!targets.length) return;
+
+        targets.forEach((el) => {
+            const rawText = el.textContent.trim();
+            el.innerHTML = rawText.split('').map(char => {
+                if (char === ' ') return '&nbsp;';
+                return `<span class="char d-inline-block" data-char="${char}">${char}</span>`;
+            }).join('');
+
+            const chars = el.querySelectorAll('.char');
+            if (!chars.length) return;
+
+            gsap.set(chars, {
+                transformPerspective: 400,
+                transformOrigin: "50% 50%",
+                willChange: "transform, opacity"
+            });
+
+            const masterTl = gsap.timeline({
+                repeat: -1,
+                repeatDelay: 1.2
+            });
+
+            masterTl
+                .to(chars, {
+                    color: '#ffffff',
+                    textShadow: '0 0 12px rgba(255, 255, 255, 0.8)',
+                    duration: 0.35,
+                    stagger: {
+                        each: 0.06,
+                        from: 'start'
+                    },
+                    ease: 'power2.inOut'
+                })
+                .to(chars, {
+                    color: 'rgb(213, 213, 213)',
+                    textShadow: '0 0 0px rgba(0,0,0,0)',
+                    duration: 0.8,
+                    stagger: {
+                        each: 0.03,
+                        from: 'start'
+                    },
+                    ease: 'power2.out'
+                }, '-=0.2');
+        });
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
-        const slides = document.querySelectorAll('.hero-feature-slide');
-        const section = document.getElementById('heroParallaxSection');
-        const stage = document.getElementById('heroFeatureStage');
-        let currentIndex = 0;
-        const displayDuration = 4500;
+        if (typeof gsap !== 'undefined') {
+            if (typeof ScrollTrigger !== 'undefined') {
+                gsap.registerPlugin(ScrollTrigger);
+            }
+        } else {
+            console.warn('GSAP core is missing. Visual animation modules skipped.');
+        }
 
-        // Slide Rotator
-        setInterval(() => {
-            slides[currentIndex].classList.remove('is-active');
-            currentIndex = (currentIndex + 1) % slides.length;
-            slides[currentIndex].classList.add('is-active');
-        }, displayDuration);
+        const runModule = (moduleName, moduleFn) => {
+            try {
+                if (typeof moduleFn === 'function') {
+                    moduleFn();
+                }
+            } catch (error) {
+                console.warn(`[Module Error] ${moduleName} failed to initialize:`, error);
+            }
+        };
 
-        // Mouse Tilt Parallax Effect
-        const maxRotation = 7; // Degrees of rotation
+        runModule('Theme Switcher', initThemeSwitcher);
+        runModule('Global Delegated Events', initGlobalDelegatedEvents);
+        runModule('Hero Slider', initHeroSlider);
+        runModule('Kinetic Ticker', initKineticTicker);
+        runModule('Cart & Product Interactions', initCartAndProductInteractions);
+        runModule('Editorial Accents', initEditorialAccents);
 
-        section.addEventListener('mousemove', (e) => {
-            const rect = section.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            // Calculate percentage from center (-1 to 1)
-            const xPct = (x / rect.width - 0.5) * 2;
-            const yPct = (y / rect.height - 0.5) * 2;
-
-            // Apply 3D Rotation to the Main Stage
-            const rotateX = -yPct * maxRotation;
-            const rotateY = xPct * maxRotation;
-            stage.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-
-            // Subtle opposing shift on tag depth
-            const activeSlide = slides[currentIndex];
-            const tags = activeSlide.querySelectorAll('.parallax-tag');
-            tags.forEach(tag => {
-                const depth = parseFloat(tag.getAttribute('data-depth')) || 15;
-                const moveX = xPct * depth;
-                const moveY = yPct * depth;
-                tag.style.transform = `translate3d(${moveX}px, ${moveY}px, 0px)`;
-            });
-        });
-
-        // Reset stage position on mouse leave
-        section.addEventListener('mouseleave', () => {
-            stage.style.transform = `rotateX(0deg) rotateY(0deg)`;
-            const tags = document.querySelectorAll('.parallax-tag');
-            tags.forEach(tag => {
-                tag.style.transform = `translate3d(0px, 0px, 0px)`;
-            });
+        requestAnimationFrame(() => {
+            runModule('Site Entrance & Sticky Nav', initSiteAnimations);
+            runModule('Scroll Reveals', initScrollReveals);
         });
     });
+
 </script>
