@@ -1040,3 +1040,14 @@ html {
 footer input::placeholder {
     color: rgba(255, 255, 255, 0.5) !important;
 }
+/* Custom class to handle portrait framing on wide/short viewports */
+.hero-slide-img {
+    object-position: 50% 20% !important;
+}
+
+/* Responsive adjustment for short screen heights */
+@media (max-height: 700px) {
+    .hero-slide-img {
+        object-position: 50% 15% !important;
+    }
+}

@@ -32,7 +32,7 @@
             <div class="row gy-4 pb-5 mb-2 justify-content-between">
 
                 <div class="col-12 col-lg-3">
-                    <h4 class="fw-black text-uppercase tracking-tight fs-4 mb-3 text-white">Smash Active</h4>
+                    <h4 class="fw-black text-uppercase tracking-tight fs-4 mb-3 text-white">Where Passion Meets Performance</h4>
                     <p class="fs-7 text-white text-opacity-75 mb-4">
                         Designed and engineered in Australia. Built for high performance on and off the court.
                     </p>
@@ -79,7 +79,6 @@
                         <li><a href="/pages/about" class="footer-link">Our Story</a></li>
                         <li><a href="/pages/athletes" class="footer-link">Athletes & Team</a></li>
                         <li><a href="/pages/sustainability" class="footer-link">Fabric Tech</a></li>
-                        <li><a href="/pages/careers" class="footer-link">Careers</a></li>
                         <li><a href="/pages/contact" class="footer-link">Contact Us</a></li>
                     </ul>
                 </div>
@@ -90,7 +89,7 @@
                         <li><a href="https://instagram.com" target="_blank" class="footer-link">Instagram</a></li>
                         <li><a href="https://tiktok.com" target="_blank" class="footer-link">TikTok</a></li>
                         <li><a href="https://youtube.com" target="_blank" class="footer-link">YouTube</a></li>
-                        <li><a href="https://strava.com" target="_blank" class="footer-link">Strava Club</a></li>
+                        <li><a href="https://facebook.com" target="_blank" class="footer-link">Facebook</a></li>
                     </ul>
                 </div>
 

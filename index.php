@@ -10,32 +10,28 @@ ob_start(); ?>
         <!-- 1. FADING BACKGROUND SLIDES -->
         <div class="hero-slides-wrapper position-absolute top-0 start-0 w-100 h-100 z-0">
             <div class="hero-slide active position-absolute top-0 start-0 w-100 h-100" data-slide="0">
-                <img src="/smashapparel/assets/images/slide_1.webp" alt="PPA Tour Melbourne Pro Pickleball"
-                     class="w-100 h-100 object-fit-cover">
+                <img src="/smashapparel/assets/images/slide_3.jpg" alt="PPA Tour Melbourne Pro Pickleball"
+                     class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="1">
-                <img src="/smashapparel/assets/images/slide_2.webp" alt="Pro Court Tech Tee"
-                     class="w-100 h-100 object-fit-cover">
-            </div>
-            <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="2">
-                <img src="/smashapparel/assets/images/slide_3.webp" alt="Pro Doubles Match Play"
-                     class="w-100 h-100 object-fit-cover">
-            </div>
-            <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="3">
-                <img src="/smashapparel/assets/images/slide_5.webp" alt="Tennis Performance Activewear"
-                     class="w-100 h-100 object-fit-cover">
+                <img src="/smashapparel/assets/images/slide_4.png" alt="Pro Court Tech Tee"
+                     class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="4">
-                <img src="/smashapparel/assets/images/slide_6.webp" alt="Championship Match Victory"
-                     class="w-100 h-100 object-fit-cover">
+                <img src="/smashapparel/assets/images/slide_6.png" alt="Championship Match Victory"
+                     class="w-100 h-100 object-fit-cover hero-slide-img">
+            </div>
+            <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="6">
+                <img src="/smashapparel/assets/images/slide_2.png" alt="Kinetic Gradient Pro Top"
+                     class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="5">
                 <img src="/smashapparel/assets/images/slide_7.webp" alt="Post Match Sportsmanship"
-                     class="w-100 h-100 object-fit-cover">
+                     class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
-            <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="6">
-                <img src="/smashapparel/assets/images/slide_8.webp" alt="Kinetic Gradient Pro Top"
-                     class="w-100 h-100 object-fit-cover">
+            <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="2">
+                <img src="/smashapparel/assets/images/slide_9.png" alt="Pro Doubles Match Play"
+                     class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
         </div>
 
@@ -90,16 +86,6 @@ ob_start(); ?>
                         <span class="editorial-accent-text">Control.</span>
                     </h1>
                     <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">High-breathability tech tees built for lightning-fast dink exchanges and baseline drives.</p>
-                </div>
-
-                <!-- Slide 4 Content (Tennis Forehand Drive) -->
-                <div class="hero-text-group d-none" data-slide-text="3">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 04 — Court Performance</p>
-                    <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        Full <br>
-                        <span class="editorial-accent-text">Torque.</span>
-                    </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Zero-restriction shoulder seam geometry designed for heavy topspin baseline play.</p>
                 </div>
 
                 <!-- Slide 5 Content (Championship Confetti Arena Walk) -->
@@ -166,6 +152,124 @@ ob_start(); ?>
     </section>
 </div>
 <div class="container-fluid px-2 px-md-3 py-2">
+    <div class="w-100 bg-body text-white rounded-4 overflow-hidden position-relative">
+        <section class="row g-0 align-items-stretch" style="min-height: 600px;">
+
+            <!-- Content Column (Left Side on Desktop, Second on Mobile) -->
+            <div class="col-12 col-lg-4 order-2 order-lg-1 p-4 p-md-5 d-flex flex-column justify-content-center position-relative z-1">
+                <h2 class="display-4 fw-black text-uppercase fst-italic tracking-tight lh-09 mb-3 text-body">
+                    Engineered For the rally.<br>
+                    <span></span>
+                </h2>
+
+                <p class="lead text-body-secondary fs-6 mb-4 font-monospace">
+                    Breathable dri-motion, lightweight core material keeps you cool under pressure.
+                </p>
+
+                <div>
+                    <a href="/collections/all"
+                       class="btn btn-brand text-white rounded-pill px-4 py-3 fw-bold text-uppercase fs-7 tracking-widest d-inline-flex align-items-center gap-4 js-shop-btn">
+                        <span>Our Story</span>
+                        <span class="btn-indicator-line"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image Column (Right Side on Desktop, First on Mobile) -->
+            <div class="col-12 col-lg-8 order-1 order-lg-2 position-relative min-vh-50" style="min-height: 350px;">
+                <img src="/smashapparel/assets/images/rally.png"
+                     alt="Engineered for the rally"
+                     class="w-100 h-100 object-fit-cover hero-slide-img position-absolute top-0 start-0"
+                     loading="lazy">
+            </div>
+
+        </section>
+    </div>
+</div>
+<div class="container-fluid px-2 px-md-3 py-2">
+    <div class="row g-2 g-md-3">
+
+        <!-- Card 1: Breathable -->
+        <div class="col-12 col-md-4">
+            <div class="w-100 h-100 bg-body text-body rounded-4 border border-body-subtle p-4 p-xl-5 d-flex align-items-center gap-3 gap-xl-4">
+                <!-- Custom Wind / Air Flow SVG -->
+                <div class="flex-shrink-0 text-danger d-flex align-items-center justify-content-center" style="width: 54px; height: 54px;">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-100 h-100" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 20H38C43 20 46 16 43 12C40 8 34 10 35 15" />
+                        <path d="M4 32H50C55 32 58 36 55 40C52 44 46 42 47 37" />
+                        <path d="M12 44H30C35 44 38 48 35 52C32 56 26 54 27 49" />
+                        <path d="M14 20L20 14M20 26L14 20" />
+                    </svg>
+                </div>
+                <div class="flex-grow-1">
+                    <h3 class="h4 fw-black text-uppercase fst-italic tracking-tight mb-2">Breathable</h3>
+                    <p class="fs-8 text-body-secondary text-uppercase tracking-wider fw-semibold mb-3 lh-sm">
+                        Lightweight, perforated fabrics keep air flowing so you stay cool.
+                    </p>
+                    <div class="bg-danger rounded-pill" style="width: 28px; height: 3px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Pro Tested (Featured Accent Card) -->
+        <div class="col-12 col-md-4">
+            <div class="w-100 h-100 bg-brand text-white rounded-4 border border-danger p-4 p-xl-5 d-flex align-items-center gap-3 gap-xl-4">
+                <!-- Pro Tested Group & Checkmark SVG -->
+                <div class="flex-shrink-0 text-white d-flex align-items-center justify-content-center" style="width: 54px; height: 54px;">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-100 h-100" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Center User -->
+                        <circle cx="32" cy="18" r="7" />
+                        <!-- Left User -->
+                        <circle cx="18" cy="24" r="5" />
+                        <!-- Right User -->
+                        <circle cx="46" cy="24" r="5" />
+                        <!-- Body Outlines -->
+                        <path d="M10 44C10 36 18 34 22 34" />
+                        <path d="M54 44C54 36 46 34 42 34" />
+                        <path d="M20 48C20 38 44 38 44 48" />
+                        <!-- Badge Checkmark -->
+                        <circle cx="32" cy="48" r="9" fill="currentColor" class="text-white" />
+                        <path d="M28 48L31 51L36 45" stroke="#d9251d" stroke-width="3.5" />
+                    </svg>
+                </div>
+                <div class="flex-grow-1">
+                    <h3 class="h4 fw-black text-uppercase fst-italic tracking-tight mb-2">Pro Tested</h3>
+                    <p class="fs-8 text-white-50 text-uppercase tracking-wider fw-semibold mb-3 lh-sm">
+                        Professionally tested by the athletes who set the pace and define the standard.
+                    </p>
+                    <div class="bg-white rounded-pill" style="width: 28px; height: 3px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Sweat Absorbing -->
+        <div class="col-12 col-md-4">
+            <div class="w-100 h-100 bg-body text-body rounded-4 border border-body-subtle p-4 p-xl-5 d-flex align-items-center gap-3 gap-xl-4">
+                <!-- Dual Water Drops SVG -->
+                <div class="flex-shrink-0 text-danger d-flex align-items-center justify-content-center" style="width: 54px; height: 54px;">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-100 h-100" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Main Water Drop -->
+                        <path d="M28 10C28 10 12 30 12 42C12 50.8366 19.1634 58 28 58C36.8366 58 44 50.8366 44 42C44 30 28 10 28 10Z" />
+                        <!-- Ripple Arc inside main drop -->
+                        <path d="M20 44C22 48 26 50 30 50" />
+                        <!-- Small Accent Drop / Spark -->
+                        <path d="M46 16C46 16 38 28 38 34C38 38.4183 41.5817 42 46 42C50.4183 42 54 38.4183 54 34C54 28 46 16 46 16Z" stroke-width="2.5" />
+                        <path d="M52 14L56 10M50 8L52 4" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="flex-grow-1">
+                    <h3 class="h4 fw-black text-uppercase fst-italic tracking-tight mb-2">Sweat Absorbing</h3>
+                    <p class="fs-8 text-body-secondary text-uppercase tracking-wider fw-semibold mb-3 lh-sm">
+                        With our dri-motion technology sweat is pulled away before it pulls you back.
+                    </p>
+                    <div class="bg-danger rounded-pill" style="width: 28px; height: 3px;"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid px-2 px-md-3 py-2">
     <div class="row g-3 flex-nowrap overflow-x-auto no-scrollbar align-items-center">
 
         <!-- DIV 1: MEN -->
@@ -173,7 +277,7 @@ ob_start(); ?>
             <a href="/collections/men"
                class="hover-card d-block w-100 rounded-4 overflow-hidden position-relative text-decoration-none shadow-sm"
                style="aspect-ratio: 3/4;">
-                <img src="assets/images/cat-men.webp" alt="Men" class="hover-card-img w-100 h-100 object-fit-cover">
+                <img src="assets/images/cat-men.png" alt="Men" class="hover-card-img w-100 h-100 object-fit-cover">
 
                 <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-end z-1">
                     <div class="d-flex align-items-center justify-content-between">
@@ -195,7 +299,7 @@ ob_start(); ?>
             <a href="/collections/ladies"
                class="hover-card d-block w-100 rounded-4 overflow-hidden position-relative text-decoration-none shadow-sm"
                style="aspect-ratio: 3/4;">
-                <img src="assets/images/cat-women.webp" alt="Ladies" class="hover-card-img w-100 h-100 object-fit-cover">
+                <img src="assets/images/cat-women.png" alt="Ladies" class="hover-card-img w-100 h-100 object-fit-cover">
 
                 <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-end z-1">
                     <div class="d-flex align-items-center justify-content-between">
@@ -217,7 +321,7 @@ ob_start(); ?>
             <a href="/collections/boy"
                class="hover-card d-block w-100 rounded-4 overflow-hidden position-relative text-decoration-none shadow-sm"
                style="aspect-ratio: 3/4;">
-                <img src="assets/images/cat-boy.webp" alt="Boy" class="hover-card-img w-100 h-100 object-fit-cover">
+                <img src="assets/images/cat-boy.png" alt="Boy" class="hover-card-img w-100 h-100 object-fit-cover">
 
                 <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-end z-1">
                     <div class="d-flex align-items-center justify-content-between">
@@ -239,7 +343,7 @@ ob_start(); ?>
             <a href="/collections/girl"
                class="hover-card d-block w-100 rounded-4 overflow-hidden position-relative text-decoration-none shadow-sm"
                style="aspect-ratio: 3/4;">
-                <img src="assets/images/cat-girl.webp" alt="Girl" class="hover-card-img w-100 h-100 object-fit-cover">
+                <img src="assets/images/cat-girl.png" alt="Girl" class="hover-card-img w-100 h-100 object-fit-cover">
 
                 <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-end z-1">
                     <div class="d-flex align-items-center justify-content-between">
@@ -257,44 +361,6 @@ ob_start(); ?>
         </div>
 
     </div>
-</div>
-<div class="container-fluid px-2 px-md-3 py-2">
-    <section class="row g-2 g-md-3 align-items-stretch">
-
-        <!-- Image Card (First on Mobile, Right Side on Desktop) -->
-        <div class="col-12 col-lg-9 order-1 order-lg-2">
-            <div class="w-100 h-100 bg-body-tertiary rounded-4 border border-body-subtle overflow-hidden position-relative" style="min-height: 600px !important;">
-                <img src="/smashapparel/assets/images/slide_8.webp" alt="Engineered for the rally" class="w-100 h-100 object-fit-cover object-fit-top position-absolute inset-0" loading="lazy">
-            </div>
-        </div>
-
-        <!-- Content Card (Second on Mobile, Left Side on Desktop) -->
-        <div class="col-12 col-lg-3 order-2 order-lg-1">
-            <div class="w-100 h-100 bg-brand text-white rounded-4 border border-body-subtle p-4 p-md-5 d-flex flex-column justify-content-center">
-<!--                                <p class="text-uppercase tracking-widest fw-bold text-body-secondary fs-8 mb-2">-->
-<!--                                    Edition 01 — Dri-Motion™ Tech-->
-<!--                                </p>-->
-
-                <h2 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3 text-body">
-                    Engineered for the rally.<br>
-                    <span class=""></span>
-                </h2>
-
-                <p class="lead text-body-secondary fs-6 mb-4 font-monospace">
-                    Breathable dri-motion, lightweight core material keeps you cool under pressure.
-                </p>
-
-                <div>
-                    <a href="/collections/all"
-                       class="btn btn-brand bg-black text-white rounded-pill px-4 py-3 fw-bold text-uppercase fs-7 tracking-widest d-inline-flex align-items-center gap-4 js-shop-btn">
-                        <span>Our Story</span>
-                        <span class="btn-indicator-line"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </section>
 </div>
 <div class="container-fluid px-2 px-md-3 py-2">
     <section class="w-100 rounded-4 bg-body-tertiary border border-body-subtle p-4 p-md-5">
@@ -591,7 +657,7 @@ ob_start(); ?>
 
             <!-- LEFT COLUMN: LARGE EDITORIAL STATEMENT -->
             <div class="col-12 col-lg-7 col-xl-8">
-                <h2 class="display-5 fw-black text-white text-uppercase tracking-tight lh-1 mb-0">
+                <h2 class="display-5 fw-black fst-italic text-white text-uppercase tracking-tight lh-1 mb-0">
                     The new standard in court apparel, training and activewear.
                 </h2>
             </div>
@@ -619,7 +685,7 @@ ob_start(); ?>
 
         <!-- LEFT PANEL: SPOTLIGHT MEDIA -->
         <div class="w-100 w-lg-50 rounded-4 overflow-hidden position-relative bg-body-tertiary d-flex flex-column justify-content-between p-4 p-md-5">
-            <img src="/smashapparel/assets/images/premium-cat.webp" alt="Featured Activewear"
+            <img src="/smashapparel/assets/images/slide_3.jpg" alt="Featured Activewear"
                  class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0 spot-img">
             <div class="position-absolute top-0 start-0 w-100 h-100 z-1 bg-overlay-editorial pointer-events-none"></div>
 
@@ -633,11 +699,11 @@ ob_start(); ?>
             <div class="position-relative z-2 text-white mt-auto">
                 <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Thermal Engineering</p>
                 <h2 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                    Engineered <br>
-                    <span class="editorial-accent-text">To Disrupt.</span>
+                    Built for <br>
+                    <span class="editorial-accent-text">Every Point.</span>
                 </h2>
                 <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">High-tension compression fabric designed
-                    for thermal regulation and zero drag.</p>
+                    from first serve to match point.</p>
             </div>
         </div>
 
@@ -1234,31 +1300,64 @@ ob_start(); ?>
 </div>
 <div class="container-fluid px-2 px-md-3 py-2">
     <section class="w-100 rounded-4 bg-brand py-5 px-4 px-md-5 position-relative overflow-hidden">
-        <div class="row align-items-center justify-content-between gy-4">
+        <div class="row align-items-center justify-content-between gy-5">
 
             <!-- LEFT COLUMN: LARGE EDITORIAL STATEMENT -->
-            <div class="col-12 col-lg-7 col-xl-8">
-                <span class="text-uppercase tracking-widest fw-bold text-white fs-8 mb-2 d-inline-block">
-                    <i class="bi bi-heart-fill me-1"></i> Our Philosophy
-                </span>
-                <h2 class="display-5 fw-black text-white text-uppercase tracking-tight lh-1 mb-0">
-                    Forged In The Weight Room.
+            <div class="col-12 col-lg-6 col-xl-6">
+                <h2 class="display-4 fw-black fst-italic text-white text-uppercase tracking-tight lh-09 mb-3">
+                    Built for<br>
+                    every point<span class="text-black">.</span>
                 </h2>
+                <p class="fs-6 text-white text-opacity-80 fw-bold text-uppercase tracking-wider mb-0">
+                    From first serve to match point.
+                </p>
             </div>
 
-            <!-- RIGHT COLUMN: ACTION & TAGLINE -->
-            <div class="col-12 col-lg-5 col-xl-4 text-start text-lg-end d-flex flex-column align-items-start align-items-lg-end gap-3">
-                <!-- BLACK PILL BUTTON -->
-                <a href="/collections/all"
-                   class="btn btn-brand bg-black text-white rounded-pill px-4 py-3 fw-bold text-uppercase fs-7 tracking-widest d-inline-flex align-items-center gap-4 js-shop-btn">
-                    <span>Shop Smash</span>
-                    <span class="btn-indicator-line"></span>
-                </a>
+            <!-- RIGHT COLUMN: 3 FEATURE ITEMS -->
+            <div class="col-12 col-lg-6 col-xl-5 text-white d-flex flex-column gap-4">
 
-                <!-- TAGLINE / BODY TEXT -->
-                <p class="fs-6 text-white text-opacity-80 fw-normal mb-0 lh-base">
-                    Smash Apparel was born from an obsession with raw training. We construct precision activewear engineered to eliminate friction and elevate every rep—built by lifters, for lifters.
-                </p>
+                <!-- Feature 1 -->
+                <div class="d-flex align-items-start gap-3">
+                    <div class="flex-shrink-0 text-white mt-1" style="width: 32px; height: 32px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-100 h-100">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="h6 fw-black text-uppercase fst-italic tracking-tight mb-1 text-white">Performance Driven Design</h3>
+                        <p class="fs-8 text-white-50 text-uppercase tracking-wider mb-0 lh-sm">Every detail has a purpose.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="d-flex align-items-start gap-3">
+                    <div class="flex-shrink-0 text-white mt-1" style="width: 32px; height: 32px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-100 h-100">
+                            <path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5z"/>
+                            <path d="M5 19h14"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="h6 fw-black text-uppercase fst-italic tracking-tight mb-1 text-white">Premium Quality</h3>
+                        <p class="fs-8 text-white-50 text-uppercase tracking-wider mb-0 lh-sm">Built to last. Wash after wash.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="d-flex align-items-start gap-3">
+                    <div class="flex-shrink-0 text-white mt-1" style="width: 32px; height: 32px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-100 h-100">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="h6 fw-black text-uppercase fst-italic tracking-tight mb-1 text-white">Made for Competitors</h3>
+                        <p class="fs-8 text-white-50 text-uppercase tracking-wider mb-0 lh-sm">Trusted by players who love the game.</p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -1275,7 +1374,7 @@ ob_start(); ?>
         <!-- CONTENT LAYER -->
         <div class="position-relative z-2 container-fluid p-0">
             <div class="row">
-                <div class="col-12 col-md-8 col-lg-6 col-xl-6 text-start">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-8 text-start">
 
                     <!-- BRAND BADGE -->
                     <div class="d-inline-flex align-items-center gap-2 py-1 rounded-pill bg-transparent bg-opacity-75 mb-1 backdrop-blur">
@@ -1286,7 +1385,7 @@ ob_start(); ?>
                     </div>
 
                     <!-- HERO HEADING -->
-                    <h3 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3 text-white">Elevate Your<br><span class="editorial-accent-text">Daily Motion.</span></h3>
+                    <h3 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3 text-white">Heavyweight Comfort meets<br><span class="editorial-accent-text">Street Ready Durability.</span></h3>
 
                     <!-- SUBTEXT -->
                     <p class="fs-6 text-white-50 fw-normal mb-4 pe-md-3">
