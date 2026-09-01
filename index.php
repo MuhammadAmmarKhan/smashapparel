@@ -10,27 +10,27 @@ ob_start(); ?>
         <!-- 1. FADING BACKGROUND SLIDES -->
         <div class="hero-slides-wrapper position-absolute top-0 start-0 w-100 h-100 z-0">
             <div class="hero-slide active position-absolute top-0 start-0 w-100 h-100" data-slide="0">
-                <img src="/smashapparel/assets/images/slide_3.jpg" alt="PPA Tour Melbourne Pro Pickleball"
+                <img src="/smashapparel/assets/images/slide_3.jpg" alt="Built For Every Point"
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="1">
-                <img src="/smashapparel/assets/images/slide_4.png" alt="Pro Court Tech Tee"
+                <img src="/smashapparel/assets/images/slide_4.png" alt="Court Wear That Performs"
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="4">
-                <img src="/smashapparel/assets/images/slide_6.png" alt="Championship Match Victory"
+                <img src="/smashapparel/assets/images/slide_6.png" alt="Engineered For The Rally"
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="6">
-                <img src="/smashapparel/assets/images/slide_2.png" alt="Kinetic Gradient Pro Top"
+                <img src="/smashapparel/assets/images/slide_2.png" alt="Breathable Dri-Motion"
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="5">
-                <img src="/smashapparel/assets/images/slide_7.webp" alt="Post Match Sportsmanship"
+                <img src="/smashapparel/assets/images/slide_7.webp" alt="Pro Tested Standard"
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="2">
-                <img src="/smashapparel/assets/images/slide_9.png" alt="Pro Doubles Match Play"
+                <img src="/smashapparel/assets/images/slide_9.png" alt="Passion For Performance"
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
         </div>
@@ -48,7 +48,7 @@ ob_start(); ?>
                 <span class="text-uppercase tracking-widest fs-8 fw-semibold text-white-50">Edition 2026</span>
             </div>
             <div class="slide-indicators text-white-50 fw-bold fs-7 tracking-widest font-monospace">
-                <span class="js-current-slide text-white">01</span> &mdash; 07
+                <span class="js-current-slide text-white">01</span> &mdash; 06
             </div>
         </div>
 
@@ -58,64 +58,64 @@ ob_start(); ?>
             <!-- Dynamic Content Swapper -->
             <div class="hero-text-content position-relative max-w-2xl">
 
-                <!-- Slide 1 Content (Melbourne PPA Low Stretch Action) -->
+                <!-- Slide 1 Content -->
                 <div class="hero-text-group active" data-slide-text="0">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 01 — PPA Tour Melbourne</p>
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 01 — Match Ready</p>
                     <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        Low <br>
-                        <span class="editorial-accent-text">Reach.</span>
+                        Built For <br>
+                        <span class="editorial-accent-text">Every Point.</span>
                     </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Engineered four-way stretch apparel tailored for max reach and kitchen line intensity.</p>
+                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">From first serve to match point.</p>
                 </div>
 
-                <!-- Slide 2 Content (Obsidian Sun-Shielding Pro Tee) -->
+                <!-- Slide 2 Content -->
                 <div class="hero-text-group d-none" data-slide-text="1">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 02 — Australian Open Air</p>
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 02 — Why Smash Apparel</p>
                     <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        Sun <br>
-                        <span class="editorial-accent-text">Armor.</span>
+                        Court Wear That <br>
+                        <span class="editorial-accent-text">Performs</span>
                     </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Ultra-lightweight moisture dissipation fabric crafted for intense sunny court conditions.</p>
+                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">We create high-performance tennis apparel that blends cutting-edge technology with modern design.</p>
                 </div>
 
-                <!-- Slide 3 Content (Pro Doubles Match Sync) -->
+                <!-- Slide 3 Content -->
                 <div class="hero-text-group d-none" data-slide-text="2">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 03 — Pro Tour Doubles</p>
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 03 — Pro Performance</p>
                     <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        Kitchen <br>
-                        <span class="editorial-accent-text">Control.</span>
+                        For The <br>
+                        <span class="editorial-accent-text">Rally.</span>
                     </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">High-breathability tech tees built for lightning-fast dink exchanges and baseline drives.</p>
+                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Breathable dri-motion, lightweight core material keeps you cool under pressure.</p>
                 </div>
 
-                <!-- Slide 5 Content (Championship Confetti Arena Walk) -->
+                <!-- Slide 4 Content -->
                 <div class="hero-text-group d-none" data-slide-text="4">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 05 — Championship Stage</p>
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 04 — Fabric Tech</p>
                     <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        Arena <br>
-                        <span class="editorial-accent-text">Victory.</span>
+                        Breathable <br>
+                        <span class="editorial-accent-text">Perforated.</span>
                     </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Pro-tier gradient compression wear tested and proven under stadium lights.</p>
+                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Lightweight, perforated fabrics keep air flowing so you stay cool.</p>
                 </div>
 
-                <!-- Slide 6 Content (Post-Match Net Hug) -->
+                <!-- Slide 5 Content -->
                 <div class="hero-text-group d-none" data-slide-text="5">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 06 — Post Match</p>
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 05 — Athlete Grade</p>
                     <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        Court <br>
-                        <span class="editorial-accent-text">Respect.</span>
+                        Pro <br>
+                        <span class="editorial-accent-text">Tested.</span>
                     </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Quick-dry anti-cling fibers keeping athletes cool from championship point to handshake.</p>
+                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Professionally tested by the athletes who set the pace and define the standard.</p>
                 </div>
 
-                <!-- Slide 7 Content (Kinetic Neon Gradient Reach) -->
+                <!-- Slide 6 Content -->
                 <div class="hero-text-group d-none" data-slide-text="6">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 07 — Kinetic Series</p>
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 06 — Moisture Control</p>
                     <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        Speed <br>
-                        <span class="editorial-accent-text">Spectrum.</span>
+                        Sweat <br>
+                        <span class="editorial-accent-text">Absorbing.</span>
                     </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">High-visibility gradient sublimated performance gear built for explosive athletic output.</p>
+                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">With our dri-motion technology, sweat is pulled away before it pulls you back.</p>
                 </div>
 
             </div>
@@ -150,6 +150,23 @@ ob_start(); ?>
         </div>
 
     </section>
+</div>
+<div class="container-fluid px-2 py-2 px-md-3">
+    <div class="w-100 rounded-4 overflow-hidden border border-body-subtle bg-black position-relative">
+
+        <!-- Desktop Image (Visible on lg and up) -->
+        <img src="/smashapparel/assets/images/cta-003.jpeg"
+             alt="Built for Every Point"
+             class="w-100 h-auto d-none d-lg-block object-fit-cover"
+             loading="lazy">
+
+        <!-- Mobile Image (Visible on screens smaller than lg) -->
+        <img src="/smashapparel/assets/images/cta-003-m.jpeg"
+             alt="Built for Every Point"
+             class="w-100 h-auto d-block d-lg-none object-fit-cover"
+             loading="lazy">
+
+    </div>
 </div>
 <div class="container-fluid px-2 px-md-3 py-2">
     <div class="w-100 bg-body text-white rounded-4 overflow-hidden position-relative">
@@ -650,6 +667,23 @@ ob_start(); ?>
 
         </div>
     </section>
+</div>
+<div class="container-fluid px-2 py-2 px-md-3">
+    <div class="w-100 rounded-4 overflow-hidden border border-body-subtle bg-black position-relative">
+
+        <!-- Desktop Image (Visible on lg and up) -->
+        <img src="/smashapparel/assets/images/cta-002.jpeg"
+             alt="Built for Every Point"
+             class="w-100 h-auto d-none d-lg-block object-fit-cover"
+             loading="lazy">
+
+        <!-- Mobile Image (Visible on screens smaller than lg) -->
+        <img src="/smashapparel/assets/images/cta-002-m.jpeg"
+             alt="Built for Every Point"
+             class="w-100 h-auto d-block d-lg-none object-fit-cover"
+             loading="lazy">
+
+    </div>
 </div>
 <div class="container-fluid px-2 px-md-3 py-2">
     <section class="w-100 rounded-4 bg-brand py-5 px-4 px-md-5  position-relative overflow-hidden">
@@ -1363,6 +1397,23 @@ ob_start(); ?>
         </div>
     </section>
 </div>
+<div class="container-fluid px-2 py-2 px-md-3">
+    <div class="w-100 rounded-4 overflow-hidden border border-body-subtle bg-black position-relative">
+
+        <!-- Desktop Image (Visible on lg and up) -->
+        <img src="/smashapparel/assets/images/cta-001.jpeg"
+             alt="Built for Every Point"
+             class="w-100 h-auto d-none d-lg-block object-fit-cover"
+             loading="lazy">
+
+        <!-- Mobile Image (Visible on screens smaller than lg) -->
+        <img src="/smashapparel/assets/images/cta-001-m.jpeg"
+             alt="Built for Every Point"
+             class="w-100 h-auto d-block d-lg-none object-fit-cover"
+             loading="lazy">
+
+    </div>
+</div>
 <div class="container-fluid px-2 px-md-3 py-2">
     <section class="w-100 rounded-4 overflow-hidden position-relative p-4 p-md-5  d-flex align-items-center"
              style="min-height: 410px; background: url('assets/images/slide_7.webp') center center / cover no-repeat fixed;">
@@ -1374,7 +1425,7 @@ ob_start(); ?>
         <!-- CONTENT LAYER -->
         <div class="position-relative z-2 container-fluid p-0">
             <div class="row">
-                <div class="col-12 col-md-8 col-lg-6 col-xl-8 text-start">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-8 text-start">
 
                     <!-- BRAND BADGE -->
                     <div class="d-inline-flex align-items-center gap-2 py-1 rounded-pill bg-transparent bg-opacity-75 mb-1 backdrop-blur">
