@@ -32,7 +32,7 @@
             <div class="row gy-4 pb-5 mb-2 justify-content-between">
 
                 <div class="col-12 col-lg-3">
-                    <h4 class="fw-black text-uppercase tracking-tight fs-4 mb-3 text-white">Where Passion Meets Performance</h4>
+                    <h4 class="fw-black text-uppercase tracking-tight fs-4 mb-3 text-white"><span class="text-brand">Passion</span> for Performance</h4>
                     <p class="fs-7 text-white text-opacity-75 mb-4">
                         Designed and engineered in Australia. Built for high performance on and off the court.
                     </p>
