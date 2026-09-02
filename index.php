@@ -386,38 +386,6 @@ ob_start(); ?>
                 </div>
             </article>
 
-
-            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
-                <div class="p-2 pb-0">
-                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
-                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">HOT</span>
-                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
-                            <i class="bi bi-heart fs-7"></i>
-                        </button>
-                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
-                            <img src="assets/images/Female Purple Hoodie Front View.png" alt="Female Purple Hoodie Front View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
-                            <img src="assets/images/Female Purple Hoodie Rear View.png" alt="Female Purple Hoodie Rear View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
-                        </div>
-                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
-                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
-                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
-                    <div>
-                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Hoodie Collection</span>
-                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Female Purple Hoodie</h4>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
-                        <div>
-                            <span class="text-white fw-bold fs-6">$68.00</span>
-                        </div>
-                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-
             <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
                 <div class="p-2 pb-0">
                     <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
@@ -474,6 +442,67 @@ ob_start(); ?>
                     <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
                         <div>
                             <span class="text-white fw-bold fs-6">$65.00</span>
+                        </div>
+                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
+                <div class="p-2 pb-0">
+                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
+                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">NEW</span>
+                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
+                            <i class="bi bi-heart fs-7"></i>
+                        </button>
+                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
+                            <img src="assets/images/Mens White Hoodie Rear View.png" alt="Mens White Hoodie Rear View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                        </div>
+                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
+                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
+                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Hoodie Collection</span>
+                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Men's White Hoodie</h4>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
+                        <div>
+                            <span class="text-white fw-bold fs-6">$72.00</span>
+                        </div>
+                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
+                <div class="p-2 pb-0">
+                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
+                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">HOT</span>
+                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
+                            <i class="bi bi-heart fs-7"></i>
+                        </button>
+                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
+                            <img src="assets/images/Female Purple Hoodie Front View.png" alt="Female Purple Hoodie Front View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                            <img src="assets/images/Female Purple Hoodie Rear View.png" alt="Female Purple Hoodie Rear View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                        </div>
+                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
+                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
+                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Hoodie Collection</span>
+                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Female Purple Hoodie</h4>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
+                        <div>
+                            <span class="text-white fw-bold fs-6">$68.00</span>
                         </div>
                         <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
                     </div>
@@ -572,37 +601,6 @@ ob_start(); ?>
                     </div>
                 </div>
             </article>
-
-            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
-                <div class="p-2 pb-0">
-                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
-                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">NEW</span>
-                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
-                            <i class="bi bi-heart fs-7"></i>
-                        </button>
-                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
-                            <img src="assets/images/Mens White Hoodie Rear View.png" alt="Mens White Hoodie Rear View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
-                        </div>
-                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
-                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
-                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
-                    <div>
-                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Hoodie Collection</span>
-                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Men's White Hoodie</h4>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
-                        <div>
-                            <span class="text-white fw-bold fs-6">$72.00</span>
-                        </div>
-                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-
             <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
                 <div class="p-2 pb-0">
                     <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
