@@ -10,20 +10,20 @@ ob_start(); ?>
         <!-- 1. FADING BACKGROUND SLIDES -->
         <div class="hero-slides-wrapper position-absolute top-0 start-0 w-100 h-100 z-0">
             <div class="hero-slide active position-absolute top-0 start-0 w-100 h-100" data-slide="0">
-                <img src="/smashapparel/assets/images/slide_3.jpg" alt="Built For Every Point"
+                <img src="/smashapparel/assets/images/slide_1.png" alt="Built For Every Point"
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="1">
-                <img src="/smashapparel/assets/images/slide_4.png" alt="Court Wear That Performs"
+                <img src="/smashapparel/assets/images/slide_9.png" alt="Court Wear That Performs"
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="2">
-                <img src="/smashapparel/assets/images/slide_9.png" alt="Passion For Performance"
+                <img src="/smashapparel/assets/images/slide_4.png" alt="Passion For Performance"
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="6">
                 <img src="/smashapparel/assets/images/slide_2.png" alt="Breathable Dri-Motion"
-                     class="w-100 h-100 object-fit-cover hero-slide-img">
+                     class="w-100 h-100 object-fit-cover object-fit-top hero-slide-img" style="object-position: top !important;">
             </div>
         </div>
 
@@ -54,8 +54,8 @@ ob_start(); ?>
                 <div class="hero-text-group d-none" data-slide-text="2">
                     <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 03 — Pro Performance</p>
                     <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        For The <br>
-                        <span class="editorial-accent-text">Rally.</span>
+                        Passion For <br>
+                        <span class="editorial-accent-text">Performance.</span>
                     </h1>
                     <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Breathable dri-motion, lightweight core material keeps you cool under pressure.</p>
                 </div>
@@ -125,24 +125,6 @@ ob_start(); ?>
 
     </section>
 </div>
-<div class="container-fluid px-2 py-2 px-md-3">
-    <div class="w-100 rounded-4 overflow-hidden border border-body-subtle bg-black position-relative">
-
-        <!-- Desktop Image (Visible on lg and up) -->
-        <img src="/smashapparel/assets/images/cta-003.jpeg"
-             alt="Built for Every Point"
-             class="w-100 h-auto d-none d-lg-block object-fit-cover"
-             loading="lazy">
-
-        <!-- Mobile Image (Visible on screens smaller than lg) -->
-        <img src="/smashapparel/assets/images/cta-003-m.jpeg"
-             alt="Built for Every Point"
-             class="w-100 h-auto d-block d-lg-none object-fit-cover"
-             loading="lazy">
-
-    </div>
-</div>
-
 <div class="container-fluid px-2 px-md-3 py-2">
     <div class="row g-2 g-md-3">
 
@@ -238,10 +220,10 @@ ob_start(); ?>
 
                 <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 p-0 d-flex flex-column justify-content-end z-1">
                     <!-- BLACK CONTAINER FOR CONTENT -->
-                    <div class="bg-black bg-opacity-85 border border-white border-opacity-10 rounded-3 p-3 d-flex align-items-center justify-content-between shadow">
+                    <div class="bg-black bg-opacity-85 border border-white border-opacity-10 rounded-3 p-3 py-1 d-flex align-items-center justify-content-between shadow">
                         <div>
                             <span class="fs-8 text-white-50 text-uppercase tracking-wider fw-semibold d-block mb-1">Collection</span>
-                            <h3 class="display-4 fw-black text-uppercase text-white tracking-tight m-0">Men</h3>
+                            <h3 class="display-5 fw-black text-uppercase text-white tracking-tight m-0">Men</h3>
                         </div>
                         <!-- RED BUTTON WITH WHITE ARROW -->
                         <span class="hover-card-btn rounded-circle p-0 d-flex align-items-center justify-content-center shadow-sm flex-shrink-0"
@@ -260,12 +242,12 @@ ob_start(); ?>
                style="aspect-ratio: 3/4;">
                 <img src="assets/images/cat-women.png" alt="Ladies" class="hover-card-img w-100 h-100 object-fit-cover">
 
-                <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-end z-1">
+                <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column justify-content-end z-1">
                     <!-- BLACK CONTAINER FOR CONTENT -->
-                    <div class="bg-black bg-opacity-85 border border-white border-opacity-10 rounded-3 p-3 d-flex align-items-center justify-content-between shadow">
+                    <div class="bg-black bg-opacity-85 border border-white border-opacity-10 rounded-3 p-3 py-1 d-flex align-items-center justify-content-between shadow">
                         <div>
                             <span class="fs-8 text-white-50 text-uppercase tracking-wider fw-semibold d-block mb-1">Collection</span>
-                            <h3 class="display-4 fw-black text-uppercase text-white tracking-tight m-0">Ladies</h3>
+                            <h3 class="display-5 fw-black text-uppercase text-white tracking-tight m-0">Ladies</h3>
                         </div>
                         <!-- RED BUTTON WITH WHITE ARROW -->
                         <span class="hover-card-btn btn btn-danger rounded-circle p-0 d-flex align-items-center justify-content-center shadow-sm flex-shrink-0"
@@ -284,12 +266,12 @@ ob_start(); ?>
                style="aspect-ratio: 3/4;">
                 <img src="assets/images/cat-boy.png" alt="Boy" class="hover-card-img w-100 h-100 object-fit-cover">
 
-                <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-end z-1">
+                <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column justify-content-end z-1">
                     <!-- BLACK CONTAINER FOR CONTENT -->
-                    <div class="bg-black bg-opacity-85 border border-white border-opacity-10 rounded-3 p-3 d-flex align-items-center justify-content-between shadow">
+                    <div class="bg-black bg-opacity-85 border border-white border-opacity-10 rounded-3 p-3 py-1 d-flex align-items-center justify-content-between shadow">
                         <div>
                             <span class="fs-8 text-white-50 text-uppercase tracking-wider fw-semibold d-block mb-1">Youth</span>
-                            <h3 class="display-4 fw-black text-uppercase text-white tracking-tight m-0">Boy</h3>
+                            <h3 class="display-5 fw-black text-uppercase text-white tracking-tight m-0">Boy</h3>
                         </div>
                         <!-- RED BUTTON WITH WHITE ARROW -->
                         <span class="hover-card-btn btn btn-danger rounded-circle p-0 d-flex align-items-center justify-content-center shadow-sm flex-shrink-0"
@@ -308,12 +290,12 @@ ob_start(); ?>
                style="aspect-ratio: 3/4;">
                 <img src="assets/images/cat-girl.png" alt="Girl" class="hover-card-img w-100 h-100 object-fit-cover">
 
-                <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-end z-1">
+                <div class="hover-card-overlay position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column justify-content-end z-1">
                     <!-- BLACK CONTAINER FOR CONTENT -->
-                    <div class="bg-black bg-opacity-85 border border-white border-opacity-10 rounded-3 p-3 d-flex align-items-center justify-content-between shadow">
+                    <div class="bg-black bg-opacity-85 border border-white border-opacity-10 rounded-3 p-3 py-1 d-flex align-items-center justify-content-between shadow">
                         <div>
                             <span class="fs-8 text-white-50 text-uppercase tracking-wider fw-semibold d-block mb-1">Youth</span>
-                            <h3 class="display-4 fw-black text-uppercase text-white tracking-tight m-0">Girl</h3>
+                            <h3 class="display-5 fw-black text-uppercase text-white tracking-tight m-0">Girl</h3>
                         </div>
                         <!-- RED BUTTON WITH WHITE ARROW -->
                         <span class="hover-card-btn btn btn-danger rounded-circle p-0 d-flex align-items-center justify-content-center shadow-sm flex-shrink-0"
@@ -332,7 +314,7 @@ ob_start(); ?>
         <div class="d-flex flex-column flex-md-row align-items-start align-items-md-end justify-content-between gap-3 mb-3 pb-3 border-bottom border-body-subtle">
             <div>
                 <span class="text-uppercase tracking-widest fw-bold text-brand fs-8 mb-2 d-inline-flex align-items-center gap-1">
-                    <i class="bi bi-droplet"></i> Fresh Drops
+                    <i class="bi bi-droplet"></i> Fresh Drops (2027)
                 </span>
                 <h3 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-0 text-body">
                     New <br>
@@ -353,6 +335,222 @@ ob_start(); ?>
         </div>
 
         <div class="d-flex gap-3 overflow-x-auto pt-3 pb-3 js-arrival-track no-scrollbar" style="margin-top: -8px;">
+            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
+                <div class="p-2 pb-0">
+                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
+                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">NEW</span>
+                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
+                            <i class="bi bi-heart fs-7"></i>
+                        </button>
+                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
+                            <img src="assets/images/2027 Mens Performance Shirts - Black and Pink (Front).png" alt="2027 Mens Performance Shirts Black and Pink Front" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                            <img src="assets/images/2027 Mens Performance Shirts - Black and Pink (Rear).png" alt="2027 Mens Performance Shirts Black and Pink Rear" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                        </div>
+                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
+                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
+                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Pro Performance</span>
+                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Mens Performance Shirt - Black &amp; Pink</h4>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
+                        <div>
+                            <span class="text-white fw-bold fs-6">$65.00</span>
+                        </div>
+                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
+                <div class="p-2 pb-0">
+                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
+                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">NEW</span>
+                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
+                            <i class="bi bi-heart fs-7"></i>
+                        </button>
+                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
+                            <img src="assets/images/2027 Mens Performance Shirts - Black and Green (Front).png" alt="2027 Mens Performance Shirts Black and Green Front" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                            <img src="assets/images/2027 Mens Performance Shirts - Black and Green (Rear).png" alt="2027 Mens Performance Shirts Black and Green Rear" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                        </div>
+                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
+                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
+                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Pro Performance</span>
+                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Mens Performance Shirt - Black &amp; Green</h4>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
+                        <div>
+                            <span class="text-white fw-bold fs-6">$65.00</span>
+                        </div>
+                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
+                <div class="p-2 pb-0">
+                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
+                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">HOT</span>
+                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
+                            <i class="bi bi-heart fs-7"></i>
+                        </button>
+                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
+                            <img src="assets/images/2027 Mens Performance Shirts - Black and Blue (Front).png" alt="2027 Mens Performance Shirts Black and Blue Front" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                            <img src="assets/images/2027 Mens Performance Shirts - Black and Black (Rear).png" alt="2027 Mens Performance Shirts Black and Blue Rear" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                        </div>
+                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
+                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
+                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Pro Performance</span>
+                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Mens Performance Shirt - Black &amp; Blue</h4>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
+                        <div>
+                            <span class="text-white fw-bold fs-6">$65.00</span>
+                        </div>
+                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
+                <div class="p-2 pb-0">
+                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
+                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">NEW</span>
+                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
+                            <i class="bi bi-heart fs-7"></i>
+                        </button>
+                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
+                            <img src="assets/images/2027 Performance Shorts - Blue_Purple (Front View).png" alt="2027 Performance Shorts Blue/Purple Front" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                            <img src="assets/images/2027 Performance Shorts - Blue_Purple (Rear View).png" alt="2027 Performance Shorts Blue/Purple Rear" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                        </div>
+                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
+                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
+                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Bottoms</span>
+                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Performance Shorts - Blue/Purple</h4>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
+                        <div>
+                            <span class="text-white fw-bold fs-6">$48.00</span>
+                        </div>
+                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
+                <div class="p-2 pb-0">
+                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
+                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">CORE</span>
+                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
+                            <i class="bi bi-heart fs-7"></i>
+                        </button>
+                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
+                            <img src="assets/images/2027 Performance Shorts - White (Front View).png" alt="2027 Performance Shorts White Front" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                            <img src="assets/images/2027 Performance Shorts - White (Rear View).png" alt="2027 Performance Shorts White Rear" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                        </div>
+                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
+                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
+                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Bottoms</span>
+                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Performance Shorts - White</h4>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
+                        <div>
+                            <span class="text-white fw-bold fs-6">$48.00</span>
+                        </div>
+                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
+                <div class="p-2 pb-0">
+                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
+                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">HOT</span>
+                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
+                            <i class="bi bi-heart fs-7"></i>
+                        </button>
+                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
+                            <img src="assets/images/2027 Performance Shorts - Pink (Front View).png" alt="2027 Performance Shorts Pink Front" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                            <img src="assets/images/2027 Performance Shorts - Pink (Rear View).png" alt="2027 Performance Shorts Pink Rear" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                        </div>
+                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
+                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
+                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Bottoms</span>
+                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Performance Shorts - Pink</h4>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
+                        <div>
+                            <span class="text-white fw-bold fs-6">$48.00</span>
+                        </div>
+                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
+                <div class="p-2 pb-0">
+                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
+                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">CORE</span>
+                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
+                            <i class="bi bi-heart fs-7"></i>
+                        </button>
+                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
+                            <img src="assets/images/2027 Performance Shorts - Black (Front View).png" alt="2027 Performance Shorts Black Front" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                            <img src="assets/images/2027 Performance Shorts - Black (Rear View).png" alt="2027 Performance Shorts Black Rear" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                        </div>
+                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
+                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
+                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Bottoms</span>
+                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Performance Shorts - Black</h4>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
+                        <div>
+                            <span class="text-white fw-bold fs-6">$48.00</span>
+                        </div>
+                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
+                    </div>
+                </div>
+            </article>
 
             <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
                 <div class="p-2 pb-0">
@@ -638,13 +836,13 @@ ob_start(); ?>
     <div class="w-100 rounded-4 overflow-hidden border border-body-subtle bg-black position-relative">
 
         <!-- Desktop Image (Visible on lg and up) -->
-        <img src="/smashapparel/assets/images/cta-002.jpeg"
+        <img src="/smashapparel/assets/images/cta-002.png"
              alt="Built for Every Point"
              class="w-100 h-auto d-none d-lg-block object-fit-cover"
              loading="lazy">
 
         <!-- Mobile Image (Visible on screens smaller than lg) -->
-        <img src="/smashapparel/assets/images/cta-002-m.jpeg"
+        <img src="/smashapparel/assets/images/cta-002-m.png"
              alt="Built for Every Point"
              class="w-100 h-auto d-block d-lg-none object-fit-cover"
              loading="lazy">
@@ -656,25 +854,23 @@ ob_start(); ?>
 
         <!-- LEFT PANEL: SPOTLIGHT MEDIA -->
         <div class="w-100 w-lg-50 rounded-4 overflow-hidden position-relative bg-body-tertiary d-flex flex-column justify-content-between p-4 p-md-5">
-            <img src="/smashapparel/assets/images/ctaaaa.jpg" alt="Featured Activewear"
+            <img src="/smashapparel/assets/images/ctaaaa.png" alt="Featured Activewear"
                  class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0 spot-img">
             <div class="position-absolute top-0 start-0 w-100 h-100 z-1 bg-overlay-editorial pointer-events-none"></div>
 
             <!-- TOP STATUS BADGE -->
             <div class="position-relative z-2 w-100 d-flex align-items-center gap-3">
-                <span class="live-status-dot"></span>
-                <span class="text-uppercase tracking-widest fs-8 fw-bold text-brand">Pro-Series Focus</span>
+<!--                <span class="live-status-dot"></span>-->
+<!--                <span class="text-uppercase tracking-widest fs-8 fw-bold text-brand">Pro-Series Focus</span>-->
             </div>
 
             <!-- EDITORIAL HEADING & SUBTITLE -->
             <div class="position-relative z-2 text-white mt-auto">
-                <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Thermal Engineering</p>
-                <h2 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                    Built for <br>
-                    <span class="editorial-accent-text">Every Point.</span>
+                <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2"></p>
+                <h2 class="display-4 fw-black fst-italic text-uppercase tracking-tight lh-09 mb-3">
+                    Engineered For <br/>the Rally
                 </h2>
-                <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">High-tension compression fabric designed
-                    from first serve to match point.</p>
+                <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Breathable dri-motion, lightweight core material keeps you cool under pressure.</p>
             </div>
         </div>
 
@@ -1232,7 +1428,7 @@ ob_start(); ?>
     <div class="w-100 rounded-4 overflow-hidden border border-body-subtle bg-black position-relative">
 
         <!-- Desktop Image (Visible on lg and up) -->
-        <img src="/smashapparel/assets/images/cta-001.jpeg"
+        <img src="/smashapparel/assets/images/cta-001.png"
              alt="Built for Every Point"
              class="w-100 h-auto d-none d-lg-block object-fit-cover"
              loading="lazy">

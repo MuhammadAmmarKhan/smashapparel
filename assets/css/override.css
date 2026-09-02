@@ -1043,7 +1043,7 @@ footer input::placeholder {
 }
 /* Custom class to handle portrait framing on wide/short viewports */
 .hero-slide-img {
-    object-position: 50% 20% !important;
+    /*object-position: 50% 20% !important;*/
 }
 
 /* Responsive adjustment for short screen heights */
