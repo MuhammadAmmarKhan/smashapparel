@@ -658,7 +658,7 @@ ob_start(); ?>
 
         <!-- LEFT PANEL: SPOTLIGHT MEDIA -->
         <div class="w-100 w-lg-50 rounded-4 overflow-hidden position-relative bg-body-tertiary d-flex flex-column justify-content-between p-4 p-md-5">
-            <img src="/smashapparel/assets/images/slide_3.jpg" alt="Featured Activewear"
+            <img src="/smashapparel/assets/images/ctaaaa.jpg" alt="Featured Activewear"
                  class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0 spot-img">
             <div class="position-absolute top-0 start-0 w-100 h-100 z-1 bg-overlay-editorial pointer-events-none"></div>
 
