@@ -14,7 +14,7 @@ ob_start(); ?>
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="1">
-                <img src="/smashapparel/assets/images/slide_9.png" alt="Court Wear That Performs"
+                <img src="/smashapparel/assets/images/slide_10.png" alt="Court Wear That Performs"
                      class="w-100 h-100 object-fit-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="2">
