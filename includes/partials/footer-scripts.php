@@ -95,14 +95,14 @@
 
         gsap.set(heroBanner, {force3D: true});
 
-        heroBanner.addEventListener('mousemove', (e) => {
-            const rect = heroBanner.getBoundingClientRect();
-            const x = ((e.clientX - rect.left) / rect.width) * 100;
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-
-            heroBanner.style.setProperty('--mouse-x', `${x}%`);
-            heroBanner.style.setProperty('--mouse-y', `${y}%`);
-        });
+        // heroBanner.addEventListener('mousemove', (e) => {
+        //     const rect = heroBanner.getBoundingClientRect();
+        //     const x = ((e.clientX - rect.left) / rect.width) * 100;
+        //     const y = ((e.clientY - rect.top) / rect.height) * 100;
+        //
+        //     heroBanner.style.setProperty('--mouse-x', `${x}%`);
+        //     heroBanner.style.setProperty('--mouse-y', `${y}%`);
+        // });
 
         const initHeroReveal = () => {
             slides.forEach((slide, idx) => {

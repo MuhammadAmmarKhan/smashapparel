@@ -5,102 +5,98 @@ $page_description = "Smash Apparel";
 $page_keywords = "Smash Apparel";
 ob_start(); ?>
 <div class="container-fluid px-2 px-md-3 py-2">
-    <section class="position-relative w-100 vh-100 rounded-4 overflow-hidden bg-black text-white d-flex align-items-between flex-column justify-content-between p-4 p-md-5 js-hero-banner" style="height:calc(100vh - 107px) !important; min-height: 450px;">
+    <section class="position-relative w-100 rounded-4 overflow-hidden bg-black text-white d-flex align-items-between flex-column justify-content-between p-3 p-md-5 js-hero-banner hero-banner-responsive">
 
         <!-- 1. FADING BACKGROUND SLIDES -->
         <div class="hero-slides-wrapper position-absolute top-0 start-0 w-100 h-100 z-0">
             <div class="hero-slide active position-absolute top-0 start-0 w-100 h-100" data-slide="0">
                 <img src="/smashapparel/assets/images/slide_1.png" alt="Built For Every Point"
-                     class="w-100 h-100 object-fit-cover hero-slide-img">
-            </div>
-            <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="1">
-                <img src="/smashapparel/assets/images/slide_10.png" alt="Court Wear That Performs"
-                     class="w-100 h-100 object-fit-cover hero-slide-img">
+                     class="w-100 h-100 object-fit-contain object-fit-md-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="2">
-                <img src="/smashapparel/assets/images/slide_4.png" alt="Passion For Performance"
-                     class="w-100 h-100 object-fit-cover hero-slide-img">
+                <img src="/smashapparel/assets/images/ctaaa.png" alt="Passion For Performance"
+                     class="w-100 h-100 object-fit-contain object-fit-md-cover hero-slide-img">
             </div>
             <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="6">
                 <img src="/smashapparel/assets/images/slide_2.png" alt="Breathable Dri-Motion"
-                     class="w-100 h-100 object-fit-cover object-fit-top hero-slide-img" style="object-position: top !important;">
+                     class="w-100 h-100 object-fit-contain object-fit-md-cover hero-slide-img">
+            </div>
+            <div class="hero-slide position-absolute top-0 start-0 w-100 h-100" data-slide="1">
+                <img src="/smashapparel/assets/images/slide_10.png" alt="Court Wear That Performs"
+                     class="w-100 h-100 object-fit-contain object-fit-md-cover hero-slide-img">
             </div>
         </div>
 
-        <!-- 2. DYNAMIC MOVING VIGNETTE (Follows Cursor) -->
-        <div class="dynamic-vignette position-absolute top-0 start-0 w-100 h-100 z-1 pointer-events-none js-dynamic-vignette"></div>
-
-        <!-- 3. SUBTLE GRADIENT OVERLAY (Text Contrast Guarantee) -->
+        <!-- 2. SUBTLE GRADIENT OVERLAY -->
         <div class="position-absolute top-0 start-0 w-100 h-100 z-1 bg-overlay-editorial pointer-events-none"></div>
 
         <!-- TOP BAR: BRAND MARK & MINIMAL METRICS -->
         <div class="position-relative z-2 w-100 d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-2 gap-md-3">
                 <span class="live-status-dot"></span>
                 <span class="text-uppercase tracking-widest fs-8 fw-semibold text-white-50">Edition 2026</span>
             </div>
-            <div class="slide-indicators text-white-50 fw-bold fs-7 tracking-widest font-monospace">
+            <div class="slide-indicators text-white-50 fw-bold fs-8 fs-md-7 tracking-widest font-monospace">
                 <span class="js-current-slide text-white">01</span> &mdash; 04
             </div>
         </div>
 
         <!-- CENTER/BOTTOM: EDITORIAL ASYMMETRIC CONTENT HOOK -->
-        <div class="position-relative z-2 w-100 d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-4 my-auto my-md-0">
+        <div class="position-relative z-2 w-100 d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end gap-3 gap-md-4 my-0">
 
             <!-- Dynamic Content Swapper -->
-            <div class="hero-text-content position-relative max-w-2xl">
+            <div class="hero-text-content position-relative max-w-2xl" style="min-width:400px">
 
                 <!-- Slide 1 Content -->
-                <div class="hero-text-group d-none" data-slide-text="2">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 03 — Pro Performance</p>
-                    <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        Passion For <br>
-                        <span class="editorial-accent-text">Performance.</span>
+                <div class="hero-text-group d-none" data-slide-text="2" data-cta-url="/collections/performance" data-cta-label="Explore Collection">
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2"></p>
+                    <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">
+                        Edition 01
+                        <span class="editorial-accent-text"></span>
                     </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Breathable dri-motion, lightweight core material keeps you cool under pressure.</p>
+                    <p class="lead text-white-50 fs-7 fs-md-6 mb-0 max-w-sm font-monospace"></p>
                 </div>
 
                 <!-- Slide 2 Content -->
-                <div class="hero-text-group d-none" data-slide-text="1">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 02 — Why Smash Apparel</p>
-                    <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        Make Team <br>
-                        <span class="editorial-accent-text">SMASH&nbsp;APPAREL</span>
+                <div class="hero-text-group active" data-slide-text="0" data-cta-url="/collections/match-ready" data-cta-label="Explore Collection">
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 01 — Match Ready</p>
+                    <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">
+                        Built For <br>
+                        <span class="editorial-accent-text">Every Point.</span>
                     </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">We create high-performance tennis apparel that blends cutting-edge technology with modern design.</p>
+                    <p class="lead text-white-50 fs-7 fs-md-6 mb-0 max-w-sm font-monospace">From first serve to match point.</p>
                 </div>
 
                 <!-- Slide 3 Content -->
-                <div class="hero-text-group active" data-slide-text="0">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 01 — Match Ready</p>
-                    <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
-                        Built For <br>
-                        <span class="editorial-accent-text">Every&nbsp;Point.</span>
-                    </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">From first serve to match point.</p>
-                </div>
-
-                <!-- Slide 4 Content -->
-                <div class="hero-text-group d-none" data-slide-text="5">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-2">Edition 05 — Athlete Grade</p>
-                    <h1 class="display-4 fw-black text-uppercase tracking-tight lh-09 mb-3">
+                <div class="hero-text-group d-none" data-slide-text="5" data-cta-url="/collections/pro-series" data-cta-label="Explore Collection">
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 05 — Athlete Grade</p>
+                    <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">
                         Pro <br>
                         <span class="editorial-accent-text">Tested.</span>
                     </h1>
-                    <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Professionally tested by the athletes who set the pace and define the standard.</p>
+                    <p class="lead text-white-50 fs-7 fs-md-6 mb-0 max-w-sm font-monospace">Professionally tested by the athletes who set the pace and define the standard.</p>
                 </div>
 
-
+                <!-- Slide 4 Content -->
+                <div class="hero-text-group d-none" data-slide-text="1" data-cta-url="/collections/all" data-cta-label="Explore Collection">
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 02 — Why Smash Apparel</p>
+                    <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">
+                        Make Team <br>
+                        <span class="editorial-accent-text">SMASH APPAREL</span>
+                    </h1>
+                    <p class="lead text-white-50 fs-7 fs-md-6 mb-0 max-w-sm font-monospace">We create high-performance tennis apparel that blends cutting-edge technology with modern design.</p>
+                </div>
 
             </div>
 
             <!-- SHOP CTA & PROGRESS CONTROLS -->
-            <div class="d-flex flex-column align-items-start align-items-md-end gap-4 flex-shrink-0">
+            <div class="d-flex flex-column align-items-start align-items-md-end gap-3 gap-md-4 flex-shrink-0">
 
                 <!-- SHOP NOW BUTTON -->
-                <a href="/collections/all"
-                   class="btn btn-brand text-white rounded-pill px-4 py-3 fw-bold text-uppercase fs-7 tracking-widest d-inline-flex align-items-center gap-4 js-shop-btn">
-                    <span>Explore Collection</span>
+                <a href="/collections/match-ready"
+                   id="hero-dynamic-cta"
+                   class="btn btn-brand text-white rounded-pill px-3 px-md-4 py-2 py-md-3 fw-bold text-uppercase fs-8 fs-md-7 tracking-widest d-inline-flex align-items-center gap-2 gap-md-3 js-shop-btn text-nowrap">
+                    <span class="js-cta-text">Explore Collection</span>
                     <span class="btn-indicator-line"></span>
                 </a>
 
@@ -125,6 +121,58 @@ ob_start(); ?>
 
     </section>
 </div>
+
+<style>
+    /* Custom typography sizes to stop word-wrapping issues */
+    .hero-heading {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        white-space: normal;
+        word-break: normal;
+    }
+
+    /* Ensure button and indicator stay aligned horizontally */
+    #hero-dynamic-cta {
+        white-space: nowrap;
+        max-width: max-content;
+    }
+
+    /* Container Height Rules */
+    .hero-banner-responsive {
+        height: auto;
+        min-height: 350px;
+    }
+
+    @media (min-width: 768px) {
+        .hero-banner-responsive {
+            height: calc(100vh - 107px) !important;
+            min-height: 450px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const updateCTA = () => {
+            const activeGroup = document.querySelector('.hero-text-group.active');
+            const ctaBtn = document.getElementById('hero-dynamic-cta');
+            if (activeGroup && ctaBtn) {
+                const url = activeGroup.getAttribute('data-cta-url');
+                const label = activeGroup.getAttribute('data-cta-label');
+                if (url) ctaBtn.setAttribute('href', url);
+                if (label) {
+                    const textSpan = ctaBtn.querySelector('.js-cta-text');
+                    if (textSpan) textSpan.textContent = label;
+                }
+            }
+        };
+
+        const container = document.querySelector('.hero-text-content');
+        if (container) {
+            const observer = new MutationObserver(updateCTA);
+            observer.observe(container, { attributes: true, subtree: true, attributeFilter: ['class'] });
+        }
+    });
+</script>
 <div class="container-fluid px-2 px-md-3 py-2">
     <div class="row g-2 g-md-3">
 
@@ -205,6 +253,23 @@ ob_start(); ?>
                 </div>
             </div>
         </div>
+
+    </div>
+</div>
+<div class="container-fluid px-2 py-2 px-md-3">
+    <div class="w-100 rounded-4 overflow-hidden border border-body-subtle bg-black position-relative">
+
+        <!-- Desktop Image (Visible on lg and up) -->
+        <img src="/smashapparel/assets/images/cta-001.png"
+             alt="Built for Every Point"
+             class="w-100 h-auto d-none d-lg-block object-fit-cover"
+             loading="lazy">
+
+        <!-- Mobile Image (Visible on screens smaller than lg) -->
+        <img src="/smashapparel/assets/images/cta-001-m.jpeg"
+             alt="Built for Every Point"
+             class="w-100 h-auto d-block d-lg-none object-fit-cover"
+             loading="lazy">
 
     </div>
 </div>
@@ -584,128 +649,6 @@ ob_start(); ?>
                 </div>
             </article>
 
-            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
-                <div class="p-2 pb-0">
-                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
-                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">-15%</span>
-                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
-                            <i class="bi bi-heart fs-7"></i>
-                        </button>
-                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
-                            <img src="assets/images/Mens Royal Blue Hoodie Rear View.png" alt="Mens Royal Blue Hoodie Rear View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
-                        </div>
-                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
-                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
-                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
-                    <div>
-                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Hoodie Collection</span>
-                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Men's Royal Blue Hoodie</h4>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
-                        <div>
-                            <span class="text-white fw-bold fs-6">$59.50</span>
-                            <span class="text-danger text-decoration-line-through fs-8 me-1">$70.00</span>
-                        </div>
-                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
-                <div class="p-2 pb-0">
-                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
-                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">NEW</span>
-                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
-                            <i class="bi bi-heart fs-7"></i>
-                        </button>
-                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
-                            <img src="assets/images/Mens Pink Hoodie front View.png" alt="Mens Pink Hoodie Front View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
-                            <img src="assets/images/Mens Pink Hoodie Rear View.png" alt="Mens Pink Hoodie Rear View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
-                        </div>
-                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
-                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
-                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
-                    <div>
-                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Hoodie Collection</span>
-                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Men's Pink Hoodie</h4>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
-                        <div>
-                            <span class="text-white fw-bold fs-6">$65.00</span>
-                        </div>
-                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
-                <div class="p-2 pb-0">
-                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
-                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">NEW</span>
-                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
-                            <i class="bi bi-heart fs-7"></i>
-                        </button>
-                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
-                            <img src="assets/images/Mens White Hoodie Rear View.png" alt="Mens White Hoodie Rear View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
-                        </div>
-                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
-                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
-                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
-                    <div>
-                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Hoodie Collection</span>
-                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Men's White Hoodie</h4>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
-                        <div>
-                            <span class="text-white fw-bold fs-6">$72.00</span>
-                        </div>
-                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
-                <div class="p-2 pb-0">
-                    <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
-                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">HOT</span>
-                        <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
-                            <i class="bi bi-heart fs-7"></i>
-                        </button>
-                        <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
-                            <img src="assets/images/Female Purple Hoodie Front View.png" alt="Female Purple Hoodie Front View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
-                            <img src="assets/images/Female Purple Hoodie Rear View.png" alt="Female Purple Hoodie Rear View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
-                        </div>
-                        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
-                            <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
-                            <button class="btn btn-card-nav js-card-next" aria-label="Next Image"><i class="bi bi-arrow-right fs-7"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
-                    <div>
-                        <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Hoodie Collection</span>
-                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Female Purple Hoodie</h4>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
-                        <div>
-                            <span class="text-white fw-bold fs-6">$68.00</span>
-                        </div>
-                        <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
-                    </div>
-                </div>
-            </article>
 
             <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
                 <div class="p-2 pb-0">
@@ -741,13 +684,12 @@ ob_start(); ?>
             <article class="flex-shrink-0 rounded-4 bg-black border border-body-subtle overflow-hidden d-flex flex-column product-card">
                 <div class="p-2 pb-0">
                     <div class="position-relative overflow-hidden rounded-3 card-media-wrapper js-card-media-wrapper">
-                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">HOT</span>
+                        <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand">-15%</span>
                         <button class="btn btn-wishlist position-absolute top-0 end-0 m-2 z-3 rounded-circle d-flex align-items-center justify-content-center" aria-label="Add to wishlist">
                             <i class="bi bi-heart fs-7"></i>
                         </button>
                         <div class="d-flex h-100 w-100 card-slides-track js-card-slides">
-                            <img src="assets/images/Female Royal Blue Hoodie Front View.png" alt="Female Royal Blue Hoodie Front View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
-                            <img src="assets/images/Female Royal Blue Hoodie Rear View.png" alt="Female Royal Blue Hoodie Rear View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
+                            <img src="assets/images/Mens Royal Blue Hoodie Rear View.png" alt="Mens Royal Blue Hoodie Rear View" class="w-100 h-100 object-fit-cover object-fit-top flex-shrink-0" loading="lazy">
                         </div>
                         <div class="position-absolute bottom-0 w-100 d-flex justify-content-between p-2 z-3 card-slide-nav">
                             <button class="btn btn-card-nav js-card-prev" aria-label="Previous Image"><i class="bi bi-arrow-left fs-7"></i></button>
@@ -758,11 +700,12 @@ ob_start(); ?>
                 <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
                     <div>
                         <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider d-block mb-1">Hoodie Collection</span>
-                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Female Royal Blue Hoodie</h4>
+                        <h4 class="h6 text-white fw-bold text-truncate mb-3">Men's Royal Blue Hoodie</h4>
                     </div>
                     <div class="d-flex align-items-center justify-content-between pt-2 border-top border-body-subtle">
                         <div>
-                            <span class="text-white fw-bold fs-6">$70.00</span>
+                            <span class="text-white fw-bold fs-6">$59.50</span>
+                            <span class="text-danger text-decoration-line-through fs-8 me-1">$70.00</span>
                         </div>
                         <button class="btn btn-brand rounded-3 d-flex align-items-center justify-content-center" aria-label="Add to cart"><i class="bi bi-bag-plus"></i></button>
                     </div>
@@ -832,23 +775,7 @@ ob_start(); ?>
         </div>
     </section>
 </div>
-<div class="container-fluid px-2 py-2 px-md-3">
-    <div class="w-100 rounded-4 overflow-hidden border border-body-subtle bg-black position-relative">
 
-        <!-- Desktop Image (Visible on lg and up) -->
-        <img src="/smashapparel/assets/images/cta-002.png"
-             alt="Built for Every Point"
-             class="w-100 h-auto d-none d-lg-block object-fit-cover"
-             loading="lazy">
-
-        <!-- Mobile Image (Visible on screens smaller than lg) -->
-        <img src="/smashapparel/assets/images/cta-002-m.png"
-             alt="Built for Every Point"
-             class="w-100 h-auto d-block d-lg-none object-fit-cover"
-             loading="lazy">
-
-    </div>
-</div>
 <div class="container-fluid px-2 px-md-3 py-2">
     <section class="w-100 min-vh-100 d-flex flex-column flex-lg-row gap-3">
 
@@ -870,7 +797,7 @@ ob_start(); ?>
                 <h2 class="display-4 fw-black fst-italic text-uppercase tracking-tight lh-09 mb-3">
                     Engineered For <br/>the Rally
                 </h2>
-                <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Breathable dri-motion, lightweight core material keeps you cool under pressure.</p>
+                <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">United by performance driven by purpose</p>
             </div>
         </div>
 
@@ -1428,20 +1355,19 @@ ob_start(); ?>
     <div class="w-100 rounded-4 overflow-hidden border border-body-subtle bg-black position-relative">
 
         <!-- Desktop Image (Visible on lg and up) -->
-        <img src="/smashapparel/assets/images/cta-001.png"
+        <img src="/smashapparel/assets/images/cta-002.png"
              alt="Built for Every Point"
              class="w-100 h-auto d-none d-lg-block object-fit-cover"
              loading="lazy">
 
         <!-- Mobile Image (Visible on screens smaller than lg) -->
-        <img src="/smashapparel/assets/images/cta-001-m.jpeg"
+        <img src="/smashapparel/assets/images/cta-002-m.png"
              alt="Built for Every Point"
              class="w-100 h-auto d-block d-lg-none object-fit-cover"
              loading="lazy">
 
     </div>
 </div>
-
 <div class="container-fluid px-2 px-md-3 py-2">
 
     <!-- INFINITE MARQUEE TICKER -->
