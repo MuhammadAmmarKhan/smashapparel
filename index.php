@@ -59,17 +59,17 @@ ob_start(); ?>
 
                 <!-- Slide 2 Content -->
                 <div class="hero-text-group active" data-slide-text="0" data-cta-url="/collections/match-ready" data-cta-label="Explore Collection">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 01 — Match Ready</p>
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 02 - Match Ready</p>
                     <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">
                         Built For <br>
-                        <span class="editorial-accent-text">Every Point.</span>
+                        <span class="editorial-accent-text">Every&nbsp;Point.</span>
                     </h1>
                     <p class="lead text-white-50 fs-7 fs-md-6 mb-0 max-w-sm font-monospace">From first serve to match point.</p>
                 </div>
 
                 <!-- Slide 3 Content -->
                 <div class="hero-text-group d-none" data-slide-text="5" data-cta-url="/collections/pro-series" data-cta-label="Explore Collection">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 05 — Athlete Grade</p>
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 03 - Player Focused</p>
                     <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">
                         Pro <br>
                         <span class="editorial-accent-text">Tested.</span>
@@ -79,12 +79,12 @@ ob_start(); ?>
 
                 <!-- Slide 4 Content -->
                 <div class="hero-text-group d-none" data-slide-text="1" data-cta-url="/collections/all" data-cta-label="Explore Collection">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 02 — Why Smash Apparel</p>
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 04 - Meet the Team</p>
                     <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">
-                        Make Team <br>
+                        Meet Team <br>
                         <span class="editorial-accent-text">SMASH&nbsp;APPAREL</span>
                     </h1>
-                    <p class="lead text-white-50 fs-7 fs-md-6 mb-0 max-w-sm font-monospace">We create high-performance tennis apparel that blends cutting-edge technology with modern design.</p>
+                    <p class="lead text-white-50 fs-7 fs-md-6 mb-0 max-w-sm font-monospace">United by Performance, Driven by Purpose</p>
                 </div>
 
             </div>
