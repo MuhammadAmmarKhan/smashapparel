@@ -82,7 +82,7 @@ ob_start(); ?>
                     <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 02 — Why Smash Apparel</p>
                     <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">
                         Make Team <br>
-                        <span class="editorial-accent-text">SMASH APPAREL</span>
+                        <span class="editorial-accent-text">SMASH&nbsp;APPAREL</span>
                     </h1>
                     <p class="lead text-white-50 fs-7 fs-md-6 mb-0 max-w-sm font-monospace">We create high-performance tennis apparel that blends cutting-edge technology with modern design.</p>
                 </div>
@@ -139,7 +139,7 @@ ob_start(); ?>
     /* Container Height Rules */
     .hero-banner-responsive {
         height: auto;
-        min-height: 350px;
+        min-height: 300px;
     }
 
     @media (min-width: 768px) {
