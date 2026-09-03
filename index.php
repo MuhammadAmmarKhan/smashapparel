@@ -78,7 +78,7 @@ ob_start(); ?>
                 </div>
 
                 <!-- Slide 4 Content -->
-                <div class="hero-text-group d-none" data-slide-text="1" data-cta-url="/collections/all" data-cta-label="Explore Collection">
+                <div class="hero-text-group d-none" data-slide-text="1" data-cta-url="/our-team" data-cta-label="Meet the Team">
                     <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 04 - Meet the Team</p>
                     <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">
                         Meet Team <br>
@@ -797,7 +797,7 @@ ob_start(); ?>
                 <h2 class="display-4 fw-black fst-italic text-uppercase tracking-tight lh-09 mb-3">
                     Engineered For <br/>the Rally
                 </h2>
-                <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">United by performance driven by purpose</p>
+                <p class="lead text-white-50 fs-6 mb-0 max-w-sm font-monospace">Breathable dri-motion, lightweight core material keeps you cool under pressure.</p>
             </div>
         </div>
 
