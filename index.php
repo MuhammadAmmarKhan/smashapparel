@@ -49,12 +49,12 @@ ob_start(); ?>
 
                 <!-- Slide 1 Content -->
                 <div class="hero-text-group d-none" data-slide-text="2" data-cta-url="/collections/performance" data-cta-label="Explore Collection">
-                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2"></p>
-                    <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">
-
-                        <span class="editorial-accent-text"></span>
-                    </h1>
-                    <p class="lead text-white-50 fs-7 fs-md-6 mb-0 max-w-sm font-monospace"></p>
+                    <p class="text-uppercase tracking-widest fw-bold text-white-50 fs-8 mb-1 mb-md-2">Edition 01 - Built for the Court</p>
+<!--                    <h1 class="hero-heading fw-black text-uppercase tracking-tight lh-09 mb-2 mb-md-3">-->
+<!---->
+<!--                        <span class="editorial-accent-text"></span>-->
+<!--                    </h1>-->
+                    <p class="lead text-white-50 fs-7 fs-md-6 mb-0 max-w-sm font-monospace">Dedicated to helping players reach their full potential</p>
                 </div>
 
                 <!-- Slide 2 Content -->
