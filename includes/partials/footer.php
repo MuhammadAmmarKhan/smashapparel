@@ -129,8 +129,8 @@
                 <div class="col-6 col-md-3 col-lg-2">
                     <p class="fw-black text-uppercase tracking-widest fs-8 mb-3 text-brand">Brand</p>
                     <ul class="list-unstyled d-flex flex-column gap-2 fs-7 fw-bold mb-0">
-                        <li><a href="/pages/about" class="footer-link">Our Story</a></li>
-                        <li><a href="/pages/athletes" class="footer-link">Athletes & Team</a></li>
+                        <li><a href="/smashapparel/about-us.php" class="footer-link">About Us</a></li>
+                        <li><a href="/smashapparel/team.php" class="footer-link">Athletes & Team</a></li>
                         <li><a href="/pages/sustainability" class="footer-link">Fabric Tech</a></li>
                         <li><a href="/pages/contact" class="footer-link">Contact Us</a></li>
                     </ul>
@@ -160,7 +160,7 @@
                     <span>&copy; <?=date('Y')?> SMASH ACTIVE PTY LTD. ALL RIGHTS RESERVED.</span>
                     <span class="d-none d-md-inline">•</span>
                     <a href="/policies/privacy-policy" class="footer-link">Privacy Policy</a>
-                    <a href="/policies/terms-of-service" class="footer-link">Terms of Service</a>
+                    <a href="/smashapparel/terms-and-conditions.php" class="footer-link">Terms of Service</a>
                     <a href="/policies/refund-policy" class="footer-link">Refund Policy</a>
                     <span class="d-none d-md-inline">•</span>
                     <span class="text-white-50">Design &amp; Developed with <i class="bi bi-heart-fill text-danger fs-9" aria-hidden="true"></i> by <a href="https://smartservix.com.au" target="_blank" rel="noopener" class="footer-link text-white fw-bold">Smart Servix</a></span>

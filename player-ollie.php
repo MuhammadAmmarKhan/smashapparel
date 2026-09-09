@@ -29,6 +29,9 @@ ob_start(); ?>
 
                 <!-- Player Quick Info & Intro -->
                 <div class="col-12 col-md-7 col-lg-7">
+                    <a href="/smashapparel/team.php" class="text-uppercase text-decoration-none tracking-widest fw-bold text-secondary fs-8 mb-2 d-inline-flex align-items-center gap-2">
+                        <span class="fa fa-arrow-left"></span> Back to team
+                    </a><br/>
 
                     <span class="text-uppercase tracking-widest fw-bold text-brand fs-8 mb-2 d-inline-flex align-items-center gap-2">
                         <span class="live-status-dot"></span> Smash Apparel Sponsored
@@ -372,6 +375,35 @@ ob_start(); ?>
         </div>
     </div>
 
+    <!-- SPONSORSHIP CTA SECTION -->
+    <div class="container-fluid px-2 px-md-3 pt-2">
+        <div class="bg-black border border-secondary border-opacity-25 rounded-4 p-4 p-md-5 position-relative overflow-hidden text-center text-white">
+
+            <div class="position-relative z-2 max-w-2xl mx-auto py-2">
+            <span class="text-uppercase tracking-widest fw-bold text-brand fs-8 mb-2 d-inline-block">
+                Join Team Smash
+            </span>
+
+                <h2 class="display-5 fw-black text-uppercase tracking-tight text-white mb-3 fst-italic">
+                    Want to Get Sponsored<span class="text-brand">?</span>
+                </h2>
+
+                <p class="text-white fs-6 mb-4 max-w-lg mx-auto lh-lg">
+                    We're always on the lookout for talent. Click below to make your application and join our elite roster of court athletes.
+                </p>
+
+                <div>
+                    <a href="/smashapparel/sponsorship-application"
+                       class="btn btn-brand text-white rounded-pill px-3 px-md-4 py-2 py-md-3 fw-bold text-uppercase fs-8 fs-md-7 tracking-widest d-inline-flex align-items-center gap-2 gap-md-3 js-shop-btn text-nowrap">
+                        Sponsorship Application
+                        <i class="bi bi-arrow-right fs-6"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <!-- LIGHTBOX MODAL COMPONENT -->
     <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -441,6 +473,7 @@ ob_start(); ?>
             }
         });
     </script>
+
 
 <?php $content = ob_get_clean();
 include "includes/partials/app.php";

@@ -7,7 +7,7 @@ ob_start(); ?>
 
     <!-- HERO BANNER SECTION -->
     <div class="container-fluid px-2 px-md-3 pt-2">
-        <div class="js-hero-banner position-relative overflow-hidden rounded-4 bg-black border border-body-subtle p-4 p-md-5 text-center min-h-350 d-flex flex-column justify-content-center align-items-center">
+        <div class="js-hero-banner position-relative overflow-hidden rounded-4 bg-black border border-dark p-4 p-md-5 text-center min-h-350 d-flex flex-column justify-content-center align-items-center">
             <!-- Background Overlay -->
             <div class="position-absolute inset-0 bg-overlay-editorial z-1"></div>
             <div class="position-absolute inset-0 dynamic-vignette z-1"></div>
@@ -40,7 +40,7 @@ ob_start(); ?>
                         <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
                             <img src="/smashapparel/assets/images/mtt-adrian.png"
                                  alt="Adrian Arcon"
-                                 class="w-100 h-100 object-fit-cover object-fit-top hover-card-img transition-transform duration-300"
+                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
                                  loading="lazy">
                             <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
                             <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">ATP / ITF Circuit</span>
@@ -81,7 +81,7 @@ ob_start(); ?>
                         <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
                             <img src="/smashapparel/assets/images/mtt-stephan.jpg"
                                  alt="Stefan Djordjic"
-                                 class="w-100 h-100 object-fit-cover object-fit-top hover-card-img transition-transform duration-300"
+                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
                                  loading="lazy">
                             <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
                             <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">Pro Pickleball</span>
@@ -122,7 +122,7 @@ ob_start(); ?>
                         <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
                             <img src="/smashapparel/assets/images/jeremy-beale.webp"
                                  alt="Jeremy Beale"
-                                 class="w-100 h-100 object-fit-cover object-fit-top hover-card-img transition-transform duration-300"
+                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
                                  loading="lazy">
                             <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
                             <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">ATP Tour Veteran</span>
@@ -161,9 +161,9 @@ ob_start(); ?>
                     <div>
                         <!-- Player Image / Banner Area -->
                         <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
-                            <img src="/smashapparel/assets/images/mtt-ollie.jpg"
+                            <img src="/smashapparel/assets/images/player-ollie-1.webp"
                                  alt="Oliver Hancin"
-                                 class="w-100 h-100 object-fit-cover object-fit-top hover-card-img transition-transform duration-300"
+                                 class="w-100 h-100 object-fit-cover hover-card-img transition-transform duration-300"
                                  loading="lazy">
                             <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
                             <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">ITF Junior Star</span>
@@ -189,7 +189,89 @@ ob_start(); ?>
                     <!-- Footer Callout Link -->
                     <div class="p-4 pt-0">
                         <hr class="border-body-subtle my-3">
-                        <a href="/smashapparel/team/oliver-hancin" class="btn btn-brand w-100 rounded-pill py-2 d-flex align-items-center justify-content-center gap-2 text-decoration-none hover-lift">
+                        <a href="/smashapparel/player-ollie.php" class="btn btn-brand w-100 rounded-pill py-2 d-flex align-items-center justify-content-center gap-2 text-decoration-none hover-lift">
+                            View Full Profile <i class="bi bi-arrow-right transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- PLAYER 5: MARK HASKETT -->
+            <div class="col">
+                <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
+                    <div>
+                        <!-- Player Image / Banner Area -->
+                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
+                            <img src="/smashapparel/assets/images/player-mark.webp"
+                                 alt="Mark Haskett"
+                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
+                            <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">Blind Tennis</span>
+                        </div>
+
+                        <!-- Player Meta & Bio -->
+                        <div class="p-4">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="tag-dot"></span>
+                                <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider">B2 Singles • South Australia</span>
+                            </div>
+                            <h2 class="fs-3 fw-bold text-uppercase text-body mb-2 hover-text-brand transition-colors">Mark Haskett</h2>
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge badge-brand-outline fs-8">AUS #1 | Global #2</span>
+                                <span class="text-muted fs-8">B2 Category</span>
+                            </div>
+                            <p class="text-secondary fs-7 mb-0 line-clamp-3">
+                                Mark Haskett has become one of Australia’s most inspiring sporting figures, rising to the top of the blind tennis world with determination, resilience, and elite competitive spirit. Ranked No. 1 in Australia and No. 2 globally in the B2 singles category, Haskett has transformed a late introduction to tennis into a remarkable international career.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Callout Link -->
+                    <div class="p-4 pt-0">
+                        <hr class="border-body-subtle my-3">
+                        <a href="/smashapparel/team/mark-haskett" class="btn btn-brand w-100 rounded-pill py-2 d-flex align-items-center justify-content-center gap-2 text-decoration-none hover-lift">
+                            View Full Profile <i class="bi bi-arrow-right transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- PLAYER 6: VANESSA FITZGERALD -->
+            <div class="col">
+                <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
+                    <div>
+                        <!-- Player Image / Banner Area -->
+                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
+                            <img src="/smashapparel/assets/images/player-vanessa.webp"
+                                 alt="Vanessa Fitzgerald"
+                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
+                            <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">Junior Prodigy</span>
+                        </div>
+
+                        <!-- Player Meta & Bio -->
+                        <div class="p-4">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="tag-dot"></span>
+                                <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider">Junior Circuit • Cairns, QLD</span>
+                            </div>
+                            <h2 class="fs-3 fw-bold text-uppercase text-body mb-2 hover-text-brand transition-colors">Vanessa Fitzgerald</h2>
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge badge-brand-outline fs-8">AUS U-10 #1</span>
+                                <span class="text-muted fs-8">Age 11</span>
+                            </div>
+                            <p class="text-secondary fs-7 mb-0 line-clamp-3">
+                                Vanessa Fitzgerald is quickly becoming one of the brightest young talents in Australian tennis, already turning heads nationwide with her dominance on the junior circuit. The Cairns‑based prodigy held the No. 1 ranking in Australia for under‑10s, remaining undefeated for more than three years in her age group.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Callout Link -->
+                    <div class="p-4 pt-0">
+                        <hr class="border-body-subtle my-3">
+                        <a href="/smashapparel/team/vanessa-fitzgerald" class="btn btn-brand w-100 rounded-pill py-2 d-flex align-items-center justify-content-center gap-2 text-decoration-none hover-lift">
                             View Full Profile <i class="bi bi-arrow-right transition-transform"></i>
                         </a>
                     </div>
