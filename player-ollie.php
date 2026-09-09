@@ -17,7 +17,7 @@ ob_start(); ?>
                 <!-- Player Main Image / Badge -->
                 <div class="col-12 col-md-5 col-lg-5">
                     <div class="position-relative overflow-hidden rounded-4 border border-dark shadow-lg">
-                        <img src="/smashapparel/assets/images/player-ollie-1.png"
+                        <img src="/smashapparel/assets/images/player-ollie-1.webp"
                              alt="<?php echo $player_name; ?>"
                              class="w-100 h-100 object-fit-cover object-fit-top"
                              style="max-height: 480px;">
@@ -31,7 +31,7 @@ ob_start(); ?>
                 <div class="col-12 col-md-7 col-lg-7">
 
                     <span class="text-uppercase tracking-widest fw-bold text-brand fs-8 mb-2 d-inline-flex align-items-center gap-2">
-                        <span class="live-status-dot"></span> Smash Apparel Ambassador
+                        <span class="live-status-dot"></span> Smash Apparel Sponsored
                     </span>
                     <h1 class="display-3 fw-black text-uppercase tracking-tight text-white mb-2 lh-09">
                         Oliver <br>
@@ -212,7 +212,7 @@ ob_start(); ?>
                     </div>
 
                     <div class="d-flex align-items-center gap-3 pt-3 border-top border-body-subtle">
-                        <img src="/smashapparel/assets/images/player-ollie-1.png"
+                        <img src="/smashapparel/assets/images/player-ollie-1.webp"
                              alt="Oliver Hancin"
                              class="rounded-circle object-fit-cover border border-brand"
                              width="48"
@@ -251,13 +251,13 @@ ob_start(); ?>
 
                             <!-- Gallery Item 1 -->
                             <div class="flex-shrink-0" style="width: 180px;">
-                                <a href="/smashapparel/assets/images/player-ollie-1.png"
+                                <a href="/smashapparel/assets/images/player-ollie-1.webp"
                                    data-bs-toggle="modal"
                                    data-bs-target="#lightboxModal"
-                                   data-bs-img="/smashapparel/assets/images/player-ollie-1.png"
+                                   data-bs-img="/smashapparel/assets/images/player-ollie-1.webp"
                                    data-bs-caption="Oliver Hancin — Tournament Matchplay"
                                    class="d-block position-relative overflow-hidden rounded-3 ratio ratio-1x1 group hover-card">
-                                    <img src="/smashapparel/assets/images/player-ollie-1.png"
+                                    <img src="/smashapparel/assets/images/player-ollie-1.webp"
                                          alt="Oliver Hancin Matchplay"
                                          class="w-100 h-100 object-fit-cover transition-transform duration-300 hover-card-img"
                                          loading="lazy">
@@ -269,13 +269,13 @@ ob_start(); ?>
 
                             <!-- Gallery Item 2 -->
                             <div class="flex-shrink-0" style="width: 180px;">
-                                <a href="/smashapparel/assets/images/player-ollie-2.png"
+                                <a href="/smashapparel/assets/images/player-ollie-2.webp"
                                    data-bs-toggle="modal"
                                    data-bs-target="#lightboxModal"
-                                   data-bs-img="/smashapparel/assets/images/player-ollie-2.png"
+                                   data-bs-img="/smashapparel/assets/images/player-ollie-2.webp"
                                    data-bs-caption="Oliver Hancin — Baseline Forehand Drive"
                                    class="d-block position-relative overflow-hidden rounded-3 ratio ratio-1x1 group hover-card">
-                                    <img src="/smashapparel/assets/images/player-ollie-2.png"
+                                    <img src="/smashapparel/assets/images/player-ollie-2.webp"
                                          alt="Oliver Hancin Forehand"
                                          class="w-100 h-100 object-fit-cover transition-transform duration-300 hover-card-img"
                                          loading="lazy">
@@ -287,13 +287,13 @@ ob_start(); ?>
 
                             <!-- Gallery Item 3 -->
                             <div class="flex-shrink-0" style="width: 180px;">
-                                <a href="/smashapparel/assets/images/player-ollie-3.png"
+                                <a href="/smashapparel/assets/images/player-ollie-3.webp"
                                    data-bs-toggle="modal"
                                    data-bs-target="#lightboxModal"
-                                   data-bs-img="/smashapparel/assets/images/player-ollie-3.png"
+                                   data-bs-img="/smashapparel/assets/images/player-ollie-3.webp"
                                    data-bs-caption="Oliver Hancin — Serve Motion"
                                    class="d-block position-relative overflow-hidden rounded-3 ratio ratio-1x1 group hover-card">
-                                    <img src="/smashapparel/assets/images/player-ollie-3.png"
+                                    <img src="/smashapparel/assets/images/player-ollie-3.webp"
                                          alt="Oliver Hancin Serve"
                                          class="w-100 h-100 object-fit-cover transition-transform duration-300 hover-card-img"
                                          loading="lazy">
@@ -305,13 +305,13 @@ ob_start(); ?>
 
                             <!-- Gallery Item 4 -->
                             <div class="flex-shrink-0" style="width: 180px;">
-                                <a href="/smashapparel/assets/images/player-ollie-4.png"
+                                <a href="/smashapparel/assets/images/player-ollie-4.webp"
                                    data-bs-toggle="modal"
                                    data-bs-target="#lightboxModal"
-                                   data-bs-img="/smashapparel/assets/images/player-ollie-4.png"
+                                   data-bs-img="/smashapparel/assets/images/player-ollie-4.webp"
                                    data-bs-caption="Oliver Hancin — Court Warmup & Training"
                                    class="d-block position-relative overflow-hidden rounded-3 ratio ratio-1x1 group hover-card">
-                                    <img src="/smashapparel/assets/images/player-ollie-4.png"
+                                    <img src="/smashapparel/assets/images/player-ollie-4.webp"
                                          alt="Oliver Hancin Training"
                                          class="w-100 h-100 object-fit-cover transition-transform duration-300 hover-card-img"
                                          loading="lazy">
@@ -323,13 +323,13 @@ ob_start(); ?>
 
                             <!-- Gallery Item 5 -->
                             <div class="flex-shrink-0" style="width: 180px;">
-                                <a href="/smashapparel/assets/images/player-ollie-5.png"
+                                <a href="/smashapparel/assets/images/player-ollie-5.webp"
                                    data-bs-toggle="modal"
                                    data-bs-target="#lightboxModal"
-                                   data-bs-img="/smashapparel/assets/images/player-ollie-5.png"
+                                   data-bs-img="/smashapparel/assets/images/player-ollie-5.webp"
                                    data-bs-caption="Oliver Hancin — ITF Trophy Presentation"
                                    class="d-block position-relative overflow-hidden rounded-3 ratio ratio-1x1 group hover-card">
-                                    <img src="/smashapparel/assets/images/player-ollie-5.png"
+                                    <img src="/smashapparel/assets/images/player-ollie-5.webp"
                                          alt="Oliver Hancin Trophy"
                                          class="w-100 h-100 object-fit-cover transition-transform duration-300 hover-card-img"
                                          loading="lazy">
@@ -341,13 +341,13 @@ ob_start(); ?>
 
                             <!-- Gallery Item 6 -->
                             <div class="flex-shrink-0" style="width: 180px;">
-                                <a href="/smashapparel/assets/images/player-ollie-6.png"
+                                <a href="/smashapparel/assets/images/player-ollie-6.webp"
                                    data-bs-toggle="modal"
                                    data-bs-target="#lightboxModal"
-                                   data-bs-img="/smashapparel/assets/images/player-ollie-6.png"
+                                   data-bs-img="/smashapparel/assets/images/player-ollie-6.webp"
                                    data-bs-caption="Oliver Hancin — Gear Check & Post Match"
                                    class="d-block position-relative overflow-hidden rounded-3 ratio ratio-1x1 group hover-card">
-                                    <img src="/smashapparel/assets/images/player-ollie-6.png"
+                                    <img src="/smashapparel/assets/images/player-ollie-6.webp"
                                          alt="Oliver Hancin Gear Check"
                                          class="w-100 h-100 object-fit-cover transition-transform duration-300 hover-card-img"
                                          loading="lazy">

@@ -31,7 +31,7 @@ ob_start(); ?>
                 <div class="col-12 col-md-7 col-lg-7">
 
     <span class="text-uppercase tracking-widest fw-bold text-brand fs-8 mb-2 d-inline-flex align-items-center gap-2">
-        <span class="live-status-dot"></span> Smash Apparel Ambassador
+        <span class="live-status-dot"></span> Smash Apparel Sponsored
     </span>
                     <h1 class="display-3 fw-black text-uppercase tracking-tight text-white mb-2 lh-09">
                         Adrian <br>
