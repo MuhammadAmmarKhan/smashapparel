@@ -230,23 +230,23 @@ ob_start(); ?>
                     </div>
 
                     <!-- Installment Payment Options -->
-                    <div class="bg-body rounded-3 p-3 border border-body-subtle mb-4 fs-7 text-secondary">
-                        <div class="d-flex align-items-center flex-wrap gap-1 mb-2">
-                            <span>or 4 interest-free payments of <strong>$24.99</strong> with</span>
-                            <a href="#" class="d-inline-flex align-items-center hover-opacity text-decoration-none" data-bs-toggle="modal" data-bs-target="#afterpayModal">
-                                <svg width="75" height="15" viewBox="0 0 102 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="ms-1">
-                                    <rect width="102" height="21" rx="10.5" fill="#B2FCE4"/>
-                                    <path d="M83.18 6.05L80.37 14.88H77.92L75.12 6.05H77.47L79.14 12.02L80.82 6.05H83.18ZM71.22 11.23C71.22 13.25 69.83 14.88 67.75 14.88C65.68 14.88 64.28 13.25 64.28 11.23C64.28 9.22 65.68 7.58 67.75 7.58C69.83 7.58 71.22 9.22 71.22 11.23ZM62.08 11.23C62.08 6.13 67.75 6.13 67.75 6.13C67.75 6.13 73.42 6.13 73.42 11.23C73.42 16.33 67.75 16.33 67.75 16.33C67.75 16.33 62.08 16.33 62.08 11.23ZM56.33 14.88H54.13V6.05H56.33V14.88ZM28.82 14.88H26.62V6.05H28.82V14.88ZM48.65 8.92V6.05H51.48V8.92H48.65ZM48.65 14.88V9.97H51.48V14.88H48.65ZM44.25 11.23C44.25 12.63 43.32 13.58 41.98 13.58C40.65 13.58 39.72 12.63 39.72 11.23C39.72 9.83 40.65 8.88 41.98 8.88C43.32 8.88 44.25 9.83 44.25 11.23ZM37.52 11.23C37.52 14.62 39.52 15.38 41.98 15.38C44.45 15.38 46.45 14.62 46.45 11.23C46.45 7.85 44.45 7.08 41.98 7.08C39.52 7.08 37.52 7.85 37.52 11.23ZM32.32 7.58V6.05H34.52V14.88H32.32V13.35C31.65 14.38 30.38 15.02 29.12 15.02C26.12 15.02 24.12 12.85 24.12 9.98C24.12 7.12 26.12 4.95 29.12 4.95C30.38 4.95 31.65 5.58 32.32 6.62M32.32 9.98C32.32 8.58 31.18 7.32 29.62 7.32C28.05 7.32 26.92 8.58 26.92 9.98C26.92 11.38 28.05 12.65 29.62 12.65C31.18 12.65 32.32 11.38 32.32 9.98Z" fill="#000000"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-1">
-                            <span>or 6 weekly interest-free payments from <strong>$16.66</strong></span>
-                            <a href="#" class="text-body text-decoration-underline hover-theme fs-8" data-bs-toggle="modal" data-bs-target="#paymentInfoModal">
-                                what's this?
-                            </a>
-                        </div>
-                    </div>
+<!--                    <div class="bg-body rounded-3 p-3 border border-body-subtle mb-4 fs-7 text-secondary">-->
+<!--                        <div class="d-flex align-items-center flex-wrap gap-1 mb-2">-->
+<!--                            <span>or 4 interest-free payments of <strong>$24.99</strong> with</span>-->
+<!--                            <a href="#" class="d-inline-flex align-items-center hover-opacity text-decoration-none" data-bs-toggle="modal" data-bs-target="#afterpayModal">-->
+<!--                                <svg width="75" height="15" viewBox="0 0 102 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="ms-1">-->
+<!--                                    <rect width="102" height="21" rx="10.5" fill="#B2FCE4"/>-->
+<!--                                    <path d="M83.18 6.05L80.37 14.88H77.92L75.12 6.05H77.47L79.14 12.02L80.82 6.05H83.18ZM71.22 11.23C71.22 13.25 69.83 14.88 67.75 14.88C65.68 14.88 64.28 13.25 64.28 11.23C64.28 9.22 65.68 7.58 67.75 7.58C69.83 7.58 71.22 9.22 71.22 11.23ZM62.08 11.23C62.08 6.13 67.75 6.13 67.75 6.13C67.75 6.13 73.42 6.13 73.42 11.23C73.42 16.33 67.75 16.33 67.75 16.33C67.75 16.33 62.08 16.33 62.08 11.23ZM56.33 14.88H54.13V6.05H56.33V14.88ZM28.82 14.88H26.62V6.05H28.82V14.88ZM48.65 8.92V6.05H51.48V8.92H48.65ZM48.65 14.88V9.97H51.48V14.88H48.65ZM44.25 11.23C44.25 12.63 43.32 13.58 41.98 13.58C40.65 13.58 39.72 12.63 39.72 11.23C39.72 9.83 40.65 8.88 41.98 8.88C43.32 8.88 44.25 9.83 44.25 11.23ZM37.52 11.23C37.52 14.62 39.52 15.38 41.98 15.38C44.45 15.38 46.45 14.62 46.45 11.23C46.45 7.85 44.45 7.08 41.98 7.08C39.52 7.08 37.52 7.85 37.52 11.23ZM32.32 7.58V6.05H34.52V14.88H32.32V13.35C31.65 14.38 30.38 15.02 29.12 15.02C26.12 15.02 24.12 12.85 24.12 9.98C24.12 7.12 26.12 4.95 29.12 4.95C30.38 4.95 31.65 5.58 32.32 6.62M32.32 9.98C32.32 8.58 31.18 7.32 29.62 7.32C28.05 7.32 26.92 8.58 26.92 9.98C26.92 11.38 28.05 12.65 29.62 12.65C31.18 12.65 32.32 11.38 32.32 9.98Z" fill="#000000"/>-->
+<!--                                </svg>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-1">-->
+<!--                            <span>or 6 weekly interest-free payments from <strong>$16.66</strong></span>-->
+<!--                            <a href="#" class="text-body text-decoration-underline hover-theme fs-8" data-bs-toggle="modal" data-bs-target="#paymentInfoModal">-->
+<!--                                what's this?-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
                     <!-- Size Selection -->
                     <div class="mb-4">
@@ -299,14 +299,6 @@ ob_start(); ?>
                                 <i class="bi bi-bag-plus fs-5"></i> Add to Cart <span class="btn-indicator-line"></span>
                             </button>
                         </div>
-                    </div>
-
-                    <!-- Buy with Shop Express Checkout -->
-                    <div class="mb-3">
-                        <button type="button" class="btn btn-primary bg-indigo border-0 w-100 py-2 d-flex align-items-center justify-content-center gap-2 rounded-pill" style="background-color: #5a31f4;">
-                            <span class="fw-bold text-white">Buy with</span>
-                            <span class="badge bg-white text-dark rounded-2 px-2 py-1 font-monospace fw-bold fs-7">shop</span>
-                        </button>
                     </div>
 
                     <!-- More Payment Options & Store Pickup Info -->

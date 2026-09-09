@@ -62,7 +62,7 @@
 
             <!-- 2. CENTER ZONE: Centered Brand Logo -->
             <div class="grid-zone-center text-center">
-                <a class="navbar-brand m-0 d-inline-block align-middle" href="/" aria-label="Smash Apparel Home">
+                <a class="navbar-brand m-0 d-inline-block align-middle" href="/smashapparel" aria-label="Smash Apparel Home">
                     <img src="<?= asset('images/logo-white.webp') ?>" alt="Smash Apparel Logo" width="80" height="28"
                          class="img-fluid object-fit-contain d-md-none" loading="eager" fetchpriority="high">
                     <img src="<?= asset('images/logo-white.webp') ?>" alt="Smash Apparel Logo" width="100" height="32"

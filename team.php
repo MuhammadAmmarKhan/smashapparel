@@ -15,11 +15,11 @@ ob_start(); ?>
             <!-- Content -->
             <div class="position-relative z-2 max-w-2xl mx-auto">
             <span class="text-uppercase tracking-widest fw-bold text-brand fs-8 mb-2 d-inline-flex align-items-center gap-2">
-                <span class="live-status-dot"></span> Smash Elite Squad
+                <span class="live-status-dot"></span> Team Smash Apparel
             </span>
                 <h1 class="display-3 fw-black text-uppercase tracking-tight text-white mb-3 lh-09">
                     Meet The <br>
-                    <span class="editorial-accent-text">HEROES.</span>
+                    <span class="editorial-accent-text">PROS.</span>
                 </h1>
                 <p class="text-secondary fs-6 mb-0 max-w-xl mx-auto">
                     Discover the extraordinary competitors and rising stars driving the future of Australian racquet sports. Powered by passion, performance, and Smash Apparel.
@@ -37,8 +37,8 @@ ob_start(); ?>
                 <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
                     <div>
                         <!-- Player Image / Banner Area -->
-                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4">
-                            <img src="/smashapparel/assets/images/mtt-adrian.jpg"
+                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
+                            <img src="/smashapparel/assets/images/mtt-adrian.png"
                                  alt="Adrian Arcon"
                                  class="w-100 h-100 object-fit-cover object-fit-top hover-card-img transition-transform duration-300"
                                  loading="lazy">
@@ -78,7 +78,7 @@ ob_start(); ?>
                 <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
                     <div>
                         <!-- Player Image / Banner Area -->
-                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4">
+                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
                             <img src="/smashapparel/assets/images/mtt-stephan.jpg"
                                  alt="Stefan Djordjic"
                                  class="w-100 h-100 object-fit-cover object-fit-top hover-card-img transition-transform duration-300"
@@ -119,7 +119,7 @@ ob_start(); ?>
                 <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
                     <div>
                         <!-- Player Image / Banner Area -->
-                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4">
+                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
                             <img src="/smashapparel/assets/images/jeremy-beale.webp"
                                  alt="Jeremy Beale"
                                  class="w-100 h-100 object-fit-cover object-fit-top hover-card-img transition-transform duration-300"
@@ -160,7 +160,7 @@ ob_start(); ?>
                 <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
                     <div>
                         <!-- Player Image / Banner Area -->
-                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4">
+                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
                             <img src="/smashapparel/assets/images/mtt-ollie.jpg"
                                  alt="Oliver Hancin"
                                  class="w-100 h-100 object-fit-cover object-fit-top hover-card-img transition-transform duration-300"
@@ -199,18 +199,124 @@ ob_start(); ?>
         </div>
     </div>
 
-    <!-- CALL TO ACTION BANNER -->
+    <!-- WHY SMASH APPAREL HERO CARD -->
     <div class="container-fluid px-2 px-md-3 pt-2">
-        <div class="bg-body-tertiary border border-body-subtle rounded-4 p-4 p-md-5 text-center">
-            <h3 class="fs-2 fw-bold text-uppercase text-body mb-2">Wear What The Champions Wear</h3>
-            <p class="text-secondary fs-6 mb-4 max-w-xl mx-auto">
-                Get tournament-ready with Smash Apparel’s elite range of high-performance singlets, shorts, and hoodies engineered for maximum mobility and cooling.
-            </p>
-            <a href="/smashapparel/shop" class="btn btn-brand rounded-pill px-4 py-2 text-uppercase fw-bold">
-                Explore Collection <i class="bi bi-arrow-right ms-1"></i>
-            </a>
+        <div class="row g-2">
+            <div class="col-12" style="">
+                <div class="bg-black border border-secondary border-opacity-25 rounded-4 p-4 p-md-5 position-relative overflow-hidden d-flex flex-column justify-content-around">
+
+                    <!-- Background Image & Lightning Overlay -->
+
+
+                    <!-- Left Player Image Overlay -->
+
+
+                    <!-- Right Player Image Overlay -->
+
+
+                    <!-- MAIN CENTER CONTENT AREA -->
+                    <div class="position-relative z-2 my-auto py-5">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-9 col-xl-6" style="">
+                                <div class="row align-items-center gy-4">
+
+                                    <!-- Headline Left -->
+                                    <div class="col-12 col-md-6 text-start" style="">
+                                    <span class="text-uppercase fw-bold text-danger tracking-wider fs-8 mb-2 d-block">
+                                        WHY SMASH APPAREL
+                                    </span>
+                                        <h2 class="display-5 fw-light text-uppercase text-white tracking-tight lh-1 mb-0 fst-italic hero-condensed-title" style="translate: none;rotate: none;scale: none;opacity: 1;transform: translate(0px, 0px);font-weight: 100 !important;">
+                                            COURT WEAR THAT PERFORMS AS HARD AS YOU DO<span class="text-danger">.</span>
+                                        </h2>
+                                    </div>
+
+                                    <!-- Description Right with Red Divider -->
+                                    <div class="col-12 col-md-6 text-start" style="">
+                                        <div class="border-start border-danger border-2 ps-4 my-1">
+                                            <p class="text-white text-opacity-90 fs-6 mb-3 fw-normal lh-base">
+                                                We create high-performance tennis apparel that blends cutting-edge technology with modern design.
+                                            </p>
+                                            <p class="text-white text-opacity-75 fs-6 mb-0 fw-normal lh-base">
+                                                From practice sessions to tournament days, every piece is built to help you move better, feel better and play better.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOTTOM THREE ICON FEATURE PILLARS -->
+                    <div class="position-relative z-2 pb-2 pt-4">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-9 col-xl-6" style="">
+                                <div class="row row-cols-1 row-cols-sm-3 g-4 text-start justify-content-center align-items-center">
+
+                                    <!-- Pillar 1: Trophy -->
+                                    <div class="col d-flex align-items-center gap-3">
+                                        <div class="text-danger flex-shrink-0">
+                                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#e61c24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                                                <path d="M4 22h16"></path>
+                                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="lh-sm">
+                                            <span class="d-block text-uppercase fw-normal text-white fs-6 tracking-wider fst-italic">DESIGNED FOR THE GAME</span>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Pillar 2: Globe Grid -->
+                                    <div class="col d-flex align-items-center gap-3">
+                                        <div class="text-danger flex-shrink-0">
+                                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#e61c24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="lh-sm">
+                                            <span class="d-block text-uppercase fw-normal text-white fs-6 tracking-wider fst-italic">PREMIUM FABRICS GLOBAL STANDARD</span>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Pillar 3: Heart Outline -->
+                                    <div class="col d-flex align-items-center gap-3">
+                                        <div class="text-danger flex-shrink-0">
+                                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#e61c24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="lh-sm">
+                                            <span class="d-block text-uppercase fw-normal text-white fs-6 tracking-wider fst-italic">MADE BY PLAYERS FOR PLAYERS</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
+
+    <style>
+        /* Exact Headline Condensed Typography Styling */
+        .hero-condensed-title {
+            font-family: 'Impact', 'Arial Narrow', sans-serif;
+            font-stretch: condensed;
+            letter-spacing: -0.02em;
+        }
+    </style>
 
 <?php $content = ob_get_clean();
 include "includes/partials/app.php";

@@ -12,7 +12,7 @@ function asset($path)
     return $baseUrl . $path . '?v=' . $version;
 } ?>
 <!doctype html>
-<html lang="en-AU" data-bs-theme="light">
+<html lang="en-AU" data-bs-theme="dark">
 <head><?php include 'head.php'; ?></head>
 <body class="bg-secondary-subtle"  style="overflow-x:hidden;">
 

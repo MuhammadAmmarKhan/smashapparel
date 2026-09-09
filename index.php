@@ -1368,59 +1368,6 @@ ob_start(); ?>
 
     </div>
 </div>
-<div class="container-fluid px-2 px-md-3 py-2">
-
-    <!-- INFINITE MARQUEE TICKER -->
-    <div class="w-100 bg-black text-white rounded-3 overflow-hidden position-relative border border-dark">
-        <div class="ticker-track d-flex align-items-center">
-
-            <!-- TRACK CONTENT (LOOP 1) -->
-            <div class="ticker-content d-flex align-items-center flex-nowrap fw-black text-uppercase tracking-wider fs-6 text-nowrap">
-                <span class="px-4">Engineered For The Rally</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Breathable</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Pro Tested</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Sweat Absorbing</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Built For Every Point</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Performance Driven Design</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Premium Quality</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Made For Competitors</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Play Hard. Look Sharp. Smash Everything</span>
-                <span class="text-danger fs-8">•</span>
-            </div>
-
-            <!-- DUPLICATED TRACK CONTENT FOR ZERO-GLITCH INFINITE LOOP -->
-            <div class="ticker-content d-flex align-items-center flex-nowrap fw-black text-uppercase tracking-wider fs-6 text-nowrap" aria-hidden="true">
-                <span class="px-4">Engineered For The Rally</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Breathable</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Pro Tested</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Sweat Absorbing</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Built For Every Point</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Performance Driven Design</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Premium Quality</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Made For Competitors</span>
-                <span class="text-danger fs-8">•</span>
-                <span class="px-4">Play Hard. Look Sharp. Smash Everything</span>
-                <span class="text-danger fs-8">•</span>
-            </div>
-
-        </div>
-    </div>
-</div>
 <?php $content = ob_get_clean();
 include "includes/partials/app.php";
 ?>

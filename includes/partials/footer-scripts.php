@@ -297,12 +297,6 @@
                 duration: 0.6,
                 clearProps: 'all'
             })
-            .from('.site-header', {
-                y: -30,
-                opacity: 0,
-                duration: 0.6,
-                clearProps: 'transform,opacity'
-            }, '-=0.3')
             .from('.navbar-brand', {
                 y: -8,
                 opacity: 0,
@@ -335,49 +329,6 @@
                     clearProps: 'all'
                 }, '-=0.4');
         });
-
-        const siteHeader = document.querySelector('.site-header');
-        if (siteHeader) {
-            gsap.set(siteHeader, {
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                width: '100%',
-                zIndex: 1030
-            });
-
-            ScrollTrigger.create({
-                trigger: document.body,
-                start: 'top top',
-                end: '100vh top',
-                onLeave: () => {
-                    siteHeader.classList.add('is-sticky-active');
-                },
-                onEnterBack: () => {
-                    siteHeader.classList.remove('is-sticky-active');
-                    gsap.to(siteHeader, {yPercent: 0, duration: 0.3, ease: 'power2.out'});
-                }
-            });
-
-            ScrollTrigger.create({
-                start: '100vh top',
-                onUpdate: (self) => {
-                    if (self.direction === 1) {
-                        gsap.to(siteHeader, {
-                            yPercent: -100,
-                            duration: 0.4,
-                            ease: 'power3.inOut'
-                        });
-                    } else if (self.direction === -1) {
-                        gsap.to(siteHeader, {
-                            yPercent: 0,
-                            duration: 0.4,
-                            ease: 'power3.out'
-                        });
-                    }
-                }
-            });
-        }
 
         const mainNavCollapse = document.getElementById('mainNavCollapse');
         if (mainNavCollapse) {
@@ -867,3 +818,4 @@
 
 
 </script>
+
