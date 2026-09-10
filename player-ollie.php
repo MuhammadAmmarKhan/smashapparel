@@ -40,12 +40,9 @@ ob_start(); ?>
                         Oliver <br>
                         <span class="editorial-accent-text">Hancin</span>
                     </h1>
-                    <p class="text-secondary fs-6 mb-4 max-w-xl">
-                        "Talent gets you on the court. Discipline, sacrifice, and heart decide how far you go." A rising junior star from Melbourne climbing the ITF world rankings with back-to-back J30 titles and relentless determination.
-                    </p>
 
                     <!-- Key Stat Badges Grid -->
-                    <div class="row g-2 mb-4">
+                    <div class="row g-2 mb-2">
                         <!-- Australian Ranking -->
                         <div class="col-12 col-md-4">
                             <div class="bg-body-tertiary border border-body-subtle rounded-4 p-4 text-center h-100 d-flex flex-column justify-content-center align-items-center">
