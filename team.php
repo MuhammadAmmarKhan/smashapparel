@@ -22,7 +22,7 @@ ob_start(); ?>
                     <span class="editorial-accent-text">PROS.</span>
                 </h1>
                 <p class="text-secondary fs-6 mb-0 max-w-xl mx-auto">
-                    Discover the extraordinary competitors and rising stars driving the future of Australian racquet sports. Powered by passion, performance, and Smash Apparel.
+                    Meet the athletes who trust Smash Apparel in real competition—professionally tested on court, engineered for performance, and available to you: Meet the Pros. Wear What They Wear. Perform in Smash.
                 </p>
             </div>
         </div>
@@ -304,9 +304,9 @@ ob_start(); ?>
 
                                     <!-- Headline Left -->
                                     <div class="col-12 col-md-6 text-start" style="">
-                                    <span class="text-uppercase fw-bold text-danger tracking-wider fs-8 mb-2 d-block">
-                                        WHY SMASH APPAREL
-                                    </span>
+<!--                                    <span class="text-uppercase fw-bold text-danger tracking-wider fs-8 mb-2 d-block">-->
+<!--                                        WHY SMASH APPAREL-->
+<!--                                    </span>-->
                                         <h2 class="display-5 fw-light text-uppercase text-white tracking-tight lh-1 mb-0 fst-italic hero-condensed-title" style="translate: none;rotate: none;scale: none;opacity: 1;transform: translate(0px, 0px);font-weight: 100 !important;">
                                             COURT WEAR THAT PERFORMS AS HARD AS YOU DO<span class="text-danger">.</span>
                                         </h2>

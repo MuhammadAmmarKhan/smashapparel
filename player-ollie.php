@@ -17,9 +17,9 @@ ob_start(); ?>
                 <!-- Player Main Image / Badge -->
                 <div class="col-12 col-md-5 col-lg-5">
                     <div class="position-relative overflow-hidden rounded-4 border border-dark shadow-lg">
-                        <img src="/smashapparel/assets/images/player-ollie-1.webp"
+                        <img src="/smashapparel/assets/images/player-ollie-3.webp"
                              alt="<?php echo $player_name; ?>"
-                             class="w-100 h-100 object-fit-cover object-fit-top"
+                             class="w-100 h-100 object-fit-cover"
                              style="max-height: 480px;">
                         <span class="position-absolute top-0 start-0 m-3 badge badge-brand shadow-sm">
                         ITF Junior Circuit
@@ -34,7 +34,7 @@ ob_start(); ?>
                     </a><br/>
 
                     <span class="text-uppercase tracking-widest fw-bold text-brand fs-8 mb-2 d-inline-flex align-items-center gap-2">
-                        <span class="live-status-dot"></span> Smash Apparel Sponsored
+                        <span class="live-status-dot"></span> Team Smash Apparel Sponsored Athlete
                     </span>
                     <h1 class="display-3 fw-black text-uppercase tracking-tight text-white mb-2 lh-09">
                         Oliver <br>
@@ -45,29 +45,52 @@ ob_start(); ?>
                     </p>
 
                     <!-- Key Stat Badges Grid -->
-                    <div class="row g-2 max-w-xl mb-4">
-                        <div class="col-6 col-sm-3">
-                            <div class="bg-body-tertiary border border-body-subtle rounded-3 p-3 text-center">
-                                <span class="d-block text-secondary fs-8 text-uppercase fw-semibold">ITF High</span>
-                                <span class="fs-4 fw-bold text-body">#634</span>
+                    <div class="row g-2 mb-4">
+                        <!-- Australian Ranking -->
+                        <div class="col-12 col-md-4">
+                            <div class="bg-body-tertiary border border-body-subtle rounded-4 p-4 text-center h-100 d-flex flex-column justify-content-center align-items-center">
+                                <span class="d-block text-secondary fs-8 text-uppercase fw-bold tracking-wider mb-2">Australian Ranking<br>for Birth Year</span>
+                                <span class="display-6 fw-bold text-body">#16</span>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-3">
-                            <div class="bg-body-tertiary border border-body-subtle rounded-3 p-3 text-center">
-                                <span class="d-block text-secondary fs-8 text-uppercase fw-semibold">Racquet</span>
-                                <span class="fs-4 fw-bold text-body">Yonex</span>
+
+                        <!-- Current UTR -->
+                        <div class="col-12 col-md-4">
+                            <div class="bg-body-tertiary border border-body-subtle rounded-4 p-4 text-center h-100 d-flex flex-column justify-content-center align-items-center">
+                                <span class="d-block text-secondary fs-8 text-uppercase fw-bold tracking-wider mb-2">Current UTR</span>
+                                <span class="display-6 fw-bold text-body">11.36</span>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-3">
-                            <div class="bg-body-tertiary border border-body-subtle rounded-3 p-3 text-center">
-                                <span class="d-block text-secondary fs-8 text-uppercase fw-semibold">Age</span>
-                                <span class="fs-4 fw-bold text-body">15</span>
+
+                        <!-- Career High Singles -->
+                        <div class="col-12 col-md-4">
+                            <div class="bg-body-tertiary border border-body-subtle rounded-4 p-4 text-center h-100 d-flex flex-column justify-content-center align-items-center">
+                                <span class="d-block text-secondary fs-8 text-uppercase fw-bold tracking-wider mb-2">Career High Singles<br>ITF Ranking</span>
+                                <span class="display-6 fw-bold text-body">#634</span>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-3">
-                            <div class="bg-body-tertiary border border-body-subtle rounded-3 p-3 text-center">
-                                <span class="d-block text-secondary fs-8 text-uppercase fw-semibold">Nationality</span>
-                                <span class="fs-4 fw-bold text-body">AUS 🇦🇺</span>
+
+                        <!-- Current ITF Singles -->
+                        <div class="col-12 col-md-4">
+                            <div class="bg-body-tertiary border border-body-subtle rounded-4 p-4 text-center h-100 d-flex flex-column justify-content-center align-items-center">
+                                <span class="d-block text-secondary fs-8 text-uppercase fw-bold tracking-wider mb-2">Current ITF<br>Singles Ranking</span>
+                                <span class="display-6 fw-bold text-body">#972</span>
+                            </div>
+                        </div>
+
+                        <!-- Career High Doubles -->
+                        <div class="col-12 col-md-4">
+                            <div class="bg-body-tertiary border border-body-subtle rounded-4 p-4 text-center h-100 d-flex flex-column justify-content-center align-items-center">
+                                <span class="d-block text-secondary fs-8 text-uppercase fw-bold tracking-wider mb-2">Career High Doubles<br>ITF Ranking</span>
+                                <span class="display-6 fw-bold text-body">#634</span>
+                            </div>
+                        </div>
+
+                        <!-- Current ITF Doubles -->
+                        <div class="col-12 col-md-4">
+                            <div class="bg-body-tertiary border border-body-subtle rounded-4 p-4 text-center h-100 d-flex flex-column justify-content-center align-items-center">
+                                <span class="d-block text-secondary fs-8 text-uppercase fw-bold tracking-wider mb-2">Current ITF<br>Doubles Ranking</span>
+                                <span class="display-6 fw-bold text-body">#972</span>
                             </div>
                         </div>
                     </div>
@@ -95,12 +118,12 @@ ob_start(); ?>
                 <div class="bg-body-tertiary border border-body-subtle rounded-4 p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
                     <div>
                         <h2 class="fs-3 fw-bold text-uppercase text-body mb-3">Athlete Overview</h2>
+                        <blockquote class="fs-4 fst-italic fw-bold">"Talent gets you on the court. Discipline, sacrifice, and heart decide how far you go."</blockquote>
                         <p class="text-secondary fs-6 lh-lg mb-4">
-                            Oliver Hancin is one of Australia’s brightest rising tennis stars, making significant waves across the ITF Junior Circuit. Hailing from Melbourne, Oliver’s dedicated work ethic and fierce competitive spirit have propelled him up the global junior rankings, reaching an ITF Junior Career-High ranking of #634.
+                            I guess I should start by saying that I love tennis. Not just enjoy it, but truly love it. Tennis has been a major part of my life, and my dream is to become a professional tennis player one day.
                         </p>
-                        <p class="text-secondary fs-6 lh-lg mb-4">
-                            Oliver's breakout international performances include claiming back-to-back J30 ITF titles in Fiji—winning both the Nadi and Lautoka championships. Driven by his core mantra—<em>"Talent gets you on the court. Discipline, sacrifice, and heart decide how far you go"</em>—he continues to train tirelessly on and off the court to break into the top tier of international tennis.
-                        </p>
+                        <p class="text-secondary fs-6 lh-lg mb-4">I started playing tennis at 8 and quickly developed a passion for the sport. I spend a lot of time training, competing, and improving my skills because I am always working towards becoming the best player I can be.</p>
+                        <p class="text-secondary fs-6 lh-lg mb-4">I am also interested in tennis history and enjoy learning about the journeys of some of the greatest players in the sport. Tennis has taught me important values such as discipline, determination, and resilience, which I carry with me both on and off the court.</p>
                     </div>
 
                     <div>
@@ -110,26 +133,27 @@ ob_start(); ?>
                         <h3 class="fs-4 fw-bold text-uppercase text-body mb-3">Playstyle & Attributes</h3>
                         <div class="row g-2">
                             <div class="col-12 col-md-6">
-                                <div class="d-flex align-items-start gap-3">
-                                    <div class="badge badge-brand rounded-circle p-2 mt-1">
-                                        <i class="bi bi-trophy-fill"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="fs-6 fw-bold mb-1 text-body">Championship Mentality</h4>
-                                        <p class="text-secondary fs-7 mb-0">Proven tournament winner under pressure with back-to-back ITF J30 singles titles in Oceania.</p>
-                                    </div>
-                                </div>
+                                <p class="text-secondary fs-7 mb-0">TBA</p>
+<!--                                <div class="d-flex align-items-start gap-3">-->
+<!--                                    <div class="badge badge-brand rounded-circle p-2 mt-1">-->
+<!--                                        <i class="bi bi-trophy-fill"></i>-->
+<!--                                    </div>-->
+<!--                                    <div>-->
+<!--                                        <h4 class="fs-6 fw-bold mb-1 text-body">Championship Mentality</h4>-->
+<!--                                        <p class="text-secondary fs-7 mb-0">TBA</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="d-flex align-items-start gap-3">
-                                    <div class="badge badge-brand rounded-circle p-2 mt-1">
-                                        <i class="bi bi-lightning-charge-fill"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="fs-6 fw-bold mb-1 text-body">Aggressive Baseline Play</h4>
-                                        <p class="text-secondary fs-7 mb-0">Combines an explosive right-handed forehand with a solid double-handed backhand to dictate rallies.</p>
-                                    </div>
-                                </div>
+<!--                                <div class="d-flex align-items-start gap-3">-->
+<!--                                    <div class="badge badge-brand rounded-circle p-2 mt-1">-->
+<!--                                        <i class="bi bi-lightning-charge-fill"></i>-->
+<!--                                    </div>-->
+<!--                                    <div>-->
+<!--                                        <h4 class="fs-6 fw-bold mb-1 text-body">Aggressive Baseline Play</h4>-->
+<!--                                        <p class="text-secondary fs-7 mb-0">TBA</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -210,7 +234,7 @@ ob_start(); ?>
                         </div>
 
                         <blockquote class="fs-4 fw-bold text-body mb-4 lh-sm">
-                            "Talent gets you on the court. Discipline, sacrifice, and heart decide how far you go. Smash Apparel gives me the lightweight breathability and flex I need to compete at my best on the global circuit."
+TBA
                         </blockquote>
                     </div>
 
@@ -376,33 +400,33 @@ ob_start(); ?>
     </div>
 
     <!-- SPONSORSHIP CTA SECTION -->
-    <div class="container-fluid px-2 px-md-3 pt-2">
-        <div class="bg-black border border-secondary border-opacity-25 rounded-4 p-4 p-md-5 position-relative overflow-hidden text-center text-white">
-
-            <div class="position-relative z-2 max-w-2xl mx-auto py-2">
-            <span class="text-uppercase tracking-widest fw-bold text-brand fs-8 mb-2 d-inline-block">
-                Join Team Smash
-            </span>
-
-                <h2 class="display-5 fw-black text-uppercase tracking-tight text-white mb-3 fst-italic">
-                    Want to Get Sponsored<span class="text-brand">?</span>
-                </h2>
-
-                <p class="text-white fs-6 mb-4 max-w-lg mx-auto lh-lg">
-                    We're always on the lookout for talent. Click below to make your application and join our elite roster of court athletes.
-                </p>
-
-                <div>
-                    <a href="/smashapparel/sponsorship-application"
-                       class="btn btn-brand text-white rounded-pill px-3 px-md-4 py-2 py-md-3 fw-bold text-uppercase fs-8 fs-md-7 tracking-widest d-inline-flex align-items-center gap-2 gap-md-3 js-shop-btn text-nowrap">
-                        Sponsorship Application
-                        <i class="bi bi-arrow-right fs-6"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
+<!--    <div class="container-fluid px-2 px-md-3 pt-2">-->
+<!--        <div class="bg-black border border-secondary border-opacity-25 rounded-4 p-4 p-md-5 position-relative overflow-hidden text-center text-white">-->
+<!---->
+<!--            <div class="position-relative z-2 max-w-2xl mx-auto py-2">-->
+<!--            <span class="text-uppercase tracking-widest fw-bold text-brand fs-8 mb-2 d-inline-block">-->
+<!--                Join Team Smash-->
+<!--            </span>-->
+<!---->
+<!--                <h2 class="display-5 fw-black text-uppercase tracking-tight text-white mb-3 fst-italic">-->
+<!--                    Want to Get Sponsored<span class="text-brand">?</span>-->
+<!--                </h2>-->
+<!---->
+<!--                <p class="text-white fs-6 mb-4 max-w-lg mx-auto lh-lg">-->
+<!--                    We're always on the lookout for talent. Click below to make your application and join our elite roster of court athletes.-->
+<!--                </p>-->
+<!---->
+<!--                <div>-->
+<!--                    <a href="/smashapparel/sponsorship-application"-->
+<!--                       class="btn btn-brand text-white rounded-pill px-3 px-md-4 py-2 py-md-3 fw-bold text-uppercase fs-8 fs-md-7 tracking-widest d-inline-flex align-items-center gap-2 gap-md-3 js-shop-btn text-nowrap">-->
+<!--                        Sponsorship Application-->
+<!--                        <i class="bi bi-arrow-right fs-6"></i>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
 
     <!-- LIGHTBOX MODAL COMPONENT -->
     <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
