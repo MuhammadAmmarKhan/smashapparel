@@ -30,7 +30,7 @@ ob_start(); ?>
 
     <!-- PLAYERS GRID SECTION -->
     <div class="container-fluid px-2 px-md-3 pt-2">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-2">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-2">
 
             <!-- PLAYER 1: ADRIAN ARCON -->
             <div class="col">

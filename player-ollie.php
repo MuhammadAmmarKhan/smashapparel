@@ -94,7 +94,7 @@ ob_start(); ?>
 
                     <!-- External Stats Link Button -->
                     <div class="pt-1">
-                        <a href="https://www.racquetworld.com.au/pages/oliver-hancin-itf-junior-tennis-player"
+                        <a href="https://www.itftennis.com/en/players/oliver-hancin/800708773/aus/jt/s/overview/"
                            target="_blank"
                            rel="noopener noreferrer"
                            class="btn btn-outline-secondary rounded-pill px-4 py-2 text-uppercase fw-semibold fs-7 d-inline-flex align-items-center gap-2 hover-text-brand transition-colors">
