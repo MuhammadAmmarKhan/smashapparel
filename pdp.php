@@ -191,27 +191,38 @@ ob_start(); ?>
                     <!-- Category & Title -->
                     <div class="mb-2">
                         <span class="badge badge-brand mb-2">In Stock</span>
-                        <h1 class="fs-2 text-uppercase fw-bold text-body mt-1 mb-2">Mens Smash Apparel Traning/Gym Shirt</h1>
+                        <h1 class="fs-2 text-uppercase fw-bold text-body mt-1 mb-2">Mens Smash Apparel Training/Gym Shirt</h1>
                     </div>
 
                     <!-- Price & Ratings -->
-                    <div class="d-flex align-items-center gap-3 mb-3">
-                        <div class="d-flex align-items-baseline gap-2">
-                            <span class="display-6 editorial-accent-text text-brand">$79.00</span>
-                            <span class="text-muted text-decoration-line-through fs-6">$89.00</span>
-                            <span class="badge badge-brand-outline px-2 py-1 fs-8">Save 25%</span>
-                        </div>
-                        <div class="vr my-1"></div>
-                        <div class="d-flex align-items-center gap-1">
-                            <div class="text-brand fs-7">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-half"></i>
+                    <div class="row g-2 align-items-center mb-3">
+                        <!-- Price Column: Takes full width on mobile (col-12), auto-fits on desktop (col-sm-auto) -->
+                        <div class="col-12 col-sm-auto">
+                            <div class="d-flex align-items-baseline gap-2 flex-nowrap">
+                                <span class="display-6 editorial-accent-text text-brand text-nowrap">$79.00</span>
+                                <span class="text-muted text-decoration-line-through fs-6 text-nowrap">$89.00</span>
+                                <span class="badge badge-brand-outline px-2 py-1 fs-8 text-nowrap">Save 25%</span>
                             </div>
-                            <span class="fw-semibold fs-7 text-body ms-1">4.8</span>
-                            <a href="#reviews" class="text-muted fs-7 hover-theme text-decoration-none ms-1">(128 reviews)</a>
+                        </div>
+
+                        <!-- Divider: Hidden on mobile, visible on desktop -->
+                        <div class="col-auto d-none d-sm-block px-0">
+                            <div class="vr h-100 my-1"></div>
+                        </div>
+
+                        <!-- Review Column: Wraps cleanly to its own row on mobile (col-12), sits beside price on desktop (col-sm-auto) -->
+                        <div class="col-12 col-sm-auto">
+                            <div class="d-flex align-items-center gap-1">
+                                <div class="text-brand fs-7 text-nowrap">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <span class="fw-semibold fs-7 text-body ms-1">4.8</span>
+                                <a href="#reviews" class="text-muted fs-7 hover-theme text-decoration-none ms-1 text-nowrap">(128 reviews)</a>
+                            </div>
                         </div>
                     </div>
 
