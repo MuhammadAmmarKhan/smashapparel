@@ -32,128 +32,10 @@ ob_start(); ?>
     <div class="container-fluid px-2 px-md-3 pt-2">
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-2">
 
-            <!-- PLAYER 1: ADRIAN ARCON -->
-            <div class="col">
-                <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
-                    <div>
-                        <!-- Player Image / Banner Area -->
-                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
-                            <img src="/smashapparel/assets/images/mtt-adrian.png"
-                                 alt="Adrian Arcon"
-                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
-                                 loading="lazy">
-                            <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
-                            <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">ATP / ITF Circuit</span>
-                        </div>
 
-                        <!-- Player Meta & Bio -->
-                        <div class="p-4">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <span class="tag-dot"></span>
-                                <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider">Tennis Pro • 6'6" Frame</span>
-                            </div>
-                            <h2 class="fs-3 fw-bold text-uppercase text-body mb-2 hover-text-brand transition-colors">Adrian Arcon</h2>
-                            <div class="d-flex align-items-center gap-2 mb-3">
-                                <span class="badge badge-brand-outline fs-8">ATP High: #1259</span>
-                                <span class="text-muted fs-8">Age 24</span>
-                            </div>
-                            <p class="text-secondary fs-7 mb-0 line-clamp-3">
-                                A powerhouse on the court with a massive 6'6" frame, Adrian Arcon is an emerging Australian star climbing the professional ATP and ITF ranks with relentless determination and a formidable all-court game.
-                            </p>
-                        </div>
-                    </div>
 
-                    <!-- Footer Callout Link -->
-                    <div class="p-4 pt-0">
-                        <hr class="border-body-subtle my-3">
-                        <a href="/smashapparel/team/adrian-arcon" class="btn btn-brand w-100 rounded-pill py-2 d-flex align-items-center justify-content-center gap-2 text-decoration-none hover-lift">
-                            View Full Profile <i class="bi bi-arrow-right transition-transform"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
 
-            <!-- PLAYER 2: STEFAN DJORDJIC -->
-            <div class="col">
-                <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
-                    <div>
-                        <!-- Player Image / Banner Area -->
-                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
-                            <img src="/smashapparel/assets/images/mtt-stephan.jpg"
-                                 alt="Stefan Djordjic"
-                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
-                                 loading="lazy">
-                            <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
-                            <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">Pro Pickleball</span>
-                        </div>
 
-                        <!-- Player Meta & Bio -->
-                        <div class="p-4">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <span class="tag-dot"></span>
-                                <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider">Pickleball • Melbourne, VIC</span>
-                            </div>
-                            <h2 class="fs-3 fw-bold text-uppercase text-body mb-2 hover-text-brand transition-colors">Stefan Djordjic</h2>
-                            <div class="d-flex align-items-center gap-2 mb-3">
-                                <span class="badge badge-brand-outline fs-8">DUPR: Mid-4s</span>
-                                <span class="text-muted fs-8">PPA Champ</span>
-                            </div>
-                            <p class="text-secondary fs-7 mb-0 line-clamp-3">
-                                Melbourne's own Stefan Djordjic is taking Australia's pickleball scene by storm, combining sharp agility with aggressive play to deliver championship victories on the pro circuit stage.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Footer Callout Link -->
-                    <div class="p-4 pt-0">
-                        <hr class="border-body-subtle my-3">
-                        <a href="/smashapparel/team/stefan-djordjic" class="btn btn-brand w-100 rounded-pill py-2 d-flex align-items-center justify-content-center gap-2 text-decoration-none hover-lift">
-                            View Full Profile <i class="bi bi-arrow-right transition-transform"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- PLAYER 3: JEREMY BEALE -->
-            <div class="col">
-                <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
-                    <div>
-                        <!-- Player Image / Banner Area -->
-                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
-                            <img src="/smashapparel/assets/images/jeremy-beale.webp"
-                                 alt="Jeremy Beale"
-                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
-                                 loading="lazy">
-                            <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
-                            <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">ATP Tour Veteran</span>
-                        </div>
-
-                        <!-- Player Meta & Bio -->
-                        <div class="p-4">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <span class="tag-dot"></span>
-                                <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider">Lefty • 6'4" Frame • Australia</span>
-                            </div>
-                            <h2 class="fs-3 fw-bold text-uppercase text-body mb-2 hover-text-brand transition-colors">Jeremy Beale</h2>
-                            <div class="d-flex align-items-center gap-2 mb-3">
-                                <span class="badge badge-brand-outline fs-8">ATP Singles: #459</span>
-                                <span class="badge badge-brand-outline fs-8">Doubles: #224</span>
-                            </div>
-                            <p class="text-secondary fs-7 mb-0 line-clamp-3">
-                                Bringing lethal left-handed power and elite international experience, veteran star Jeremy Beale boasts multiple ITF titles and exceptional high-level tour success in both singles and doubles.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Footer Callout Link -->
-                    <div class="p-4 pt-0">
-                        <hr class="border-body-subtle my-3">
-                        <a href="/smashapparel/team/jeremy-beale" class="btn btn-brand w-100 rounded-pill py-2 d-flex align-items-center justify-content-center gap-2 text-decoration-none hover-lift">
-                            View Full Profile <i class="bi bi-arrow-right transition-transform"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
 
             <!-- PLAYER 4: OLIVER HANCIN -->
             <div class="col">
@@ -195,7 +77,126 @@ ob_start(); ?>
                     </div>
                 </article>
             </div>
+            <!-- PLAYER 3: JEREMY BEALE -->
+            <div class="col">
+                <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
+                    <div>
+                        <!-- Player Image / Banner Area -->
+                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
+                            <img src="/smashapparel/assets/images/jeremy-beale.webp"
+                                 alt="Jeremy Beale"
+                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
+                            <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">ATP Tour Veteran</span>
+                        </div>
 
+                        <!-- Player Meta & Bio -->
+                        <div class="p-4">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="tag-dot"></span>
+                                <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider">Lefty • 6'4" Frame • Australia</span>
+                            </div>
+                            <h2 class="fs-3 fw-bold text-uppercase text-body mb-2 hover-text-brand transition-colors">Jeremy Beale</h2>
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge badge-brand-outline fs-8">ATP Singles: #459</span>
+                                <span class="badge badge-brand-outline fs-8">Doubles: #224</span>
+                            </div>
+                            <p class="text-secondary fs-7 mb-0 line-clamp-3">
+                                Bringing lethal left-handed power and elite international experience, veteran star Jeremy Beale boasts multiple ITF titles and exceptional high-level tour success in both singles and doubles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Callout Link -->
+                    <div class="p-4 pt-0">
+                        <hr class="border-body-subtle my-3">
+                        <a href="/smashapparel/team/jeremy-beale" class="btn btn-brand w-100 rounded-pill py-2 d-flex align-items-center justify-content-center gap-2 text-decoration-none hover-lift">
+                            View Full Profile <i class="bi bi-arrow-right transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <!-- PLAYER 2: STEFAN DJORDJIC -->
+            <div class="col">
+                <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
+                    <div>
+                        <!-- Player Image / Banner Area -->
+                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
+                            <img src="/smashapparel/assets/images/mtt-stephan.jpg"
+                                 alt="Stefan Djordjic"
+                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
+                            <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">Pro Pickleball</span>
+                        </div>
+
+                        <!-- Player Meta & Bio -->
+                        <div class="p-4">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="tag-dot"></span>
+                                <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider">Pickleball • Melbourne, VIC</span>
+                            </div>
+                            <h2 class="fs-3 fw-bold text-uppercase text-body mb-2 hover-text-brand transition-colors">Stefan Djordjic</h2>
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge badge-brand-outline fs-8">DUPR: Mid-4s</span>
+                                <span class="text-muted fs-8">PPA Champ</span>
+                            </div>
+                            <p class="text-secondary fs-7 mb-0 line-clamp-3">
+                                Melbourne's own Stefan Djordjic is taking Australia's pickleball scene by storm, combining sharp agility with aggressive play to deliver championship victories on the pro circuit stage.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Callout Link -->
+                    <div class="p-4 pt-0">
+                        <hr class="border-body-subtle my-3">
+                        <a href="/smashapparel/team/stefan-djordjic" class="btn btn-brand w-100 rounded-pill py-2 d-flex align-items-center justify-content-center gap-2 text-decoration-none hover-lift">
+                            View Full Profile <i class="bi bi-arrow-right transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <!-- PLAYER 1: ADRIAN ARCON -->
+            <div class="col">
+                <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
+                    <div>
+                        <!-- Player Image / Banner Area -->
+                        <div class="position-relative overflow-hidden card-media-wrapper rounded-top-4" style="min-height:450px">
+                            <img src="/smashapparel/assets/images/mtt-adrian.png"
+                                 alt="Adrian Arcon"
+                                 class="w-100 h-100 object-fit-cover  hover-card-img transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="position-absolute inset-0 hover-card-overlay bg-dark opacity-0 hover-opacity-25 transition-opacity"></div>
+                            <span class="position-absolute top-0 start-0 m-3 z-3 badge badge-brand shadow-sm">ATP / ITF Circuit</span>
+                        </div>
+
+                        <!-- Player Meta & Bio -->
+                        <div class="p-4">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="tag-dot"></span>
+                                <span class="text-uppercase text-secondary fs-8 fw-semibold tracking-wider">Tennis Pro • 6'6" Frame</span>
+                            </div>
+                            <h2 class="fs-3 fw-bold text-uppercase text-body mb-2 hover-text-brand transition-colors">Adrian Arcon</h2>
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge badge-brand-outline fs-8">ATP High: #1259</span>
+                                <span class="text-muted fs-8">Age 24</span>
+                            </div>
+                            <p class="text-secondary fs-7 mb-0 line-clamp-3">
+                                A powerhouse on the court with a massive 6'6" frame, Adrian Arcon is an emerging Australian star climbing the professional ATP and ITF ranks with relentless determination and a formidable all-court game.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Callout Link -->
+                    <div class="p-4 pt-0">
+                        <hr class="border-body-subtle my-3">
+                        <a href="/smashapparel/team/adrian-arcon" class="btn btn-brand w-100 rounded-pill py-2 d-flex align-items-center justify-content-center gap-2 text-decoration-none hover-lift">
+                            View Full Profile <i class="bi bi-arrow-right transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
             <!-- PLAYER 5: MARK HASKETT -->
             <div class="col">
                 <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
@@ -236,7 +237,6 @@ ob_start(); ?>
                     </div>
                 </article>
             </div>
-
             <!-- PLAYER 6: VANESSA FITZGERALD -->
             <div class="col">
                 <article class="bg-body-tertiary border border-body-subtle rounded-4 h-100 d-flex flex-column justify-content-between overflow-hidden hover-card transition-all shadow-sm hover-shadow-lg">
