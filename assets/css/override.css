@@ -1052,3 +1052,10 @@ footer input::placeholder {
         object-position: 50% 15% !important;
     }
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--brand-primary) !important;
+}
+.nav-link{
+    color: white !important;
+}

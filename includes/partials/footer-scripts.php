@@ -474,9 +474,13 @@
         }
     }
     function initScrollReveals() {
-        const sections = gsap.utils.toArray('section, footer').filter(elem => !elem.classList.contains('js-hero-banner'));
+        // Exclude components with their own state or fixed positioning
+        const excludedContainers = 'header, nav, #cartDrawer, #productGalleryModal, .js-hero-banner, .js-thumb-scroll-container, .sticky-top';
 
-        sections.forEach((elem) => {
+        // 1. Section Reveals (Fires ONCE only)
+        gsap.utils.toArray('section, footer').forEach((elem) => {
+            if (elem.closest('.js-hero-banner')) return;
+
             gsap.fromTo(elem,
                 { y: 35, opacity: 0 },
                 {
@@ -484,74 +488,60 @@
                     opacity: 1,
                     duration: 0.8,
                     ease: 'power3.out',
-                    clearProps: 'transform',
+                    clearProps: 'transform,opacity',
                     scrollTrigger: {
                         trigger: elem,
                         start: 'top 85%',
-                        toggleActions: 'play none none none'
+                        once: true // Ensures animation fires exactly once and unbinds
                     }
                 }
             );
         });
 
-        ScrollTrigger.batch('.row > [class*="col-"]', {
-            interval: 0.1,
-            batchMax: 4,
-            start: 'top 85%',
-            onEnter: (batch) => gsap.fromTo(batch,
-                { y: 30, opacity: 0 },
-                {
-                    y: 0,
-                    opacity: 1,
-                    duration: 0.65,
-                    stagger: 0.1,
-                    ease: 'power2.out',
-                    clearProps: 'transform,opacity'
-                }
-            )
-        });
-
+        // 2. Heading Reveals
         gsap.utils.toArray('h1, h2, h3, h4').forEach((heading) => {
-            if (heading.closest('header, nav, #cartDrawer, .js-hero-banner')) return;
+            if (heading.closest(excludedContainers)) return;
 
             gsap.fromTo(heading,
                 { y: 20, opacity: 0 },
                 {
                     y: 0,
                     opacity: 1,
-                    duration: 0.7,
+                    duration: 0.6,
                     ease: 'power3.out',
+                    clearProps: 'transform,opacity',
                     scrollTrigger: {
                         trigger: heading,
                         start: 'top 90%',
-                        toggleActions: 'play none none none'
+                        once: true
                     }
                 }
             );
         });
 
+        // 3. Isolated Content Images (Excludes main product viewer and thumbnails completely)
         gsap.utils.toArray('img').forEach((img) => {
-            if (img.closest('header, nav, #cartDrawer, .hero-slide')) return;
+            if (
+                img.closest(excludedContainers) ||
+                img.classList.contains('js-thumb-btn') ||
+                img.id === 'js-main-product-img'
+            ) return;
 
             gsap.fromTo(img,
-                { scale: 1.05, opacity: 0, filter: 'blur(3px)' },
+                { opacity: 0 },
                 {
-                    scale: 1,
                     opacity: 1,
-                    filter: 'blur(0px)',
-                    duration: 0.8,
+                    duration: 0.6,
                     ease: 'power2.out',
                     clearProps: 'all',
                     scrollTrigger: {
                         trigger: img,
                         start: 'top 90%',
-                        toggleActions: 'play none none none'
+                        once: true
                     }
                 }
             );
         });
-
-        ScrollTrigger.refresh();
     }
     function initKineticTicker() {
         const tickerItems = document.querySelectorAll('.gsap-ticker-list .ticker-item');

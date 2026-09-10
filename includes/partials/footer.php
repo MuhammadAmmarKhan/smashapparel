@@ -120,7 +120,6 @@
                     <ul class="list-unstyled d-flex flex-column gap-2 fs-7 fw-bold mb-0">
                         <li><a href="/pages/shipping" class="footer-link">Express Shipping</a></li>
                         <li><a href="/pages/returns" class="footer-link">Returns Portal</a></li>
-                        <li><a href="/pages/size-guide" class="footer-link">Size Guide</a></li>
                         <li><a href="/pages/order-status" class="footer-link">Track Order</a></li>
                         <li><a href="/pages/faq" class="footer-link">FAQs</a></li>
                     </ul>
@@ -131,8 +130,7 @@
                     <ul class="list-unstyled d-flex flex-column gap-2 fs-7 fw-bold mb-0">
                         <li><a href="/smashapparel/about-us.php" class="footer-link">About Us</a></li>
                         <li><a href="/smashapparel/team.php" class="footer-link">Athletes & Team</a></li>
-                        <li><a href="/pages/sustainability" class="footer-link">Fabric Tech</a></li>
-                        <li><a href="/pages/contact" class="footer-link">Contact Us</a></li>
+                        <li><a href="/smashapparel/contact-us.php" class="footer-link">Contact Us</a></li>
                     </ul>
                 </div>
 

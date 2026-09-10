@@ -26,73 +26,112 @@ ob_start(); ?>
                         <div class="d-flex flex-row flex-md-column gap-2 overflow-hidden p-2 js-thumb-scroll-container"
                              style="max-height: calc(100vh - 310px); max-width: 100%; scroll-behavior: smooth;">
 
+                            <!-- Black Front -->
                             <button class="btn p-0 border-0 overflow-hidden flex-shrink-0 active js-thumb-btn"
                                     style="width: 130px; height: 130px;"
-                                    data-img-src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 1.webp"
+                                    data-img-src="/smashapparel/assets/images/men_sa_gym_training_shirt_black_front.png"
                                     data-index="0">
-                                <img src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 1.webp"
+                                <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_black_front.png"
                                      alt="Thumbnail 1"
                                      class="img-fluid"
                                      style="object-fit: cover; object-position: top;">
                             </button>
 
+                            <!-- Black Rear -->
                             <button class="btn p-0 border-0 overflow-hidden flex-shrink-0 js-thumb-btn"
                                     style="width: 130px; height: 130px;"
-                                    data-img-src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 2.webp"
+                                    data-img-src="/smashapparel/assets/images/men_sa_gym_training_shirt_black_rear.png"
                                     data-index="1">
-                                <img src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 2.webp"
+                                <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_black_rear.png"
                                      alt="Thumbnail 2"
                                      class="img-fluid"
                                      style="object-fit: cover; object-position: top;">
                             </button>
 
+                            <!-- Pink Front -->
                             <button class="btn p-0 border-0 overflow-hidden flex-shrink-0 js-thumb-btn"
                                     style="width: 130px; height: 130px;"
-                                    data-img-src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 1.webp"
+                                    data-img-src="/smashapparel/assets/images/men_sa_gym_training_shirt_pink_front.png"
                                     data-index="2">
-                                <img src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 1.webp"
+                                <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_pink_front.png"
                                      alt="Thumbnail 3"
                                      class="img-fluid"
                                      style="object-fit: cover; object-position: top;">
                             </button>
 
+                            <!-- Pink Rear -->
                             <button class="btn p-0 border-0 overflow-hidden flex-shrink-0 js-thumb-btn"
                                     style="width: 130px; height: 130px;"
-                                    data-img-src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 2.webp"
+                                    data-img-src="/smashapparel/assets/images/men_sa_gym_training_shirt_pink_rear.png"
                                     data-index="3">
-                                <img src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 2.webp"
+                                <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_pink_rear.png"
                                      alt="Thumbnail 4"
                                      class="img-fluid"
                                      style="object-fit: cover; object-position: top;">
                             </button>
 
+                            <!-- Purple Front -->
                             <button class="btn p-0 border-0 overflow-hidden flex-shrink-0 js-thumb-btn"
                                     style="width: 130px; height: 130px;"
-                                    data-img-src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 1.webp"
+                                    data-img-src="/smashapparel/assets/images/men_sa_gym_training_shirt_purple_front.png"
                                     data-index="4">
-                                <img src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 1.webp"
+                                <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_purple_front.png"
                                      alt="Thumbnail 5"
                                      class="img-fluid"
                                      style="object-fit: cover; object-position: top;">
                             </button>
 
+                            <!-- Purple Rear -->
                             <button class="btn p-0 border-0 overflow-hidden flex-shrink-0 js-thumb-btn"
                                     style="width: 130px; height: 130px;"
-                                    data-img-src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 2.webp"
+                                    data-img-src="/smashapparel/assets/images/men_sa_gym_training_shirt_purple_rear.png"
                                     data-index="5">
-                                <img src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 2.webp"
+                                <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_purple_rear.png"
                                      alt="Thumbnail 6"
                                      class="img-fluid"
                                      style="object-fit: cover; object-position: top;">
                             </button>
 
-                            <!-- Extra 7th image triggers thumbnail scrolling -->
+                            <!-- Royal Blue Front -->
                             <button class="btn p-0 border-0 overflow-hidden flex-shrink-0 js-thumb-btn"
                                     style="width: 130px; height: 130px;"
-                                    data-img-src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 1.webp"
+                                    data-img-src="/smashapparel/assets/images/men_sa_gym_training_shirt_royal_blue_front.png"
                                     data-index="6">
-                                <img src="/smashapparel/assets/images/2026 Ladies SA Performance Singlet - Purple 1.webp"
+                                <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_royal_blue_front.png"
                                      alt="Thumbnail 7"
+                                     class="img-fluid"
+                                     style="object-fit: cover; object-position: top;">
+                            </button>
+
+                            <!-- Royal Blue Rear -->
+                            <button class="btn p-0 border-0 overflow-hidden flex-shrink-0 js-thumb-btn"
+                                    style="width: 130px; height: 130px;"
+                                    data-img-src="/smashapparel/assets/images/men_sa_gym_training_shirt_royal_blue_rear.png"
+                                    data-index="7">
+                                <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_royal_blue_rear.png"
+                                     alt="Thumbnail 8"
+                                     class="img-fluid"
+                                     style="object-fit: cover; object-position: top;">
+                            </button>
+
+                            <!-- White Front -->
+                            <button class="btn p-0 border-0 overflow-hidden flex-shrink-0 js-thumb-btn"
+                                    style="width: 130px; height: 130px;"
+                                    data-img-src="/smashapparel/assets/images/men_sa_gym_training_shirt_white_front.png"
+                                    data-index="8">
+                                <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_white_front.png"
+                                     alt="Thumbnail 9"
+                                     class="img-fluid"
+                                     style="object-fit: cover; object-position: top;">
+                            </button>
+
+                            <!-- White Rear -->
+                            <button class="btn p-0 border-0 overflow-hidden flex-shrink-0 js-thumb-btn"
+                                    style="width: 130px; height: 130px;"
+                                    data-img-src="/smashapparel/assets/images/men_sa_gym_training_shirt_white_rear.png"
+                                    data-index="9">
+                                <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_white_rear.png"
+                                     alt="Thumbnail 10"
                                      class="img-fluid"
                                      style="object-fit: cover; object-position: top;">
                             </button>
@@ -112,11 +151,11 @@ ob_start(); ?>
 
                 <!-- 2. DIRECT LARGE IMAGE (NO OUTER BOX ENCLOSURE) -->
                 <div class="col-12 col-md order-1 order-md-2 position-relative sticky-top">
-                    <img src="/smashapparel/assets/images/2026 Ladies SA Performance Top Qtr Sleeve - Purple 1.webp"
+                    <img src="/smashapparel/assets/images/men_sa_gym_training_shirt_black_front.png"
                          alt="Product Main View"
                          id="js-main-product-img"
                          class="w-100 h-auto object-fit-contain cursor-pointer d-block rounded-4"
-                         style="max-height: 540px;"
+
                          data-bs-toggle="modal"
                          data-bs-target="#productGalleryModal">
 
@@ -152,14 +191,14 @@ ob_start(); ?>
                     <!-- Category & Title -->
                     <div class="mb-2">
                         <span class="badge badge-brand mb-2">In Stock</span>
-                        <h1 class="fs-2 text-uppercase fw-bold text-body mt-1 mb-2">2026 Ladies SA Performance Singlet</h1>
+                        <h1 class="fs-2 text-uppercase fw-bold text-body mt-1 mb-2">Mens Smash Apparel Traning/Gym Shirt</h1>
                     </div>
 
                     <!-- Price & Ratings -->
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="d-flex align-items-baseline gap-2">
-                            <span class="display-6 editorial-accent-text text-brand">$99.95</span>
-                            <span class="text-muted text-decoration-line-through fs-6">$130.00</span>
+                            <span class="display-6 editorial-accent-text text-brand">$79.00</span>
+                            <span class="text-muted text-decoration-line-through fs-6">$89.00</span>
                             <span class="badge badge-brand-outline px-2 py-1 fs-8">Save 25%</span>
                         </div>
                         <div class="vr my-1"></div>
@@ -206,25 +245,42 @@ ob_start(); ?>
                     <!-- Color Selection -->
                     <div class="mb-4">
                         <label class="form-label fw-semibold text-body mb-2">
-                            Color: <span class="fw-normal text-muted" id="selectedColor">Purple</span>
+                            Color: <span class="fw-normal text-muted" id="selectedColor">Black</span>
                         </label>
                         <div class="d-flex align-items-center gap-2">
-                            <input type="radio" class="btn-check" name="colorOptions" id="colorPurple" checked autocomplete="off">
+                            <!-- Black -->
+                            <input type="radio" class="btn-check" name="colorOptions" id="colorBlack" checked autocomplete="off" data-color-name="Black">
                             <label class="btn p-1 rounded-circle border-2 border-brand-subtle d-flex align-items-center justify-content-center"
+                                   for="colorBlack" style="width: 36px; height: 36px;">
+                                <span class="rounded-circle w-100 h-100" style="background-color: #000000;"></span>
+                            </label>
+
+                            <!-- Royal Blue -->
+                            <input type="radio" class="btn-check" name="colorOptions" id="colorRoyalBlue" autocomplete="off" data-color-name="Royal Blue">
+                            <label class="btn p-1 rounded-circle border-2 border-body-subtle d-flex align-items-center justify-content-center"
+                                   for="colorRoyalBlue" style="width: 36px; height: 36px;">
+                                <span class="rounded-circle w-100 h-100" style="background-color: #4169e1;"></span>
+                            </label>
+
+                            <!-- Fluro Pink -->
+                            <input type="radio" class="btn-check" name="colorOptions" id="colorFluroPink" autocomplete="off" data-color-name="Fluro Pink">
+                            <label class="btn p-1 rounded-circle border-2 border-body-subtle d-flex align-items-center justify-content-center"
+                                   for="colorFluroPink" style="width: 36px; height: 36px;">
+                                <span class="rounded-circle w-100 h-100" style="background-color: #ff1493;"></span>
+                            </label>
+
+                            <!-- Purple -->
+                            <input type="radio" class="btn-check" name="colorOptions" id="colorPurple" autocomplete="off" data-color-name="Purple">
+                            <label class="btn p-1 rounded-circle border-2 border-body-subtle d-flex align-items-center justify-content-center"
                                    for="colorPurple" style="width: 36px; height: 36px;">
                                 <span class="rounded-circle w-100 h-100" style="background-color: #6f42c1;"></span>
                             </label>
 
-                            <input type="radio" class="btn-check" name="colorOptions" id="colorBlack" autocomplete="off">
+                            <!-- White -->
+                            <input type="radio" class="btn-check" name="colorOptions" id="colorWhite" autocomplete="off" data-color-name="White">
                             <label class="btn p-1 rounded-circle border-2 border-body-subtle d-flex align-items-center justify-content-center"
-                                   for="colorBlack" style="width: 36px; height: 36px;">
-                                <span class="rounded-circle w-100 h-100" style="background-color: #212529;"></span>
-                            </label>
-
-                            <input type="radio" class="btn-check" name="colorOptions" id="colorTeal" autocomplete="off">
-                            <label class="btn p-1 rounded-circle border-2 border-body-subtle d-flex align-items-center justify-content-center"
-                                   for="colorTeal" style="width: 36px; height: 36px;">
-                                <span class="rounded-circle w-100 h-100" style="background-color: #20c997;"></span>
+                                   for="colorWhite" style="width: 36px; height: 36px;">
+                                <span class="rounded-circle w-100 h-100 border border-body-subtle" style="background-color: #ffffff;"></span>
                             </label>
                         </div>
                     </div>
@@ -257,27 +313,29 @@ ob_start(); ?>
                                data-bs-toggle="offcanvas"
                                data-bs-target="#sizeGuideModal"
                                aria-controls="sizeGuideModal">
-                                <i class="bi bi-ruler me-1 text-brand"></i>Size Guide
+                                <i class="fa fa-ruler me-1 text-brand"></i>Size Guide
                             </a>
                         </div>
                         <div class="d-flex flex-wrap gap-2">
-                            <input type="radio" class="btn-check" name="sizeOptions" id="size6" autocomplete="off">
-                            <label class="btn btn-outline-brand px-3 py-2 border-body-subtle text-body" for="size6">6</label>
+                            <!-- Small -->
+                            <input type="radio" class="btn-check" name="sizeOptions" id="sizeS" autocomplete="off" checked>
+                            <label class="btn btn-outline-brand px-3 py-2 border-brand text-brand" for="sizeS">Small</label>
 
-                            <input type="radio" class="btn-check" name="sizeOptions" id="size8" autocomplete="off" checked>
-                            <label class="btn btn-outline-brand px-3 py-2 border-brand text-brand" for="size8">8</label>
+                            <!-- Medium -->
+                            <input type="radio" class="btn-check" name="sizeOptions" id="sizeM" autocomplete="off">
+                            <label class="btn btn-outline-brand px-3 py-2 border-body-subtle text-body" for="sizeM">Medium</label>
 
-                            <input type="radio" class="btn-check" name="sizeOptions" id="size10" autocomplete="off">
-                            <label class="btn btn-outline-brand px-3 py-2 border-body-subtle text-body" for="size10">10</label>
+                            <!-- Large -->
+                            <input type="radio" class="btn-check" name="sizeOptions" id="sizeL" autocomplete="off">
+                            <label class="btn btn-outline-brand px-3 py-2 border-body-subtle text-body" for="sizeL">Large</label>
 
-                            <input type="radio" class="btn-check" name="sizeOptions" id="size12" autocomplete="off">
-                            <label class="btn btn-outline-brand px-3 py-2 border-body-subtle text-body" for="size12">12</label>
+                            <!-- X Large -->
+                            <input type="radio" class="btn-check" name="sizeOptions" id="sizeXL" autocomplete="off">
+                            <label class="btn btn-outline-brand px-3 py-2 border-body-subtle text-body" for="sizeXL">X Large</label>
 
-                            <input type="radio" class="btn-check" name="sizeOptions" id="size14" autocomplete="off">
-                            <label class="btn btn-outline-brand px-3 py-2 border-body-subtle text-body" for="size14">14</label>
-
-                            <input type="radio" class="btn-check" name="sizeOptions" id="size16" autocomplete="off" disabled>
-                            <label class="btn btn-outline-brand px-3 py-2 border-body-subtle text-body opacity-50" for="size16">16</label>
+                            <!-- XX Large -->
+                            <input type="radio" class="btn-check" name="sizeOptions" id="sizeXXL" autocomplete="off">
+                            <label class="btn btn-outline-brand px-3 py-2 border-body-subtle text-body" for="sizeXXL">XX Large</label>
                         </div>
                     </div>
 
@@ -357,83 +415,129 @@ ob_start(); ?>
         <div class="row justify-content-center">
             <div class="col-12">
 
-                <!-- Section Title -->
-                <h2 class="fs-3 fw-bold text-body mb-4">Elevate Your Game with Smash Apparel Ladies Performance Shirt!</h2>
+                <!-- Main Section Title & Subtitle -->
+                <h1 class="fs-2 fw-bold text-body mb-2">SMASH APPAREL MEN’S GYM/TRAINING SHIRT</h1>
+                <h3 class="fs-5 fw-semibold text-brand mb-4">LIGHTER. COOLER. BUILT TO MOVE.</h3>
 
-                <!-- Intro Paragraphs -->
+                <!-- Intro Section -->
                 <p class="text-secondary fs-6 mb-3">
-                    Get ready to serve up style and comfort with the Smash Apparel Ladies Performance Shirt! Made from a fabulous blend of 88% polyester and 12% polyurethane, this shirt is designed for the fierce female athlete who loves to look great while playing hard.
+                    <strong>Push harder. Move faster. Train without limits.</strong>
                 </p>
 
                 <p class="text-secondary fs-6 mb-3">
-                    Our UV-reducing materials intercept those pesky rays, keeping you cool and protected as you dominate the court. The innovative stretch fabric is not only flexible and forgiving but also fashionable, allowing you to move freely and confidently with every swing.
-                </p>
-
-                <p class="text-secondary fs-6 mb-3">
-                    Say goodbye to static cling! Thanks to the carbon-impregnated conductive fibers, you'll stay grounded and focused on your game. Plus, our sweat-absorbent and quick-drying fabric ensures you remain dry and comfortable, no matter how intense the match gets.
+                    The <strong>Smash Apparel Men’s Gym/Training Shirt</strong> has been engineered for athletes who demand more from their training apparel. Built from an <strong>ultra-lightweight perforated performance fabric</strong>, it delivers exceptional airflow, freedom of movement and all-session comfort — whether you're lifting, running, training on court or pushing through a high-intensity workout.
                 </p>
 
                 <p class="text-secondary fs-6 mb-4">
-                    And let's talk about our Ultra Cool Technology! This amazing feature absorbs heat and perspiration, lowering your body temperature by up to 3°C, so you can stay cool as a cucumber, even in the heat of battle.
+                    Designed around our own <strong>Dri-Motion Technology</strong>, this is a training shirt made to perform when the intensity rises.
                 </p>
 
-                <!-- Choice List -->
+                <!-- Ultra-Light Perforated Performance Fabric -->
+                <h2 class="fs-4 fw-bold text-body mb-2">ULTRA-LIGHT PERFORATED PERFORMANCE FABRIC</h2>
+                <p class="text-secondary fs-6 mb-2">
+                    The difference is in the fabric.
+                </p>
+                <p class="text-secondary fs-6 mb-2">
+                    Our lightweight perforated construction allows air to circulate naturally across the body, helping release excess heat while dramatically reducing the heavy, restrictive feel of traditional training shirts.
+                </p>
+                <p class="text-secondary fs-6 mb-4">
+                    The result is a shirt that feels <strong>light, breathable and barely there</strong>, allowing you to focus completely on your performance.
+                </p>
+
+                <!-- Dri-Motion Technology -->
+                <h2 class="fs-4 fw-bold text-body mb-2">DRI-MOTION TECHNOLOGY</h2>
+                <p class="text-secondary fs-6 mb-2">
+                    <strong>Stay dry. Stay comfortable. Keep moving.</strong>
+                </p>
+                <p class="text-secondary fs-6 mb-2">
+                    Smash Apparel's <strong>Dri-Motion Technology</strong> is engineered to rapidly draw moisture away from the skin and disperse it across the fabric, helping it evaporate faster.
+                </p>
+                <p class="text-secondary fs-6 mb-4">
+                    As your workout gets harder, Dri-Motion works to keep you feeling cooler, drier and more comfortable — so sweat doesn't become a distraction when performance matters.
+                </p>
+
+                <!-- Engineered For Movement -->
+                <h2 class="fs-4 fw-bold text-body mb-2">ENGINEERED FOR MOVEMENT</h2>
+                <p class="text-secondary fs-6 mb-2">
+                    Training apparel should move with you, not against you.
+                </p>
+                <p class="text-secondary fs-6 mb-2">
+                    The performance stretch construction provides freedom through every movement — from explosive sprints and dynamic court movement to weights, functional training and everyday workouts.
+                </p>
+                <p class="text-secondary fs-6 mb-4">
+                    No unnecessary bulk. No restrictive feel. Just lightweight performance designed to move.
+                </p>
+
+                <!-- Performance Features -->
                 <div class="mb-4">
-                    <p class="text-body fw-medium mb-2">When you choose Smash Apparel, you're embracing an amazing blend of:</p>
-                    <ul class="list-unstyled ps-3 mb-0">
-                        <li class="d-flex align-items-center gap-2 mb-2 text-secondary fs-6">
-                            <i class="bi bi-check-circle-fill text-brand fs-7"></i>
-                            <span><strong>Style</strong></span>
+                    <h2 class="fs-4 fw-bold text-body mb-3">PERFORMANCE FEATURES</h2>
+                    <ul class="list-unstyled ps-3 mb-0 d-flex flex-column gap-2">
+                        <li class="d-flex align-items-start gap-2 text-secondary fs-6">
+                            <i class="bi bi-check-circle-fill text-brand fs-7 mt-1"></i>
+                            <span><strong>Ultra-Lightweight Construction</strong> — engineered to minimise weight without compromising performance.</span>
                         </li>
-                        <li class="d-flex align-items-center gap-2 mb-2 text-secondary fs-6">
-                            <i class="bi bi-check-circle-fill text-brand fs-7"></i>
-                            <span><strong>Performance</strong></span>
+                        <li class="d-flex align-items-start gap-2 text-secondary fs-6">
+                            <i class="bi bi-check-circle-fill text-brand fs-7 mt-1"></i>
+                            <span><strong>Perforated Fabric</strong> — promotes increased airflow and breathability during intense activity.</span>
                         </li>
-                        <li class="d-flex align-items-center gap-2 mb-0 text-secondary fs-6">
-                            <i class="bi bi-check-circle-fill text-brand fs-7"></i>
-                            <span><strong>Sustainability</strong></span>
+                        <li class="d-flex align-items-start gap-2 text-secondary fs-6">
+                            <i class="bi bi-check-circle-fill text-brand fs-7 mt-1"></i>
+                            <span><strong>Dri-Motion Technology</strong> — actively draws moisture away from the body to help keep you dry and comfortable.</span>
+                        </li>
+                        <li class="d-flex align-items-start gap-2 text-secondary fs-6">
+                            <i class="bi bi-check-circle-fill text-brand fs-7 mt-1"></i>
+                            <span><strong>Performance Stretch</strong> — allows unrestricted movement through training, gym and sporting activities.</span>
+                        </li>
+                        <li class="d-flex align-items-start gap-2 text-secondary fs-6">
+                            <i class="bi bi-check-circle-fill text-brand fs-7 mt-1"></i>
+                            <span><strong>Quick-Drying Fabric</strong> — designed to manage moisture and dry rapidly between sessions.</span>
+                        </li>
+                        <li class="d-flex align-items-start gap-2 text-secondary fs-6">
+                            <i class="bi bi-check-circle-fill text-brand fs-7 mt-1"></i>
+                            <span><strong>Antistatic Technology</strong> — carbon-infused conductive fibres help reduce the build-up of static electricity.</span>
+                        </li>
+                        <li class="d-flex align-items-start gap-2 text-secondary fs-6">
+                            <i class="bi bi-check-circle-fill text-brand fs-7 mt-1"></i>
+                            <span><strong>Athletic Performance Fit</strong> — designed for a modern athletic silhouette without restricting movement.</span>
+                        </li>
+                        <li class="d-flex align-items-start gap-2 text-secondary fs-6">
+                            <i class="bi bi-check-circle-fill text-brand fs-7 mt-1"></i>
+                            <span><strong>Versatile Performance</strong> — ideal for gym, strength training, running, tennis, high-intensity workouts and everyday active wear.</span>
                         </li>
                     </ul>
                 </div>
 
+                <hr class="border-body-subtle my-4">
+
+                <!-- Materials Section -->
+                <div class="mb-4">
+                    <h2 class="fs-4 fw-bold text-body mb-3">MATERIALS</h2>
+                    <ul class="list-unstyled ps-3 mb-0 d-flex flex-column gap-2">
+                        <li class="d-flex align-items-center gap-2 text-secondary fs-6">
+                            <i class="bi bi-dot text-brand fs-4"></i>
+                            <span><strong>Main Fabric:</strong> 93% Polyester, 7% Polyurethane/Spandex</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2 text-secondary fs-6">
+                            <i class="bi bi-dot text-brand fs-4"></i>
+                            <span><strong>Secondary Fabric:</strong> 85% Nylon, 15% Polyurethane</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Made For More Than The Gym -->
+                <h2 class="fs-4 fw-bold text-body mb-2">MADE FOR MORE THAN THE GYM</h2>
+                <p class="text-secondary fs-6 mb-2">
+                    This isn't just another training shirt.
+                </p>
                 <p class="text-secondary fs-6 mb-4">
-                    Elevate your tennis wardrobe with the Smash Apparel Ladies Performance Shirt - where playful style meets unbeatable performance! Get ready to ace your game in style!
+                    It's a lightweight performance layer built for athletes who expect their apparel to work as hard as they do. From your first warm-up to your final rep, the <strong>Smash Apparel Men’s Gym/Training Shirt</strong> combines technical performance, athletic styling and exceptional comfort in one versatile design.
                 </p>
 
                 <!-- Tagline Callout -->
                 <div class="text-center my-4 py-2">
                     <p class="fs-5 fw-bold text-body mb-0">
-                        Smash Apparel - <span class="text-brand">Passion for Performance!</span>
+                        Smash Apparel — <span class="text-brand">Passion for Performance.</span>
                     </p>
-                </div>
-
-                <hr class="border-body-subtle my-4">
-
-                <!-- Detailed Specifications & Highlights -->
-                <div class="row g-4 mt-1">
-                    <div class="col-12">
-                        <p class="text-body mb-2"><strong>Materials:</strong></p>
-                        <ul class="list-unstyled ps-3 mb-0">
-                            <li class="d-flex align-items-center gap-2 text-secondary fs-6">
-                                <i class="bi bi-dot text-brand fs-4"></i>
-                                <span>88% Polyester, 12% Polyurethane</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-12">
-                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
-                            <li class="text-secondary fs-6">
-                                <strong class="text-body">Stretchy and Free</strong> - Our revolutionary stretch fabric allows for unrestricted movement, enhancing your play and making every leap, sprint, and twist feel effortless.
-                            </li>
-                            <li class="text-secondary fs-6">
-                                <strong class="text-body">No More Static</strong> - Thanks to the carbon-infused conductive fibres woven into the fabric, you can say goodbye to pesky static electricity. Stay focused and fabulous!
-                            </li>
-                            <li class="text-secondary fs-6">
-                                <strong class="text-body">Ultra Dry Technology</strong> - Experience the magic of advanced materials that pull moisture away from your skin, keeping you comfortably dry no matter what challenges come your way.
-                            </li>
-                        </ul>
-                    </div>
                 </div>
 
             </div>
@@ -1010,7 +1114,7 @@ ob_start(); ?>
                 <div class="card bg-body border rounded-4 p-3">
                     <div class="d-flex align-items-start gap-3">
                         <div class="bg-black text-white rounded-circle p-2 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 38px; height: 38px;">
-                            <i class="bi bi-ruler fs-6 text-brand"></i>
+                            <i class="fa fa-ruler fs-6 text-brand"></i>
                         </div>
                         <div>
                             <h6 class="fw-bolder text-body mb-1 fs-7 text-uppercase tracking-wider">How to measure</h6>
