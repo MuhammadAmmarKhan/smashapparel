@@ -142,7 +142,7 @@ ob_start(); ?>
     </div>
 </div>
 <div class="container-fluid px-2 px-md-3 pt-2">
-    <section class="w-100 rounded-4 bg-brand py-5 px-4 px-md-5 position-relative overflow-hidden">
+    <section class="w-100 rounded-4 bg-black py-5 px-4 px-md-5 position-relative overflow-hidden">
         <div class="row align-items-center justify-content-between gy-4">
 
             <!-- LEFT COLUMN: LARGE EDITORIAL STATEMENT -->
@@ -158,7 +158,7 @@ ob_start(); ?>
             <!-- RIGHT COLUMN: ACTION & TAGLINE -->
             <div class="col-12 col-lg-5 col-xl-4 text-start text-lg-end d-flex flex-column align-items-start align-items-lg-end">
                 <!-- BLACK PILL BUTTON -->
-                <a href="/shop" class="btn btn-dark bg-black text-white rounded-pill px-4 py-3 fw-bold text-uppercase fs-6 d-inline-flex align-items-center gap-2 shadow-sm border-0 mb-3 hover-scale">
+                <a href="/shop" class="btn btn-dark bg-brand text-white rounded-pill px-4 py-3 fw-bold text-uppercase fs-6 d-inline-flex align-items-center gap-2 shadow-sm border-0 mb-3 hover-scale">
                     <span>Shop Smash</span>
                     <i class="bi bi-arrow-right fs-6"></i>
                 </a>
@@ -264,15 +264,15 @@ ob_start(); ?>
         <!-- Left Box: Pinned Brand Copy (Full Viewport Height) -->
         <div class="col-12 col-lg-6">
             <div class="sticky-top" style="top: 0.5rem; height: calc(100vh - 1rem);">
-                <div class="bg-body-tertiary border border-body-subtle rounded-4 p-4 p-md-5 h-100 d-flex flex-column justify-content-center overflow-auto">
+                <div class="bg-black border border-dark rounded-4 p-4 p-md-5 h-100 d-flex flex-column justify-content-end overflow-auto">
                     <span class="text-uppercase tracking-widest fw-bold text-brand fs-8 mb-2 d-inline-flex align-items-center gap-2">
                         <i class="bi bi-shield-check"></i> Proven On Court
                     </span>
-                    <h2 class="display-5 fw-black fst-italic lh-1 text-uppercase tracking-tight text-body mb-3">
+                    <h2 class="display-5 fw-black fst-italic lh-1 text-uppercase tracking-tight text-white mb-3">
                         Pro Tested. <br/><span class="">Performance Driven.</span>
                     </h2>
 
-                    <p class="text-body fw-bold fs-6 mb-3">
+                    <p class="text-white fw-bold fs-6 mb-3">
                         We believe the strongest test of performance apparel is performance itself.
                     </p>
 
@@ -286,7 +286,7 @@ ob_start(); ?>
                         <p class="mb-0">
                             Whether you're a professional, a rising junior, a competitive club player or someone who simply demands more from their training apparel, our goal remains the same: to create clothing that allows you to concentrate on your performance rather than what you're wearing.
                         </p>
-                        <p class="mb-0 text-body fw-semibold">
+                        <p class="mb-0 text-white fst-italic fw-semibold">
                             Because when the match gets tight, the rally gets longer and the pressure rises, your clothing shouldn't hold you back.
                         </p>
                     </div>
@@ -553,7 +553,7 @@ ob_start(); ?>
 <div class="container-fluid px-2 px-md-3 pt-2">
     <div class="row g-2">
         <div class="col-12">
-            <section class="w-100 rounded-4 bg-brand py-5 px-4 px-md-5 position-relative overflow-hidden">
+            <section class="w-100 rounded-4 bg-black py-5 px-4 px-md-5 position-relative overflow-hidden">
                 <div class="row align-items-center justify-content-between gy-4 position-relative z-2">
 
                     <!-- LEFT COLUMN: TRANSITION STORY & EDITORIAL HEADLINE -->
@@ -574,7 +574,7 @@ ob_start(); ?>
 
 
                         <!-- PRIMARY BLACK PILL BUTTON -->
-                        <a href="/shop" class="btn btn-dark bg-black text-white rounded-pill px-4 py-3 fw-bold text-uppercase fs-6 d-inline-flex align-items-center gap-2 shadow-sm border-0 mb-3 hover-scale">
+                        <a href="/shop" class="btn btn-dark bg-brand text-white rounded-pill px-4 py-3 fw-bold text-uppercase fs-6 d-inline-flex align-items-center gap-2 shadow-sm border-0 mb-3 hover-scale">
                             <span>Explore The Collection</span>
                             <i class="bi bi-arrow-right fs-6"></i>
                         </a>
