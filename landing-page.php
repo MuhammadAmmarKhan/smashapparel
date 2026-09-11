@@ -33,7 +33,7 @@
         .text-glow { text-shadow: 0 0 20px rgba(255, 255, 255, 0.35); }
     </style>
 </head>
-<body class="bg-black text-white" style="overflow-x:hidden;">
+<body class="bg-secondary-subtle text-white" style="overflow-x:hidden;">
 
 <!-- 1. FLOATING BRAND NAVIGATION & KINETIC ANNOUNCEMENT BAR -->
 <header class="sticky-top z-1030 pt-2 px-2 px-md-3">
