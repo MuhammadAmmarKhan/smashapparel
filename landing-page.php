@@ -20,9 +20,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Basic&family=BenchNine:wght@300;400;700&family=Boldonse&family=Libre+Barcode+128+Text&family=Oswald:wght@200..700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 
-    <link href="http://smashapparel.test/smashapparel/assets/css/bootstrap.min.css?v=1.8.4" rel="stylesheet">
+    <link href="/smashapparel/assets/css/bootstrap.min.css?v=1.8.4" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="http://smashapparel.test/smashapparel/assets/css/override.css?v=1.8.4" rel="stylesheet">
+    <link href="/smashapparel/assets/css/override.css?v=1.8.4" rel="stylesheet">
 
     <style>
         .backdrop-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
@@ -180,11 +180,11 @@
     </div>
 </footer>
 
-<script src="http://smashapparel.test/smashapparel/assets/js/jquery-3.6.0.min.js?v=1.8.4" defer></script>
-<script src="http://smashapparel.test/smashapparel/assets/js/bootstrap.bundle.min.js?v=1.8.4" defer></script>
-<script src="http://smashapparel.test/smashapparel/assets/js/gsap.min.js?v=1.8.4" defer></script>
-<script src="http://smashapparel.test/smashapparel/assets/js/TextPlugin.min.js?v=1.8.4" defer></script>
-<script src="http://smashapparel.test/smashapparel/assets/js/ScrollTrigger.min.js?v=1.8.4" defer></script>
+<script src="/smashapparel/assets/js/jquery-3.6.0.min.js?v=1.8.4" defer></script>
+<script src="/smashapparel/assets/js/bootstrap.bundle.min.js?v=1.8.4" defer></script>
+<script src="/smashapparel/assets/js/gsap.min.js?v=1.8.4" defer></script>
+<script src="/smashapparel/assets/js/TextPlugin.min.js?v=1.8.4" defer></script>
+<script src="/smashapparel/assets/js/ScrollTrigger.min.js?v=1.8.4" defer></script>
 
 <script type="text/javascript">
     function initEditorialAccents() {
