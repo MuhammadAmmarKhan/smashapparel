@@ -4,8 +4,6 @@ $page_title = "Contact Us | Smash Apparel";
 $page_description = "Get in touch with Smash Apparel. Reach out for general enquiries, product details, custom teamwear, or visit our retail locations.";
 $page_keywords = "contact smash apparel, smash apparel store, courtwear support, custom athletic wear australia";
 ob_start(); ?>
-
-    <!-- CONTACT US: HERO FOLD SECTION -->
     <!-- CONTACT US: HERO FOLD SECTION -->
     <div class="container-fluid px-2 px-md-3 pt-2">
         <div class="js-hero-banner position-relative overflow-hidden rounded-4 bg-black border border-dark p-4 p-md-5 text-center min-h-350 d-flex flex-column justify-content-center align-items-center">
