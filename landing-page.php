@@ -77,10 +77,13 @@
             <!-- Fading Background Campaign Slides -->
             <div class="hero-slides-wrapper position-absolute top-0 start-0 w-100 h-100 z-0">
                 <div class="hero-slide active position-absolute top-0 start-0 w-100 h-100 opacity-60" data-slide="0">
-                    <img src="/smashapparel/assets/images/ctaaa.png" alt="Passion For Performance" class="w-100 h-100 object-fit-cover">
+                    <img src="/smashapparel/assets/images/ctaaa.png" alt="Ollie" class="w-100 h-100 object-fit-cover">
                 </div>
                 <div class="hero-slide position-absolute top-0 start-0 w-100 h-100 opacity-60" data-slide="1">
-                    <img src="/smashapparel/assets/images/slide_2.png" alt="Breathable Dri-Motion" class="w-100 h-100 object-fit-cover">
+                    <img src="/smashapparel/assets/images/slide_2.png" alt="Adrian" class="w-100 h-100 object-fit-cover">
+                </div>
+                <div class="hero-slide position-absolute top-0 start-0 w-100 h-100 opacity-60" data-slide="1">
+                    <img src="/smashapparel/assets/images/mtt-stephan.jpg" alt="Stephan" class="w-100 h-100 object-fit-cover">
                 </div>
             </div>
 
@@ -90,7 +93,7 @@
 
             <!-- Top Left: Brand Crest & Status -->
             <div class="position-relative z-2">
-                <div class="d-inline-flex align-items-center gap-2 bg-black bg-opacity-60 border border-white border-opacity-15 rounded-pill px-3 py-1.5 backdrop-blur">
+                <div class="d-inline-flex align-items-center gap-2 bg-black bg-opacity-60 border border-dark border-opacity-15 rounded-pill px-3 py-2 backdrop-blur">
                     <span class="live-status-dot"></span>
                     <span class="fs-8 fw-bold text-uppercase tracking-widest text-white">Smash Apparel • Launching Q4</span>
                 </div>
@@ -245,11 +248,225 @@
 
         gsap.delayedCall(2.5, transitionNext);
     }
+    function initHeroSlider() {
+        const heroBanner = document.querySelector('.js-hero-banner');
+        if (!heroBanner) return;
+
+        const slides = document.querySelectorAll('.hero-slide');
+        const textGroups = document.querySelectorAll('.hero-text-group');
+        const currentSlideNum = document.querySelector('.js-current-slide');
+        const prevBtn = document.querySelector('.js-prev-slide');
+        const nextBtn = document.querySelector('.js-next-slide');
+        const shopBtn = document.querySelector('.js-shop-btn');
+
+        const totalSlides = slides.length;
+        if (totalSlides === 0) return;
+
+        let currentIndex = 0;
+        let isAnimating = false;
+        let autoPlayTimer = null;
+
+        gsap.set(heroBanner, {force3D: true});
+
+        // heroBanner.addEventListener('mousemove', (e) => {
+        //     const rect = heroBanner.getBoundingClientRect();
+        //     const x = ((e.clientX - rect.left) / rect.width) * 100;
+        //     const y = ((e.clientY - rect.top) / rect.height) * 100;
+        //
+        //     heroBanner.style.setProperty('--mouse-x', `${x}%`);
+        //     heroBanner.style.setProperty('--mouse-y', `${y}%`);
+        // });
+
+        const initHeroReveal = () => {
+            slides.forEach((slide, idx) => {
+                if (idx === 0) {
+                    slide.classList.add('active');
+                    gsap.set(slide, {opacity: 1, visibility: 'visible', zIndex: 2});
+                } else {
+                    slide.classList.remove('active');
+                    gsap.set(slide, {opacity: 0, visibility: 'hidden', zIndex: 1});
+                }
+            });
+
+            textGroups.forEach((group, idx) => {
+                if (idx === 0) {
+                    group.classList.remove('d-none');
+                    group.classList.add('active');
+                } else {
+                    group.classList.add('d-none');
+                    group.classList.remove('active');
+                }
+            });
+
+            const activeSlide = slides[0];
+            const activeImg = activeSlide ? activeSlide.querySelector('img') : null;
+            const activeText = textGroups[0];
+
+            const initTl = gsap.timeline({
+                onComplete: () => {
+                    startAutoPlay();
+                }
+            });
+
+            gsap.set(heroBanner, {opacity: 0, scale: 0.98});
+            if (activeImg) gsap.set(activeImg, {scale: 1.2});
+            if (activeText) gsap.set(activeText.children, {y: 40, opacity: 0});
+            if (shopBtn) gsap.set(shopBtn, {y: 20, opacity: 0});
+
+            initTl.to(heroBanner, {
+                opacity: 1,
+                scale: 1,
+                duration: 1,
+                ease: 'power3.out'
+            })
+                .to(activeImg, {
+                    scale: 1,
+                    duration: 1.4,
+                    ease: 'power2.out'
+                }, '-=0.8');
+
+            if (activeText && activeText.children.length) {
+                initTl.to(activeText.children, {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    stagger: 0.1,
+                    ease: 'power3.out'
+                }, '-=1.0');
+            }
+
+            if (shopBtn) {
+                initTl.to(shopBtn, {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    ease: 'back.out(1.7)'
+                }, '-=0.6');
+            }
+        };
+
+        const goToSlide = (targetIndex) => {
+            const newIndex = ((targetIndex % totalSlides) + totalSlides) % totalSlides;
+
+            if (isAnimating || newIndex === currentIndex) return;
+            isAnimating = true;
+
+            stopAutoPlay();
+
+            const currentSlide = slides[currentIndex];
+            const nextSlide = slides[newIndex];
+            const currentImg = currentSlide ? currentSlide.querySelector('img') : null;
+            const nextImg = nextSlide ? nextSlide.querySelector('img') : null;
+
+            const currentText = textGroups[currentIndex];
+            const nextText = textGroups[newIndex];
+
+            gsap.set(nextSlide, {visibility: 'visible', opacity: 0, zIndex: 2});
+            if (currentSlide) gsap.set(currentSlide, {zIndex: 1});
+            if (nextImg) gsap.set(nextImg, {scale: 1.18});
+
+            const tl = gsap.timeline({
+                onComplete: () => {
+                    slides.forEach((slide, idx) => {
+                        if (idx === newIndex) {
+                            slide.classList.add('active');
+                            gsap.set(slide, {opacity: 1, visibility: 'visible', zIndex: 2});
+                        } else {
+                            slide.classList.remove('active');
+                            gsap.set(slide, {opacity: 0, visibility: 'hidden', zIndex: 1});
+                        }
+                    });
+
+                    currentIndex = newIndex;
+                    isAnimating = false;
+                    startAutoPlay();
+                }
+            });
+
+            if (currentSlideNum) {
+                currentSlideNum.textContent = String(newIndex + 1).padStart(2, '0');
+            }
+
+            if (currentImg) {
+                tl.to(currentImg, {
+                    scale: 1.05,
+                    duration: 1.2,
+                    ease: 'power2.inOut'
+                }, 0);
+            }
+
+            tl.to(nextSlide, {
+                opacity: 1,
+                duration: 1,
+                ease: 'power2.inOut'
+            }, 0);
+
+            if (nextImg) {
+                tl.to(nextImg, {
+                    scale: 1,
+                    duration: 1.4,
+                    ease: 'power3.out'
+                }, 0);
+            }
+
+            if (currentText && currentText.children.length) {
+                tl.to(currentText.children, {
+                    y: -25,
+                    opacity: 0,
+                    duration: 0.3,
+                    stagger: 0.03,
+                    ease: 'power2.in'
+                }, 0);
+            }
+
+            tl.add(() => {
+                if (currentText) {
+                    currentText.classList.add('d-none');
+                    currentText.classList.remove('active');
+                }
+                if (nextText) {
+                    nextText.classList.remove('d-none');
+                    nextText.classList.add('active');
+                }
+            }, 0.3);
+
+            if (nextText && nextText.children.length) {
+                tl.fromTo(nextText.children,
+                    {y: 35, opacity: 0},
+                    {y: 0, opacity: 1, duration: 0.5, stagger: 0.06, ease: 'power3.out'},
+                    0.32
+                );
+            }
+        };
+
+        const startAutoPlay = () => {
+            stopAutoPlay();
+            autoPlayTimer = setInterval(() => {
+                goToSlide(currentIndex + 1);
+            }, 6000);
+        };
+
+        const stopAutoPlay = () => {
+            if (autoPlayTimer) clearInterval(autoPlayTimer);
+        };
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+        }
+
+        initHeroReveal();
+    }
+
 
     document.addEventListener('DOMContentLoaded', () => {
         if (typeof gsap !== 'undefined') {
             initEditorialAccents();
             initKineticTicker();
+            initHeroSlider();
         }
     });
 </script>
